@@ -83,7 +83,7 @@ Deno.serve(async (req: Request): Promise<Response> => {
     const password = typeof body.password === 'string' ? body.password : '';
     const displayName = String(body.displayName || username).trim();
     const invite = typeof body.invite === 'string' ? body.invite : '';
-    if (!/^[a-z0-9_.-]{3,24}$/.test(username) || password.length < 12 || password.length > 128
+    if (!/^[a-z0-9_.-]{3,24}$/.test(username) || password.length < 8 || password.length > 128
       || displayName.length < 1 || displayName.length > 100 || invite.length > 200
       || !(await acceptedInvite(invite))) return reply(400, { error: genericError });
     const headers = adminHeaders();

@@ -8,12 +8,14 @@ configureTemplates(await loadTemplates());
     'use strict';
     const { h, clone, uid, num } = N, $ = s => document.querySelector(s);
     const ICONS = { home: 'M3 10 12 3l9 7M5 9v12h14V9M9 21v-8h6v8', program: 'M8 3h8v4H8zM8 5H5v16h14V5h-3M8 11h8M8 16h5', play: 'm8 4 12 8-12 8V4z', history: 'M3 11a9 9 0 1 1 2 7M3 4v7h7M12 7v5l3 2', pill: 'm7 17 10-10M6 4a5 5 0 0 1 7 0l7 7a5 5 0 0 1-7 7l-7-7a5 5 0 0 1 0-7', peptide: 'm14 3 7 7M13 4l-9 9v7h7l9-9M4 20l-2 2M9 9l6 6M16 2l6 6', nutrition: 'M7 3v7M4 3v5a3 3 0 0 0 6 0V3M7 11v10M17 3c-3 4-3 8 1 9V3h1v18', user: 'M8 7a4 4 0 1 0 8 0 4 4 0 1 0-8 0M4 21v-3a6 6 0 0 1 6-6h4a6 6 0 0 1 6 6v3', edit: 'm15 4 5 5M4 14l11-11 5 5L9 19l-6 2 1-7', plus: 'M12 4v16M4 12h16', close: 'm6 6 12 12M6 18 18 6', arrow: 'M4 12h16m-6-6 6 6-6 6', download: 'M12 3v12m-4-4 4 4 4-4M4 17v4h16v-4', check: 'm5 12 4 4L19 6', info: 'M12 11v6M12 7v1M21 12a9 9 0 1 1-18 0 9 9 0 1 1 18 0', chevron: 'm8 5 7 7-7 7', search: 'M10 3a7 7 0 1 0 0 14 7 7 0 1 0 0-14m5 12 6 6', swap: 'M3 7h17l-4-4M21 17H4l4 4', logout: 'M10 4H4v16h6M9 12h12l-4-4M21 12l-4 4', more: 'M5 12h1m5 0h1m5 0h1', clock: 'M12 6v6l4 2M21 12a9 9 0 1 1-18 0 9 9 0 1 1 18 0', up: 'M12 20V4m-6 6 6-6 6 6', down: 'M12 4v16m-6-6 6 6 6-6', trash: 'M4 6h16M9 6V3h6v3M6 6l1 15h10l1-15M10 10v7M14 10v7', lock: 'M7 10V7a5 5 0 0 1 10 0v3M5 10h14v11H5zM12 14v3', copy: 'M8 8h12v13H8zM16 8V3H3v13h5', dumbbell: 'M7 6v12M17 6v12M3 9v6M21 9v6M7 12h10', calendar: 'M5 5h14v16H5zM8 3v4M16 3v4M5 10h14', refresh: 'M20 11a8 8 0 0 0-14-5L3 9m0-5v5h5M4 13a8 8 0 0 0 14 5l3-3m0 5v-5h-5' };
+    Object.assign(ICONS, { eye: 'M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12m7 0a3 3 0 1 0 6 0 3 3 0 1 0-6 0', eyeOff: 'm3 3 18 18M10.6 6.2A11 11 0 0 1 12 6c6.5 0 10 6 10 6a17 17 0 0 1-2.1 2.8M6.2 6.2C3.5 8 2 12 2 12s3.5 6 10 6c1.5 0 2.8-.3 4-.8M9.9 9.9a3 3 0 0 0 4.2 4.2' });
     const ic = n => `<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="${ICONS[n] || ICONS.info}"></path></svg>`;
     const navs = [['today', 'Сегодня', 'home'], ['program', 'Программа', 'program'], ['workout', 'Тренировка', 'play'], ['history', 'История', 'history'], ['supplements', 'Добавки', 'pill'], ['peptides', 'Пептиды', 'peptide'], ['nutrition', 'Питание', 'nutrition'], ['profile', 'Профиль', 'user']];
     const days = ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'], order = [1, 2, 3, 4, 5, 6, 0];
     const dateLabel = d => new Date(d + 'T12:00:00').toLocaleDateString('ru-RU', { day: 'numeric', month: 'long' });
     const minLabel = x => x < 60 ? x + ' с' : Math.floor(x / 60) + ' мин' + (x % 60 ? ' ' + x % 60 + ' с' : '');
     const field = (label, name, value, type = 'text', extra = '') => `<label>${h(label)}<input name="${name}" type="${type}" value="${h(value ?? '')}" ${extra}></label>`;
+    const passwordField = (label, name, extra = '') => `<label>${h(label)}<span class="password-input"><input name="${name}" type="password" value="" ${extra}><button type="button" class="password-toggle" data-action="toggle-password" aria-label="Показать пароль">${ic('eye')}</button></span></label>`;
     const select = (label, name, value, options) => `<label>${h(label)}<select name="${name}">${Object.entries(options).map(([k, v]) => `<option value="${h(k)}" ${String(value) === k ? 'selected' : ''}>${h(v)}</option>`).join('')}</select></label>`;
     const check = (name, text, on) => `<label class="form-check"><input name="${name}" type="checkbox" ${on ? 'checked' : ''}>${h(text)}</label>`;
     const daySelect = (name, chosen) => `<div class="days-select">${order.map(x => `<label><input type="checkbox" name="${name}" value="${x}" ${chosen.includes(x) ? 'checked' : ''}><span>${days[x]}</span></label>`).join('')}</div>`;
@@ -91,17 +93,18 @@ configureTemplates(await loadTemplates());
     <form id="auth-form"><div class="auth-fields">
     ${field('Логин','username','','text','autocomplete="username" placeholder="Neo или vikusia" required minlength="3" maxlength="24" pattern="[a-zA-Z0-9_.-]+"')}
     ${ui.register?field('Как к тебе обращаться','displayName','','text','required maxlength="100" placeholder="Твоё имя"'):''}
-    ${field('Пароль','password','','password',`autocomplete="${ui.register?'new-password':'current-password'}" required ${ui.register?'minlength="12"':''} maxlength="128" placeholder="Пароль или запоминающаяся фраза"`)}
-    ${ui.register?field('Повтор пароля','passwordAgain','','password','required minlength="12" maxlength="128" autocomplete="new-password"'):''}
+    ${passwordField('Пароль','password',`autocomplete="${ui.register?'new-password':'current-password'}" required ${ui.register?'minlength="8" data-password-min':''} maxlength="128" placeholder="Пароль или запоминающаяся фраза"`)}
+    ${ui.register?passwordField('Повтор пароля','passwordAgain','required minlength="8" data-password-min maxlength="128" autocomplete="new-password"'):''}
     ${ui.register&&ui.mode==='cloud'?field('Код приглашения','invite','','password','required autocomplete="off" maxlength="200"'):''}
     ${ui.register?select('Программа на старте','preset','empty',{empty:'Начать с чистого листа',neo:'Верх / низ · программа из нашего чата',vika:'Спина / руки и низ · из PDF katuabu'}):''}
     <button type="submit" class="btn primary full" id="auth-submit">${ui.register?'Создать мой профиль':'Открыть дневник'}${ic('arrow')}</button>
     </div><p class="form-error" id="auth-error" role="alert"></p></form>`:`<div class="notice warn"><div><strong>Осталось подключить базу.</strong><p>Владелец сайта должен задать Supabase URL и публичный ключ. Облачный вход до этого недоступен.</p></div></div>`}
     ${!cloud?`<div class="auth-local-note">${ic('info')}<span><b>Облако не настроено.</b> Это не синхронизация с телефоном. Скачивать HTML больше не нужно; для переноса старых данных есть однократный импорт.</span></div>`:config.allowLocal?`<button class="btn ghost full" data-action="switch-mode">${ui.mode==='cloud'?'Открыть локальный режим':'Перейти к облачному входу'}</button>`:''}
-    <div class="auth-bottom">${ui.register?'Пароль — от 12 символов. Подойдёт простая фраза из нескольких слов.':'Логин не зависит от регистра. Пароль — зависит.'}<br>${ui.mode==='cloud'?'Новые профили — по приглашению владельца.':'У каждого локального профиля своё зашифрованное хранилище.'}</div>
+    <div class="auth-bottom">${ui.register?'Минимум 8 символов. Подойдёт простая фраза из нескольких слов.':'Логин не зависит от регистра. Пароль — зависит.'}<br>${ui.mode==='cloud'?'Новые профили — по приглашению владельца.':'У каждого локального профиля своё зашифрованное хранилище.'}</div>
     </div></section></div>`;
 }
-    async function authenticate(form) { const f = new FormData(form), name = String(f.get('username')).trim(), password = String(f.get('password')); if (ui.register && password !== f.get('passwordAgain'))
+    async function authenticate(form) { const f = new FormData(form), name = String(f.get('username')).trim(), password = String(f.get('password')); if (ui.register && password.length < 8)
+        throw Error('Минимум 8 символов'); if (ui.register && password !== f.get('passwordAgain'))
         throw Error('Пароли не совпадают'); if (ui.mode === 'local' && !config.allowLocal) throw Error('Локальный режим отключён владельцем.'); store = ui.mode === 'cloud' ? new S.CloudStore(config) : local; let doc; if (ui.register) {
         doc = ui.mode === 'cloud' ? await store.register(name, password, String(f.get('displayName')), String(f.get('invite'))) : await store.register(name, password, String(f.get('displayName')), String(f.get('preset')));
         if (ui.mode === 'cloud' && f.get('preset') !== 'empty') {
@@ -284,7 +287,8 @@ configureTemplates(await loadTemplates());
     else
         state.weights.push(entry); if (f.has('current'))
         state.profile.weight = value; changed(); close(); render(); }); }
-    function passwordEditor() { formModal('Изменить пароль', `<div class="stack">${field('Текущий пароль', 'current', '', 'password', 'required autocomplete="current-password" maxlength="128"')}${field('Новый пароль: минимум 12 символов', 'next', '', 'password', 'required autocomplete="new-password" minlength="12" maxlength="128"')}${field('Повтори новый пароль', 'again', '', 'password', 'required autocomplete="new-password" minlength="12" maxlength="128"')}</div><p class="help" style="margin-top:17px">Новый пароль сохраняется автоматически. Он не меняет пароль у старых резервных JSON-копий; при необходимости создай новую резервную копию в профиле.</p>`, async (form) => { const f = new FormData(form); if (f.get('next') !== f.get('again'))
+    function passwordEditor() { formModal('Изменить пароль', `<div class="stack">${passwordField('Текущий пароль', 'current', 'required autocomplete="current-password" maxlength="128"')}${passwordField('Новый пароль · Минимум 8 символов', 'next', 'required autocomplete="new-password" minlength="8" data-password-min maxlength="128"')}${passwordField('Повтори новый пароль', 'again', 'required autocomplete="new-password" minlength="8" data-password-min maxlength="128"')}</div><p class="help" style="margin-top:17px">Новый пароль сохраняется автоматически. Он не меняет пароль у старых резервных JSON-копий; при необходимости создай новую резервную копию в профиле.</p>`, async (form) => { const f = new FormData(form); if (String(f.get('next')).length < 8)
+        throw Error('Минимум 8 символов'); if (f.get('next') !== f.get('again'))
         throw Error('Новые пароли не совпадают'); await persistNow(); if (saveError)
         throw Error('Сначала разреши ошибку сохранения'); await store.changePassword(String(f.get('current')), String(f.get('next'))); close(); toast('Пароль изменён и сохранён.'); }); }
     function download(text, type, name) { const u = URL.createObjectURL(new Blob([text], { type })), a = document.createElement('a'); a.href = u; a.download = name; document.body.append(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(u), 60000); }
@@ -604,6 +608,15 @@ configureTemplates(await loadTemplates());
             case 'password':
                 passwordEditor();
                 break;
+            case 'toggle-password': {
+                const input = b.closest('.password-input')?.querySelector('input');
+                if (!input) break;
+                const visible = input.type === 'password';
+                input.type = visible ? 'text' : 'password';
+                b.setAttribute('aria-label', visible ? 'Скрыть пароль' : 'Показать пароль');
+                b.innerHTML = ic(visible ? 'eyeOff' : 'eye');
+                break;
+            }
             case 'sync':
                 await persistNow(); if(!saveError) await refreshRemote(true);
                 break;
@@ -632,6 +645,8 @@ configureTemplates(await loadTemplates());
     }
     document.addEventListener('click', event => { const b = event.target.closest('button'); if (!b || b.disabled || (b.type === 'submit' && b.form))
         return; Promise.resolve(actions(b)).catch(e => toast(e.message, true)); });
+    document.addEventListener('invalid', event => { if (event.target.matches('[data-password-min]') && event.target.validity.tooShort) event.target.setCustomValidity('Минимум 8 символов'); }, true);
+    document.addEventListener('input', event => { if (event.target.matches('[data-password-min]')) event.target.setCustomValidity(''); });
     document.addEventListener('submit', async (event) => {
         event.preventDefault();
         const form = event.target, button = form.querySelector('[type=submit]');

@@ -12,8 +12,8 @@ import { N } from "./domain.js";
     async function seal(doc, key) { const iv = random(12), ciphertext = await crypto.subtle.encrypt({ name: 'AES-GCM', iv }, key, enc.encode(JSON.stringify(doc))); return { iv: b64(iv), ciphertext: b64(new Uint8Array(ciphertext)) }; }
     async function unseal(record, key) { return N.parseJSON(dec.decode(await crypto.subtle.decrypt({ name: 'AES-GCM', iv: unb64(record.iv) }, key, unb64(record.ciphertext)))); }
     function credentials(username, password) { if (!/^[a-zA-Z0-9_.-]{3,24}$/.test(username))
-        throw Error('Логин: 3–24 английские буквы, цифры, точка, дефис или подчёркивание.'); if (password.length < 12 || password.length > 128)
-        throw Error('Пароль: от 12 до 128 символов. Подойдёт простая фраза из нескольких слов.'); return username.toLowerCase(); }
+        throw Error('Логин: 3–24 английские буквы, цифры, точка, дефис или подчёркивание.'); if (password.length < 8 || password.length > 128)
+        throw Error(password.length < 8 ? 'Минимум 8 символов' : 'Максимум 128 символов'); return username.toLowerCase(); }
     function validateVault(v) { if (!v || v.app !== 'neo-fit-vault' || v.version !== 1 || !Array.isArray(v.accounts) || v.accounts.length > 50)
         throw Error('Некорректный файл профилей'); const seen = new Set(); for (const a of v.accounts) {
         if (!/^[a-z0-9_.-]{3,24}$/.test(a.username) || seen.has(a.username) || typeof a.salt !== 'string' || typeof a.iv !== 'string' || typeof a.ciphertext !== 'string' || a.ciphertext.length > 8000000 || a.iterations !== ITERATIONS || !Number.isInteger(a.version) || a.version < 0)

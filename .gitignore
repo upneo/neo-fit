@@ -1,0 +1,17 @@
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+supabase/.temp/
+supabase/secrets.env
+private/
+*PRIVATE*
+*private*.html
+*.zip
+playwright-report/
+test-results/
+.DS_Store
+*private*.json
+*transfer*.json
+*backup*.json

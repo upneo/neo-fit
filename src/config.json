@@ -1,0 +1,7 @@
+{
+  "supabaseUrl": "",
+  "publishableKey": "",
+  "authDomain": "users.neo-fit.invalid",
+  "registrationFunction": "diary-register",
+  "allowLocal": true
+}

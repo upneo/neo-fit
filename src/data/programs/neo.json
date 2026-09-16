@@ -1,0 +1,842 @@
+[
+  {
+    "id": "upper-a",
+    "title": "Верх А",
+    "short": "Верх А",
+    "kind": "upper",
+    "subtitle": "Спина · грудь · руки",
+    "exercises": [
+      {
+        "id": "ua1",
+        "name": "Тяга верхнего блока средним хватом",
+        "originalName": "Тяга верхнего блока средним хватом",
+        "group": "Спина",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 10,
+        "restSeconds": 150,
+        "rirMin": 2,
+        "rirMax": 3,
+        "weightMode": "stack",
+        "unilateral": false,
+        "machine": "",
+        "notes": "",
+        "catalogId": "pulldown",
+        "pattern": "vertical-pull",
+        "equipment": "cable",
+        "technique": "Настрой упор для бёдер, поставь стопы устойчиво. Веди локти вниз без рывка и сильного раскачивания. Возвращай рукоять подконтрольно; не тяни её за голову.",
+        "targets": [
+          {
+            "reps": "8–10",
+            "sourceWeight": null
+          },
+          {
+            "reps": "8–10",
+            "sourceWeight": null
+          },
+          {
+            "reps": "8–10",
+            "sourceWeight": null
+          }
+        ],
+        "restOrigin": "Настройка адаптированной программы"
+      },
+      {
+        "id": "ua2",
+        "name": "Жим гантелей на наклонной скамье",
+        "originalName": "Жим гантелей на наклонной скамье",
+        "group": "Грудь",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 10,
+        "restSeconds": 150,
+        "rirMin": 2,
+        "rirMax": 3,
+        "weightMode": "single",
+        "unilateral": false,
+        "machine": "",
+        "notes": "",
+        "catalogId": "incline-db",
+        "pattern": "incline-press",
+        "equipment": "dumbbell",
+        "technique": "Отрегулируй наклон и устойчиво поставь стопы. Держи запястья над предплечьями. Опускай отягощение плавно, без отбива и болезненной глубины.",
+        "targets": [
+          {
+            "reps": "8–10",
+            "sourceWeight": null
+          },
+          {
+            "reps": "8–10",
+            "sourceWeight": null
+          },
+          {
+            "reps": "8–10",
+            "sourceWeight": null
+          }
+        ],
+        "restOrigin": "Настройка адаптированной программы"
+      },
+      {
+        "id": "ua3",
+        "name": "Рычажная тяга с упором грудью",
+        "originalName": "Рычажная тяга с упором грудью",
+        "group": "Спина",
+        "sets": 3,
+        "repsMin": 10,
+        "repsMax": 12,
+        "restSeconds": 150,
+        "rirMin": 2,
+        "rirMax": 3,
+        "weightMode": "stack",
+        "unilateral": false,
+        "machine": "",
+        "notes": "",
+        "catalogId": "row-chest",
+        "pattern": "horizontal-pull",
+        "equipment": "machine",
+        "technique": "Зафиксируй положение корпуса и опоры. Веди локти назад, не подбрасывая вес поясницей. Плавно верни рукоять, не теряя контроля над плечами.",
+        "targets": [
+          {
+            "reps": "10–12",
+            "sourceWeight": null
+          },
+          {
+            "reps": "10–12",
+            "sourceWeight": null
+          },
+          {
+            "reps": "10–12",
+            "sourceWeight": null
+          }
+        ],
+        "restOrigin": "Настройка адаптированной программы"
+      },
+      {
+        "id": "ua4",
+        "name": "Сведение рук в тренажёре «бабочка»",
+        "originalName": "Сведение рук в тренажёре «бабочка»",
+        "group": "Грудь",
+        "sets": 2,
+        "repsMin": 12,
+        "repsMax": 15,
+        "restSeconds": 90,
+        "rirMin": 2,
+        "rirMax": 3,
+        "weightMode": "stack",
+        "unilateral": false,
+        "machine": "",
+        "notes": "",
+        "catalogId": "fly-machine",
+        "pattern": "chest-fly",
+        "equipment": "machine",
+        "technique": "Подстрой сиденье и рукояти под свой рост. Сохраняй небольшой сгиб локтей. Своди руки без рывка и не уходи в болезненное растяжение.",
+        "targets": [
+          {
+            "reps": "12–15",
+            "sourceWeight": null
+          },
+          {
+            "reps": "12–15",
+            "sourceWeight": null
+          }
+        ],
+        "restOrigin": "Настройка адаптированной программы"
+      },
+      {
+        "id": "ua5",
+        "name": "Сгибание рук на нижнем блоке",
+        "originalName": "Сгибание рук на нижнем блоке",
+        "group": "Бицепс",
+        "sets": 2,
+        "repsMin": 10,
+        "repsMax": 15,
+        "restSeconds": 90,
+        "rirMin": 2,
+        "rirMax": 3,
+        "weightMode": "stack",
+        "unilateral": false,
+        "machine": "",
+        "notes": "",
+        "catalogId": "curl-cable",
+        "pattern": "elbow-flexion",
+        "equipment": "cable",
+        "technique": "Выбери устойчивое положение. Сгибай локти без раскачивания корпусом; кисти не заламывай. Опускай вес подконтрольно.",
+        "targets": [
+          {
+            "reps": "10–15",
+            "sourceWeight": null
+          },
+          {
+            "reps": "10–15",
+            "sourceWeight": null
+          }
+        ],
+        "restOrigin": "Настройка адаптированной программы"
+      },
+      {
+        "id": "ua6",
+        "name": "Разгибание рук с канатом на верхнем блоке",
+        "originalName": "Разгибание рук с канатом на верхнем блоке",
+        "group": "Трицепс",
+        "sets": 2,
+        "repsMin": 10,
+        "repsMax": 15,
+        "restSeconds": 90,
+        "rirMin": 2,
+        "rirMax": 3,
+        "weightMode": "stack",
+        "unilateral": false,
+        "machine": "",
+        "notes": "",
+        "catalogId": "pushdown",
+        "pattern": "elbow-extension",
+        "equipment": "cable",
+        "technique": "Устойчиво встань у блока и удерживай плечи относительно корпуса. Разгибай локти без рывка. Возвращай рукоять медленно; не дави через боль в локте.",
+        "targets": [
+          {
+            "reps": "10–15",
+            "sourceWeight": null
+          },
+          {
+            "reps": "10–15",
+            "sourceWeight": null
+          }
+        ],
+        "restOrigin": "Настройка адаптированной программы"
+      }
+    ],
+    "source": "Предварительная адаптация верх/низ из чата; не официальная программа MIKE BOREYKO."
+  },
+  {
+    "id": "lower-a",
+    "title": "Низ А + плечи",
+    "short": "Низ А",
+    "kind": "lower",
+    "subtitle": "Ноги · икры · дельты",
+    "exercises": [
+      {
+        "id": "la1",
+        "name": "Жим ногами",
+        "originalName": "Жим ногами",
+        "group": "Ноги",
+        "sets": 3,
+        "repsMin": 10,
+        "repsMax": 12,
+        "restSeconds": 150,
+        "rirMin": 2,
+        "rirMax": 3,
+        "weightMode": "stack",
+        "unilateral": false,
+        "machine": "",
+        "notes": "",
+        "catalogId": "legpress",
+        "pattern": "knee-dominant",
+        "equipment": "machine",
+        "technique": "Выбери устойчивую постановку стоп. Колени направляй примерно по линии носков. Контролируй опускание; глубину выбирай без боли и потери положения корпуса.",
+        "targets": [
+          {
+            "reps": "10–12",
+            "sourceWeight": null
+          },
+          {
+            "reps": "10–12",
+            "sourceWeight": null
+          },
+          {
+            "reps": "10–12",
+            "sourceWeight": null
+          }
+        ],
+        "restOrigin": "Настройка адаптированной программы"
+      },
+      {
+        "id": "la2",
+        "name": "Сгибание ног сидя",
+        "originalName": "Сгибание ног сидя",
+        "group": "Ноги",
+        "sets": 3,
+        "repsMin": 10,
+        "repsMax": 12,
+        "restSeconds": 90,
+        "rirMin": 2,
+        "rirMax": 3,
+        "weightMode": "stack",
+        "unilateral": false,
+        "machine": "",
+        "notes": "",
+        "catalogId": "legcurl-seated",
+        "pattern": "knee-flexion",
+        "equipment": "machine",
+        "technique": "Настрой валик и ось тренажёра под себя. Не отрывай таз от опоры. Сгибай и разгибай колени плавно, не бросая груз.",
+        "targets": [
+          {
+            "reps": "10–12",
+            "sourceWeight": null
+          },
+          {
+            "reps": "10–12",
+            "sourceWeight": null
+          },
+          {
+            "reps": "10–12",
+            "sourceWeight": null
+          }
+        ],
+        "restOrigin": "Настройка адаптированной программы"
+      },
+      {
+        "id": "la3",
+        "name": "Разгибание ног в тренажёре",
+        "originalName": "Разгибание ног в тренажёре",
+        "group": "Ноги",
+        "sets": 1,
+        "repsMin": 12,
+        "repsMax": 15,
+        "restSeconds": 90,
+        "rirMin": 2,
+        "rirMax": 3,
+        "weightMode": "stack",
+        "unilateral": false,
+        "machine": "",
+        "notes": "",
+        "catalogId": "legextension",
+        "pattern": "knee-extension",
+        "equipment": "machine",
+        "technique": "Совмести ось тренажёра с коленом и настрой валик. Сохраняй опору спины. Поднимай и опускай вес без ударов и болезненной амплитуды.",
+        "targets": [
+          {
+            "reps": "12–15",
+            "sourceWeight": null
+          }
+        ],
+        "restOrigin": "Настройка адаптированной программы"
+      },
+      {
+        "id": "la4",
+        "name": "Подъём на носки сидя",
+        "originalName": "Подъём на носки сидя",
+        "group": "Икры",
+        "sets": 3,
+        "repsMin": 12,
+        "repsMax": 15,
+        "restSeconds": 90,
+        "rirMin": 2,
+        "rirMax": 3,
+        "weightMode": "stack",
+        "unilateral": false,
+        "machine": "",
+        "notes": "",
+        "catalogId": "calf-seated",
+        "pattern": "calf-seated",
+        "equipment": "machine",
+        "technique": "Устойчиво поставь переднюю часть стопы на платформу. Поднимай и опускай пятки плавно. Не пружинь внизу и не используй болезненную амплитуду.",
+        "targets": [
+          {
+            "reps": "12–15",
+            "sourceWeight": null
+          },
+          {
+            "reps": "12–15",
+            "sourceWeight": null
+          },
+          {
+            "reps": "12–15",
+            "sourceWeight": null
+          }
+        ],
+        "restOrigin": "Настройка адаптированной программы"
+      },
+      {
+        "id": "la5",
+        "name": "Обратная «бабочка» на задние дельты",
+        "originalName": "Обратная «бабочка» на задние дельты",
+        "group": "Плечи",
+        "sets": 3,
+        "repsMin": 12,
+        "repsMax": 15,
+        "restSeconds": 90,
+        "rirMin": 2,
+        "rirMax": 3,
+        "weightMode": "stack",
+        "unilateral": false,
+        "machine": "",
+        "notes": "",
+        "catalogId": "reverse-fly",
+        "pattern": "rear-delt",
+        "equipment": "machine",
+        "technique": "Настрой рукояти и положение корпуса. Двигай руками без раскачивания и пожимания плечами. Выбирай контролируемую амплитуду без дискомфорта в плече.",
+        "targets": [
+          {
+            "reps": "12–15",
+            "sourceWeight": null
+          },
+          {
+            "reps": "12–15",
+            "sourceWeight": null
+          },
+          {
+            "reps": "12–15",
+            "sourceWeight": null
+          }
+        ],
+        "restOrigin": "Настройка адаптированной программы"
+      },
+      {
+        "id": "la6",
+        "name": "Подъём гантелей в стороны",
+        "originalName": "Подъём гантелей в стороны",
+        "group": "Плечи",
+        "sets": 3,
+        "repsMin": 12,
+        "repsMax": 15,
+        "restSeconds": 90,
+        "rirMin": 2,
+        "rirMax": 3,
+        "weightMode": "single",
+        "unilateral": false,
+        "machine": "",
+        "notes": "",
+        "catalogId": "lateral-db",
+        "pattern": "lateral-raise",
+        "equipment": "dumbbell",
+        "technique": "Сохраняй небольшой сгиб локтей. Поднимай руки в комфортной плоскости без рывков корпусом. Не поднимай плечи к ушам; опускай вес плавно.",
+        "targets": [
+          {
+            "reps": "12–15",
+            "sourceWeight": null
+          },
+          {
+            "reps": "12–15",
+            "sourceWeight": null
+          },
+          {
+            "reps": "12–15",
+            "sourceWeight": null
+          }
+        ],
+        "restOrigin": "Настройка адаптированной программы"
+      }
+    ],
+    "source": "Предварительная адаптация верх/низ из чата; не официальная программа MIKE BOREYKO."
+  },
+  {
+    "id": "upper-b",
+    "title": "Верх Б",
+    "short": "Верх Б",
+    "kind": "upper",
+    "subtitle": "Грудь · спина · руки",
+    "exercises": [
+      {
+        "id": "ub1",
+        "name": "Горизонтальный жим в тренажёре",
+        "originalName": "Горизонтальный жим в тренажёре",
+        "group": "Грудь",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 10,
+        "restSeconds": 150,
+        "rirMin": 2,
+        "rirMax": 3,
+        "weightMode": "stack",
+        "unilateral": false,
+        "machine": "",
+        "notes": "",
+        "catalogId": "chest-machine",
+        "pattern": "horizontal-press",
+        "equipment": "machine",
+        "technique": "Настрой высоту сиденья или положение на скамье. Сохраняй устойчивую опору, не заламывай кисти. Жми и опускай плавно, без отбива.",
+        "targets": [
+          {
+            "reps": "8–10",
+            "sourceWeight": null
+          },
+          {
+            "reps": "8–10",
+            "sourceWeight": null
+          },
+          {
+            "reps": "8–10",
+            "sourceWeight": null
+          }
+        ],
+        "restOrigin": "Настройка адаптированной программы"
+      },
+      {
+        "id": "ub2",
+        "name": "Тяга верхнего блока нейтральным хватом",
+        "originalName": "Тяга верхнего блока нейтральным хватом",
+        "group": "Спина",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 10,
+        "restSeconds": 150,
+        "rirMin": 2,
+        "rirMax": 3,
+        "weightMode": "stack",
+        "unilateral": false,
+        "machine": "",
+        "notes": "",
+        "catalogId": "pulldown-neutral",
+        "pattern": "vertical-pull",
+        "equipment": "cable",
+        "technique": "Настрой упор для бёдер, поставь стопы устойчиво. Веди локти вниз без рывка и сильного раскачивания. Возвращай рукоять подконтрольно; не тяни её за голову.",
+        "targets": [
+          {
+            "reps": "8–10",
+            "sourceWeight": null
+          },
+          {
+            "reps": "8–10",
+            "sourceWeight": null
+          },
+          {
+            "reps": "8–10",
+            "sourceWeight": null
+          }
+        ],
+        "restOrigin": "Настройка адаптированной программы"
+      },
+      {
+        "id": "ub3",
+        "name": "Сведение рук в кроссовере",
+        "originalName": "Сведение рук в кроссовере",
+        "group": "Грудь",
+        "sets": 2,
+        "repsMin": 12,
+        "repsMax": 15,
+        "restSeconds": 90,
+        "rirMin": 2,
+        "rirMax": 3,
+        "weightMode": "stack",
+        "unilateral": false,
+        "machine": "",
+        "notes": "",
+        "catalogId": "fly-cable",
+        "pattern": "chest-fly",
+        "equipment": "cable",
+        "technique": "Подстрой сиденье и рукояти под свой рост. Сохраняй небольшой сгиб локтей. Своди руки без рывка и не уходи в болезненное растяжение.",
+        "targets": [
+          {
+            "reps": "12–15",
+            "sourceWeight": null
+          },
+          {
+            "reps": "12–15",
+            "sourceWeight": null
+          }
+        ],
+        "restOrigin": "Настройка адаптированной программы"
+      },
+      {
+        "id": "ub4",
+        "name": "Тяга гантели к поясу одной рукой с опорой свободной рукой",
+        "originalName": "Тяга гантели к поясу одной рукой с опорой свободной рукой",
+        "group": "Спина",
+        "sets": 3,
+        "repsMin": 10,
+        "repsMax": 12,
+        "restSeconds": 150,
+        "rirMin": 2,
+        "rirMax": 3,
+        "weightMode": "single",
+        "unilateral": true,
+        "machine": "",
+        "notes": "",
+        "catalogId": "row-dumbbell",
+        "pattern": "horizontal-pull",
+        "equipment": "dumbbell",
+        "technique": "Зафиксируй положение корпуса и опоры. Веди локти назад, не подбрасывая вес поясницей. Плавно верни рукоять, не теряя контроля над плечами.",
+        "targets": [
+          {
+            "reps": "10–12",
+            "sourceWeight": null
+          },
+          {
+            "reps": "10–12",
+            "sourceWeight": null
+          },
+          {
+            "reps": "10–12",
+            "sourceWeight": null
+          }
+        ],
+        "restOrigin": "Настройка адаптированной программы"
+      },
+      {
+        "id": "ub5",
+        "name": "Молотковые сгибания с гантелями",
+        "originalName": "Молотковые сгибания с гантелями",
+        "group": "Бицепс",
+        "sets": 2,
+        "repsMin": 10,
+        "repsMax": 15,
+        "restSeconds": 90,
+        "rirMin": 2,
+        "rirMax": 3,
+        "weightMode": "single",
+        "unilateral": false,
+        "machine": "",
+        "notes": "",
+        "catalogId": "hammer",
+        "pattern": "neutral-curl",
+        "equipment": "dumbbell",
+        "technique": "Держи ладони обращёнными друг к другу. Сгибай локти, не подбрасывая гантели плечами. Опускай вес плавно.",
+        "targets": [
+          {
+            "reps": "10–15",
+            "sourceWeight": null
+          },
+          {
+            "reps": "10–15",
+            "sourceWeight": null
+          }
+        ],
+        "restOrigin": "Настройка адаптированной программы"
+      },
+      {
+        "id": "ub6",
+        "name": "Разгибание рук с канатом на верхнем блоке",
+        "originalName": "Разгибание рук с канатом на верхнем блоке",
+        "group": "Трицепс",
+        "sets": 2,
+        "repsMin": 10,
+        "repsMax": 15,
+        "restSeconds": 90,
+        "rirMin": 2,
+        "rirMax": 3,
+        "weightMode": "stack",
+        "unilateral": false,
+        "machine": "",
+        "notes": "",
+        "catalogId": "pushdown",
+        "pattern": "elbow-extension",
+        "equipment": "cable",
+        "technique": "Устойчиво встань у блока и удерживай плечи относительно корпуса. Разгибай локти без рывка. Возвращай рукоять медленно; не дави через боль в локте.",
+        "targets": [
+          {
+            "reps": "10–15",
+            "sourceWeight": null
+          },
+          {
+            "reps": "10–15",
+            "sourceWeight": null
+          }
+        ],
+        "restOrigin": "Настройка адаптированной программы"
+      }
+    ],
+    "source": "Предварительная адаптация верх/низ из чата; не официальная программа MIKE BOREYKO."
+  },
+  {
+    "id": "lower-b",
+    "title": "Низ Б + плечи",
+    "short": "Низ Б",
+    "kind": "lower",
+    "subtitle": "Ноги · икры · дельты",
+    "exercises": [
+      {
+        "id": "lb1",
+        "name": "Жим ногами",
+        "originalName": "Жим ногами",
+        "group": "Ноги",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 10,
+        "restSeconds": 150,
+        "rirMin": 2,
+        "rirMax": 3,
+        "weightMode": "stack",
+        "unilateral": false,
+        "machine": "",
+        "notes": "",
+        "catalogId": "legpress",
+        "pattern": "knee-dominant",
+        "equipment": "machine",
+        "technique": "Выбери устойчивую постановку стоп. Колени направляй примерно по линии носков. Контролируй опускание; глубину выбирай без боли и потери положения корпуса.",
+        "targets": [
+          {
+            "reps": "8–10",
+            "sourceWeight": null
+          },
+          {
+            "reps": "8–10",
+            "sourceWeight": null
+          },
+          {
+            "reps": "8–10",
+            "sourceWeight": null
+          }
+        ],
+        "restOrigin": "Настройка адаптированной программы"
+      },
+      {
+        "id": "lb2",
+        "name": "Сгибание ног лёжа",
+        "originalName": "Сгибание ног лёжа",
+        "group": "Ноги",
+        "sets": 3,
+        "repsMin": 10,
+        "repsMax": 12,
+        "restSeconds": 90,
+        "rirMin": 2,
+        "rirMax": 3,
+        "weightMode": "stack",
+        "unilateral": false,
+        "machine": "",
+        "notes": "",
+        "catalogId": "legcurl-lying",
+        "pattern": "knee-flexion",
+        "equipment": "machine",
+        "technique": "Настрой валик и ось тренажёра под себя. Не отрывай таз от опоры. Сгибай и разгибай колени плавно, не бросая груз.",
+        "targets": [
+          {
+            "reps": "10–12",
+            "sourceWeight": null
+          },
+          {
+            "reps": "10–12",
+            "sourceWeight": null
+          },
+          {
+            "reps": "10–12",
+            "sourceWeight": null
+          }
+        ],
+        "restOrigin": "Настройка адаптированной программы"
+      },
+      {
+        "id": "lb3",
+        "name": "Разгибание ног в тренажёре",
+        "originalName": "Разгибание ног в тренажёре",
+        "group": "Ноги",
+        "sets": 1,
+        "repsMin": 12,
+        "repsMax": 15,
+        "restSeconds": 90,
+        "rirMin": 2,
+        "rirMax": 3,
+        "weightMode": "stack",
+        "unilateral": false,
+        "machine": "",
+        "notes": "",
+        "catalogId": "legextension",
+        "pattern": "knee-extension",
+        "equipment": "machine",
+        "technique": "Совмести ось тренажёра с коленом и настрой валик. Сохраняй опору спины. Поднимай и опускай вес без ударов и болезненной амплитуды.",
+        "targets": [
+          {
+            "reps": "12–15",
+            "sourceWeight": null
+          }
+        ],
+        "restOrigin": "Настройка адаптированной программы"
+      },
+      {
+        "id": "lb4",
+        "name": "Подъём на носки стоя в тренажёре",
+        "originalName": "Подъём на носки стоя в тренажёре",
+        "group": "Икры",
+        "sets": 3,
+        "repsMin": 12,
+        "repsMax": 15,
+        "restSeconds": 90,
+        "rirMin": 2,
+        "rirMax": 3,
+        "weightMode": "stack",
+        "unilateral": false,
+        "machine": "",
+        "notes": "",
+        "catalogId": "calf-standing",
+        "pattern": "calf-standing",
+        "equipment": "machine",
+        "technique": "Удерживай равновесие с опорой. Поднимай пятки без подскока и медленно опускай. Не превращай движение в приседание.",
+        "targets": [
+          {
+            "reps": "12–15",
+            "sourceWeight": null
+          },
+          {
+            "reps": "12–15",
+            "sourceWeight": null
+          },
+          {
+            "reps": "12–15",
+            "sourceWeight": null
+          }
+        ],
+        "restOrigin": "Настройка адаптированной программы"
+      },
+      {
+        "id": "lb5",
+        "name": "Тяга каната к лицу на задние дельты",
+        "originalName": "Тяга каната к лицу на задние дельты",
+        "group": "Плечи",
+        "sets": 3,
+        "repsMin": 12,
+        "repsMax": 15,
+        "restSeconds": 90,
+        "rirMin": 2,
+        "rirMax": 3,
+        "weightMode": "stack",
+        "unilateral": false,
+        "machine": "",
+        "notes": "",
+        "catalogId": "facepull",
+        "pattern": "rear-delt",
+        "equipment": "cable",
+        "technique": "Настрой рукояти и положение корпуса. Двигай руками без раскачивания и пожимания плечами. Выбирай контролируемую амплитуду без дискомфорта в плече.",
+        "targets": [
+          {
+            "reps": "12–15",
+            "sourceWeight": null
+          },
+          {
+            "reps": "12–15",
+            "sourceWeight": null
+          },
+          {
+            "reps": "12–15",
+            "sourceWeight": null
+          }
+        ],
+        "restOrigin": "Настройка адаптированной программы"
+      },
+      {
+        "id": "lb6",
+        "name": "Отведение руки в сторону в кроссовере",
+        "originalName": "Отведение руки в сторону в кроссовере",
+        "group": "Плечи",
+        "sets": 3,
+        "repsMin": 12,
+        "repsMax": 15,
+        "restSeconds": 90,
+        "rirMin": 2,
+        "rirMax": 3,
+        "weightMode": "stack",
+        "unilateral": true,
+        "machine": "",
+        "notes": "",
+        "catalogId": "lateral-cable",
+        "pattern": "lateral-raise",
+        "equipment": "cable",
+        "technique": "Сохраняй небольшой сгиб локтей. Поднимай руки в комфортной плоскости без рывков корпусом. Не поднимай плечи к ушам; опускай вес плавно.",
+        "targets": [
+          {
+            "reps": "12–15",
+            "sourceWeight": null
+          },
+          {
+            "reps": "12–15",
+            "sourceWeight": null
+          },
+          {
+            "reps": "12–15",
+            "sourceWeight": null
+          }
+        ],
+        "restOrigin": "Настройка адаптированной программы"
+      }
+    ],
+    "source": "Предварительная адаптация верх/низ из чата; не официальная программа MIKE BOREYKO."
+  }
+]

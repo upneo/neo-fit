@@ -1,0 +1,434 @@
+[
+  {
+    "id": "pdf-0",
+    "title": "Спина / руки",
+    "short": "Спина / руки",
+    "kind": "upper",
+    "source": "Untitled (1).pdf, страница 1, программа by katuabu. Заголовок низа в оригинале: «жопа/ноги/плечи». Веса — примеры автора, не персональные назначения. Разминка отдельно в PDF не обозначена.",
+    "exercises": [
+      {
+        "catalogId": "pulldown",
+        "name": "Тяга верхнего блока",
+        "group": "Спина",
+        "pattern": "vertical-pull",
+        "equipment": "cable",
+        "weightMode": "unspecified",
+        "unilateral": false,
+        "aliases": [],
+        "technique": "Настрой упор для бёдер, поставь стопы устойчиво. Веди локти вниз без рывка и сильного раскачивания. Возвращай рукоять подконтрольно; не тяни её за голову.",
+        "id": "pdf-0-0",
+        "originalName": "Тяга верхнего блока",
+        "sets": 4,
+        "repsMin": 10,
+        "repsMax": 12,
+        "targets": [
+          {
+            "reps": "12",
+            "sourceWeight": 15
+          },
+          {
+            "reps": "10",
+            "sourceWeight": 20
+          },
+          {
+            "reps": "10",
+            "sourceWeight": 20
+          },
+          {
+            "reps": "10",
+            "sourceWeight": 20
+          }
+        ],
+        "restSeconds": 120,
+        "restOrigin": "Технический таймер по умолчанию, не указан в PDF; можно изменить",
+        "rirMin": null,
+        "rirMax": null,
+        "machine": "",
+        "notes": "Числа из PDF сохранены как пример. Тип веса и разминочные подходы в источнике не уточнены."
+      },
+      {
+        "catalogId": "row-cable",
+        "name": "Тяга горизонтального блока сидя",
+        "group": "Спина",
+        "pattern": "horizontal-pull",
+        "equipment": "cable",
+        "weightMode": "unspecified",
+        "unilateral": false,
+        "aliases": [
+          "Тяга горизонтального блока сидя"
+        ],
+        "technique": "Зафиксируй положение корпуса и опоры. Веди локти назад, не подбрасывая вес поясницей. Плавно верни рукоять, не теряя контроля над плечами.",
+        "id": "pdf-0-1",
+        "originalName": "Тяга горизонтального блока сидя",
+        "sets": 4,
+        "repsMin": 12,
+        "repsMax": 15,
+        "targets": [
+          {
+            "reps": "15",
+            "sourceWeight": 10
+          },
+          {
+            "reps": "12",
+            "sourceWeight": 15
+          },
+          {
+            "reps": "12",
+            "sourceWeight": 15
+          },
+          {
+            "reps": "12",
+            "sourceWeight": 15
+          }
+        ],
+        "restSeconds": 120,
+        "restOrigin": "Технический таймер по умолчанию, не указан в PDF; можно изменить",
+        "rirMin": null,
+        "rirMax": null,
+        "machine": "",
+        "notes": "Числа из PDF сохранены как пример. Тип веса и разминочные подходы в источнике не уточнены."
+      },
+      {
+        "catalogId": "row-lever",
+        "name": "Тяга рычага узким хватом сидя",
+        "group": "Спина",
+        "pattern": "horizontal-pull",
+        "equipment": "machine",
+        "weightMode": "unspecified",
+        "unilateral": false,
+        "aliases": [],
+        "technique": "Зафиксируй положение корпуса и опоры. Веди локти назад, не подбрасывая вес поясницей. Плавно верни рукоять, не теряя контроля над плечами.",
+        "id": "pdf-0-2",
+        "originalName": "Тяга рычага узким хватом сидя",
+        "sets": 4,
+        "repsMin": 12,
+        "repsMax": 12,
+        "targets": [
+          {
+            "reps": "12",
+            "sourceWeight": 10
+          },
+          {
+            "reps": "12",
+            "sourceWeight": 10
+          },
+          {
+            "reps": "12",
+            "sourceWeight": 10
+          },
+          {
+            "reps": "12",
+            "sourceWeight": 10
+          }
+        ],
+        "restSeconds": 120,
+        "restOrigin": "Технический таймер по умолчанию, не указан в PDF; можно изменить",
+        "rirMin": null,
+        "rirMax": null,
+        "machine": "",
+        "notes": "Числа из PDF сохранены как пример. Тип веса и разминочные подходы в источнике не уточнены."
+      },
+      {
+        "catalogId": "curl-db",
+        "name": "Сгибания, на бицепс",
+        "group": "Бицепс",
+        "pattern": "elbow-flexion",
+        "equipment": "dumbbell",
+        "weightMode": "unspecified",
+        "unilateral": false,
+        "aliases": [
+          "Сгибания, на бицепс"
+        ],
+        "technique": "Выбери устойчивое положение. Сгибай локти без раскачивания корпусом; кисти не заламывай. Опускай вес подконтрольно.",
+        "id": "pdf-0-3",
+        "originalName": "Сгибания, на бицепс",
+        "sets": 4,
+        "repsMin": 8,
+        "repsMax": 10,
+        "targets": [
+          {
+            "reps": "10",
+            "sourceWeight": 3
+          },
+          {
+            "reps": "8",
+            "sourceWeight": 4
+          },
+          {
+            "reps": "8",
+            "sourceWeight": 4
+          },
+          {
+            "reps": "8",
+            "sourceWeight": 4
+          }
+        ],
+        "restSeconds": 120,
+        "restOrigin": "Технический таймер по умолчанию, не указан в PDF; можно изменить",
+        "rirMin": null,
+        "rirMax": null,
+        "machine": "",
+        "notes": "Числа из PDF сохранены как пример. Тип веса и разминочные подходы в источнике не уточнены."
+      },
+      {
+        "catalogId": "pushdown-bar",
+        "name": "Разгибания на трицепс в блоке",
+        "group": "Трицепс",
+        "pattern": "elbow-extension",
+        "equipment": "cable",
+        "weightMode": "unspecified",
+        "unilateral": false,
+        "aliases": [
+          "Разгибания на трицепс в блоке"
+        ],
+        "technique": "Устойчиво встань у блока и удерживай плечи относительно корпуса. Разгибай локти без рывка. Возвращай рукоять медленно; не дави через боль в локте.",
+        "id": "pdf-0-4",
+        "originalName": "Разгибания на трицепс в блоке",
+        "sets": 4,
+        "repsMin": 10,
+        "repsMax": 10,
+        "targets": [
+          {
+            "reps": "10",
+            "sourceWeight": 15
+          },
+          {
+            "reps": "10",
+            "sourceWeight": 15
+          },
+          {
+            "reps": "10",
+            "sourceWeight": 15
+          },
+          {
+            "reps": "10",
+            "sourceWeight": 15
+          }
+        ],
+        "restSeconds": 120,
+        "restOrigin": "Технический таймер по умолчанию, не указан в PDF; можно изменить",
+        "rirMin": null,
+        "rirMax": null,
+        "machine": "",
+        "notes": "Числа из PDF сохранены как пример. Тип веса и разминочные подходы в источнике не уточнены."
+      }
+    ]
+  },
+  {
+    "id": "pdf-1",
+    "title": "Ягодицы / ноги / плечи",
+    "short": "Ноги / плечи",
+    "kind": "lower",
+    "source": "Untitled (1).pdf, страница 1, программа by katuabu. Заголовок низа в оригинале: «жопа/ноги/плечи». Веса — примеры автора, не персональные назначения. Разминка отдельно в PDF не обозначена.",
+    "exercises": [
+      {
+        "catalogId": "hipbridge",
+        "name": "Ягодичный мостик",
+        "group": "Ягодицы",
+        "pattern": "hip-extension",
+        "equipment": "bodyweight",
+        "weightMode": "unspecified",
+        "unilateral": false,
+        "aliases": [],
+        "technique": "Устойчиво поставь стопы и проверь опору. Поднимай таз за счёт разгибания бёдер, не переразгибая поясницу. Опускайся подконтрольно.",
+        "id": "pdf-1-0",
+        "originalName": "Ягодичный мостик",
+        "sets": 4,
+        "repsMin": 12,
+        "repsMax": 12,
+        "targets": [
+          {
+            "reps": "12",
+            "sourceWeight": 20
+          },
+          {
+            "reps": "12",
+            "sourceWeight": 20
+          },
+          {
+            "reps": "12",
+            "sourceWeight": 20
+          },
+          {
+            "reps": "12",
+            "sourceWeight": 20
+          }
+        ],
+        "restSeconds": 120,
+        "restOrigin": "Технический таймер по умолчанию, не указан в PDF; можно изменить",
+        "rirMin": null,
+        "rirMax": null,
+        "machine": "",
+        "notes": "Числа из PDF сохранены как пример. Тип веса и разминочные подходы в источнике не уточнены."
+      },
+      {
+        "catalogId": "legcurl-lying",
+        "name": "Сгибания ног лежа",
+        "group": "Ноги",
+        "pattern": "knee-flexion",
+        "equipment": "machine",
+        "weightMode": "unspecified",
+        "unilateral": false,
+        "aliases": [],
+        "technique": "Настрой валик и ось тренажёра под себя. Не отрывай таз от опоры. Сгибай и разгибай колени плавно, не бросая груз.",
+        "id": "pdf-1-1",
+        "originalName": "Сгибания ног лежа",
+        "sets": 4,
+        "repsMin": 10,
+        "repsMax": 12,
+        "targets": [
+          {
+            "reps": "12",
+            "sourceWeight": 10
+          },
+          {
+            "reps": "10",
+            "sourceWeight": 15
+          },
+          {
+            "reps": "10",
+            "sourceWeight": 15
+          },
+          {
+            "reps": "10",
+            "sourceWeight": 15
+          }
+        ],
+        "restSeconds": 120,
+        "restOrigin": "Технический таймер по умолчанию, не указан в PDF; можно изменить",
+        "rirMin": null,
+        "rirMax": null,
+        "machine": "",
+        "notes": "Числа из PDF сохранены как пример. Тип веса и разминочные подходы в источнике не уточнены."
+      },
+      {
+        "catalogId": "abduction",
+        "name": "Разведение ног в тренажере",
+        "group": "Ягодицы",
+        "pattern": "hip-abduction",
+        "equipment": "machine",
+        "weightMode": "unspecified",
+        "unilateral": false,
+        "aliases": [],
+        "technique": "Настрой сиденье и валики. Удерживай таз и корпус на опоре. Разводи и своди ноги без рывков и столкновения грузов.",
+        "id": "pdf-1-2",
+        "originalName": "Разведение ног в тренажере",
+        "sets": 4,
+        "repsMin": 10,
+        "repsMax": 12,
+        "targets": [
+          {
+            "reps": "12",
+            "sourceWeight": 35
+          },
+          {
+            "reps": "10",
+            "sourceWeight": 45
+          },
+          {
+            "reps": "10",
+            "sourceWeight": 45
+          },
+          {
+            "reps": "10",
+            "sourceWeight": 45
+          }
+        ],
+        "restSeconds": 120,
+        "restOrigin": "Технический таймер по умолчанию, не указан в PDF; можно изменить",
+        "rirMin": null,
+        "rirMax": null,
+        "machine": "",
+        "notes": "Числа из PDF сохранены как пример. Тип веса и разминочные подходы в источнике не уточнены."
+      },
+      {
+        "catalogId": "lateral-db",
+        "name": "Разведения рук в стороны",
+        "group": "Плечи",
+        "pattern": "lateral-raise",
+        "equipment": "dumbbell",
+        "weightMode": "unspecified",
+        "unilateral": false,
+        "aliases": [
+          "Разведения рук в стороны"
+        ],
+        "technique": "Сохраняй небольшой сгиб локтей. Поднимай руки в комфортной плоскости без рывков корпусом. Не поднимай плечи к ушам; опускай вес плавно.",
+        "id": "pdf-1-3",
+        "originalName": "Разведения рук в стороны",
+        "sets": 5,
+        "repsMin": 10,
+        "repsMax": 12,
+        "targets": [
+          {
+            "reps": "12",
+            "sourceWeight": 3
+          },
+          {
+            "reps": "10",
+            "sourceWeight": 4
+          },
+          {
+            "reps": "10",
+            "sourceWeight": 4
+          },
+          {
+            "reps": "10",
+            "sourceWeight": 4
+          },
+          {
+            "reps": "12",
+            "sourceWeight": 4
+          }
+        ],
+        "restSeconds": 120,
+        "restOrigin": "Технический таймер по умолчанию, не указан в PDF; можно изменить",
+        "rirMin": null,
+        "rirMax": null,
+        "machine": "",
+        "notes": "Числа из PDF сохранены как пример. Тип веса и разминочные подходы в источнике не уточнены."
+      },
+      {
+        "catalogId": "shoulder-db",
+        "name": "Жим над головой сидя",
+        "group": "Плечи",
+        "pattern": "vertical-press",
+        "equipment": "dumbbell",
+        "weightMode": "unspecified",
+        "unilateral": false,
+        "aliases": [
+          "Жим над головой сидя"
+        ],
+        "technique": "Настрой опору спины и положение рукоятей. Не компенсируй подъём сильным прогибом поясницы. Жми и опускай без рывка в комфортной амплитуде.",
+        "id": "pdf-1-4",
+        "originalName": "Жим над головой сидя",
+        "sets": 4,
+        "repsMin": 10,
+        "repsMax": 12,
+        "targets": [
+          {
+            "reps": "12",
+            "sourceWeight": 3
+          },
+          {
+            "reps": "10",
+            "sourceWeight": 4
+          },
+          {
+            "reps": "10",
+            "sourceWeight": 4
+          },
+          {
+            "reps": "10",
+            "sourceWeight": 4
+          }
+        ],
+        "restSeconds": 120,
+        "restOrigin": "Технический таймер по умолчанию, не указан в PDF; можно изменить",
+        "rirMin": null,
+        "rirMax": null,
+        "machine": "",
+        "notes": "Числа из PDF сохранены как пример. Тип веса и разминочные подходы в источнике не уточнены."
+      }
+    ]
+  }
+]

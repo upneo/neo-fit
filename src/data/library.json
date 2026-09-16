@@ -1,0 +1,509 @@
+[
+  {
+    "catalogId": "pulldown",
+    "name": "Тяга верхнего блока средним хватом",
+    "group": "Спина",
+    "pattern": "vertical-pull",
+    "equipment": "cable",
+    "weightMode": "stack",
+    "unilateral": false,
+    "aliases": [],
+    "technique": "Настрой упор для бёдер, поставь стопы устойчиво. Веди локти вниз без рывка и сильного раскачивания. Возвращай рукоять подконтрольно; не тяни её за голову."
+  },
+  {
+    "catalogId": "pulldown-neutral",
+    "name": "Тяга верхнего блока нейтральным хватом",
+    "group": "Спина",
+    "pattern": "vertical-pull",
+    "equipment": "cable",
+    "weightMode": "stack",
+    "unilateral": false,
+    "aliases": [],
+    "technique": "Настрой упор для бёдер, поставь стопы устойчиво. Веди локти вниз без рывка и сильного раскачивания. Возвращай рукоять подконтрольно; не тяни её за голову."
+  },
+  {
+    "catalogId": "gravitron",
+    "name": "Подтягивания в гравитроне",
+    "group": "Спина",
+    "pattern": "vertical-pull",
+    "equipment": "machine",
+    "weightMode": "assist",
+    "unilateral": false,
+    "aliases": [],
+    "technique": "Настрой упор для бёдер, поставь стопы устойчиво. Веди локти вниз без рывка и сильного раскачивания. Возвращай рукоять подконтрольно; не тяни её за голову."
+  },
+  {
+    "catalogId": "row-chest",
+    "name": "Рычажная тяга с упором грудью",
+    "group": "Спина",
+    "pattern": "horizontal-pull",
+    "equipment": "machine",
+    "weightMode": "stack",
+    "unilateral": false,
+    "aliases": [],
+    "technique": "Зафиксируй положение корпуса и опоры. Веди локти назад, не подбрасывая вес поясницей. Плавно верни рукоять, не теряя контроля над плечами."
+  },
+  {
+    "catalogId": "row-cable",
+    "name": "Тяга нижнего блока узким хватом сидя",
+    "group": "Спина",
+    "pattern": "horizontal-pull",
+    "equipment": "cable",
+    "weightMode": "stack",
+    "unilateral": false,
+    "aliases": [
+      "Тяга горизонтального блока сидя"
+    ],
+    "technique": "Зафиксируй положение корпуса и опоры. Веди локти назад, не подбрасывая вес поясницей. Плавно верни рукоять, не теряя контроля над плечами."
+  },
+  {
+    "catalogId": "row-dumbbell",
+    "name": "Тяга гантели к поясу одной рукой с опорой свободной рукой",
+    "group": "Спина",
+    "pattern": "horizontal-pull",
+    "equipment": "dumbbell",
+    "weightMode": "single",
+    "unilateral": true,
+    "aliases": [],
+    "technique": "Зафиксируй положение корпуса и опоры. Веди локти назад, не подбрасывая вес поясницей. Плавно верни рукоять, не теряя контроля над плечами."
+  },
+  {
+    "catalogId": "row-lever",
+    "name": "Тяга рычага узким хватом сидя",
+    "group": "Спина",
+    "pattern": "horizontal-pull",
+    "equipment": "machine",
+    "weightMode": "stack",
+    "unilateral": false,
+    "aliases": [],
+    "technique": "Зафиксируй положение корпуса и опоры. Веди локти назад, не подбрасывая вес поясницей. Плавно верни рукоять, не теряя контроля над плечами."
+  },
+  {
+    "catalogId": "incline-db",
+    "name": "Жим гантелей на наклонной скамье",
+    "group": "Грудь",
+    "pattern": "incline-press",
+    "equipment": "dumbbell",
+    "weightMode": "single",
+    "unilateral": false,
+    "aliases": [],
+    "technique": "Отрегулируй наклон и устойчиво поставь стопы. Держи запястья над предплечьями. Опускай отягощение плавно, без отбива и болезненной глубины."
+  },
+  {
+    "catalogId": "incline-machine",
+    "name": "Наклонный жим в тренажёре",
+    "group": "Грудь",
+    "pattern": "incline-press",
+    "equipment": "machine",
+    "weightMode": "stack",
+    "unilateral": false,
+    "aliases": [],
+    "technique": "Отрегулируй наклон и устойчиво поставь стопы. Держи запястья над предплечьями. Опускай отягощение плавно, без отбива и болезненной глубины."
+  },
+  {
+    "catalogId": "chest-machine",
+    "name": "Горизонтальный жим в тренажёре",
+    "group": "Грудь",
+    "pattern": "horizontal-press",
+    "equipment": "machine",
+    "weightMode": "stack",
+    "unilateral": false,
+    "aliases": [],
+    "technique": "Настрой высоту сиденья или положение на скамье. Сохраняй устойчивую опору, не заламывай кисти. Жми и опускай плавно, без отбива."
+  },
+  {
+    "catalogId": "chest-db",
+    "name": "Жим гантелей лёжа",
+    "group": "Грудь",
+    "pattern": "horizontal-press",
+    "equipment": "dumbbell",
+    "weightMode": "single",
+    "unilateral": false,
+    "aliases": [],
+    "technique": "Настрой высоту сиденья или положение на скамье. Сохраняй устойчивую опору, не заламывай кисти. Жми и опускай плавно, без отбива."
+  },
+  {
+    "catalogId": "pushup",
+    "name": "Отжимания от опоры",
+    "group": "Грудь",
+    "pattern": "horizontal-press",
+    "equipment": "bodyweight",
+    "weightMode": "extra",
+    "unilateral": false,
+    "aliases": [],
+    "technique": "Настрой высоту сиденья или положение на скамье. Сохраняй устойчивую опору, не заламывай кисти. Жми и опускай плавно, без отбива."
+  },
+  {
+    "catalogId": "fly-machine",
+    "name": "Сведение рук в тренажёре «бабочка»",
+    "group": "Грудь",
+    "pattern": "chest-fly",
+    "equipment": "machine",
+    "weightMode": "stack",
+    "unilateral": false,
+    "aliases": [],
+    "technique": "Подстрой сиденье и рукояти под свой рост. Сохраняй небольшой сгиб локтей. Своди руки без рывка и не уходи в болезненное растяжение."
+  },
+  {
+    "catalogId": "fly-cable",
+    "name": "Сведение рук в кроссовере",
+    "group": "Грудь",
+    "pattern": "chest-fly",
+    "equipment": "cable",
+    "weightMode": "stack",
+    "unilateral": false,
+    "aliases": [],
+    "technique": "Подстрой сиденье и рукояти под свой рост. Сохраняй небольшой сгиб локтей. Своди руки без рывка и не уходи в болезненное растяжение."
+  },
+  {
+    "catalogId": "curl-cable",
+    "name": "Сгибание рук на нижнем блоке",
+    "group": "Бицепс",
+    "pattern": "elbow-flexion",
+    "equipment": "cable",
+    "weightMode": "stack",
+    "unilateral": false,
+    "aliases": [],
+    "technique": "Выбери устойчивое положение. Сгибай локти без раскачивания корпусом; кисти не заламывай. Опускай вес подконтрольно."
+  },
+  {
+    "catalogId": "curl-ez",
+    "name": "Сгибание рук с EZ-грифом",
+    "group": "Бицепс",
+    "pattern": "elbow-flexion",
+    "equipment": "barbell",
+    "weightMode": "total",
+    "unilateral": false,
+    "aliases": [
+      "Z гриф на бицепс"
+    ],
+    "technique": "Выбери устойчивое положение. Сгибай локти без раскачивания корпусом; кисти не заламывай. Опускай вес подконтрольно."
+  },
+  {
+    "catalogId": "curl-db",
+    "name": "Сгибание рук с гантелями",
+    "group": "Бицепс",
+    "pattern": "elbow-flexion",
+    "equipment": "dumbbell",
+    "weightMode": "single",
+    "unilateral": false,
+    "aliases": [
+      "Сгибания, на бицепс"
+    ],
+    "technique": "Выбери устойчивое положение. Сгибай локти без раскачивания корпусом; кисти не заламывай. Опускай вес подконтрольно."
+  },
+  {
+    "catalogId": "hammer",
+    "name": "Молотковые сгибания с гантелями",
+    "group": "Бицепс",
+    "pattern": "neutral-curl",
+    "equipment": "dumbbell",
+    "weightMode": "single",
+    "unilateral": false,
+    "aliases": [],
+    "technique": "Держи ладони обращёнными друг к другу. Сгибай локти, не подбрасывая гантели плечами. Опускай вес плавно."
+  },
+  {
+    "catalogId": "hammer-cable",
+    "name": "Молотковые сгибания с канатом на блоке",
+    "group": "Бицепс",
+    "pattern": "neutral-curl",
+    "equipment": "cable",
+    "weightMode": "stack",
+    "unilateral": false,
+    "aliases": [],
+    "technique": "Держи ладони обращёнными друг к другу. Сгибай локти, не подбрасывая гантели плечами. Опускай вес плавно."
+  },
+  {
+    "catalogId": "pushdown",
+    "name": "Разгибание рук с канатом на верхнем блоке",
+    "group": "Трицепс",
+    "pattern": "elbow-extension",
+    "equipment": "cable",
+    "weightMode": "stack",
+    "unilateral": false,
+    "aliases": [],
+    "technique": "Устойчиво встань у блока и удерживай плечи относительно корпуса. Разгибай локти без рывка. Возвращай рукоять медленно; не дави через боль в локте."
+  },
+  {
+    "catalogId": "pushdown-bar",
+    "name": "Разгибание рук на блоке с прямой рукоятью",
+    "group": "Трицепс",
+    "pattern": "elbow-extension",
+    "equipment": "cable",
+    "weightMode": "stack",
+    "unilateral": false,
+    "aliases": [
+      "Разгибания на трицепс в блоке"
+    ],
+    "technique": "Устойчиво встань у блока и удерживай плечи относительно корпуса. Разгибай локти без рывка. Возвращай рукоять медленно; не дави через боль в локте."
+  },
+  {
+    "catalogId": "legpress",
+    "name": "Жим ногами",
+    "group": "Ноги",
+    "pattern": "knee-dominant",
+    "equipment": "machine",
+    "weightMode": "stack",
+    "unilateral": false,
+    "aliases": [],
+    "technique": "Выбери устойчивую постановку стоп. Колени направляй примерно по линии носков. Контролируй опускание; глубину выбирай без боли и потери положения корпуса."
+  },
+  {
+    "catalogId": "goblet",
+    "name": "Приседание с гантелью у груди",
+    "group": "Ноги",
+    "pattern": "knee-dominant",
+    "equipment": "dumbbell",
+    "weightMode": "total",
+    "unilateral": false,
+    "aliases": [],
+    "technique": "Выбери устойчивую постановку стоп. Колени направляй примерно по линии носков. Контролируй опускание; глубину выбирай без боли и потери положения корпуса."
+  },
+  {
+    "catalogId": "sitstand",
+    "name": "Приседание до скамьи без отягощения",
+    "group": "Ноги",
+    "pattern": "knee-dominant",
+    "equipment": "bodyweight",
+    "weightMode": "extra",
+    "unilateral": false,
+    "aliases": [],
+    "technique": "Выбери устойчивую постановку стоп. Колени направляй примерно по линии носков. Контролируй опускание; глубину выбирай без боли и потери положения корпуса."
+  },
+  {
+    "catalogId": "legcurl-seated",
+    "name": "Сгибание ног сидя",
+    "group": "Ноги",
+    "pattern": "knee-flexion",
+    "equipment": "machine",
+    "weightMode": "stack",
+    "unilateral": false,
+    "aliases": [],
+    "technique": "Настрой валик и ось тренажёра под себя. Не отрывай таз от опоры. Сгибай и разгибай колени плавно, не бросая груз."
+  },
+  {
+    "catalogId": "legcurl-lying",
+    "name": "Сгибание ног лёжа",
+    "group": "Ноги",
+    "pattern": "knee-flexion",
+    "equipment": "machine",
+    "weightMode": "stack",
+    "unilateral": false,
+    "aliases": [],
+    "technique": "Настрой валик и ось тренажёра под себя. Не отрывай таз от опоры. Сгибай и разгибай колени плавно, не бросая груз."
+  },
+  {
+    "catalogId": "legextension",
+    "name": "Разгибание ног в тренажёре",
+    "group": "Ноги",
+    "pattern": "knee-extension",
+    "equipment": "machine",
+    "weightMode": "stack",
+    "unilateral": false,
+    "aliases": [],
+    "technique": "Совмести ось тренажёра с коленом и настрой валик. Сохраняй опору спины. Поднимай и опускай вес без ударов и болезненной амплитуды."
+  },
+  {
+    "catalogId": "hipbridge",
+    "name": "Ягодичный мостик",
+    "group": "Ягодицы",
+    "pattern": "hip-extension",
+    "equipment": "bodyweight",
+    "weightMode": "extra",
+    "unilateral": false,
+    "aliases": [],
+    "technique": "Устойчиво поставь стопы и проверь опору. Поднимай таз за счёт разгибания бёдер, не переразгибая поясницу. Опускайся подконтрольно."
+  },
+  {
+    "catalogId": "hipbridge-machine",
+    "name": "Ягодичный мост в тренажёре",
+    "group": "Ягодицы",
+    "pattern": "hip-extension",
+    "equipment": "machine",
+    "weightMode": "stack",
+    "unilateral": false,
+    "aliases": [],
+    "technique": "Устойчиво поставь стопы и проверь опору. Поднимай таз за счёт разгибания бёдер, не переразгибая поясницу. Опускайся подконтрольно."
+  },
+  {
+    "catalogId": "hipbridge-db",
+    "name": "Ягодичный мост с гантелью",
+    "group": "Ягодицы",
+    "pattern": "hip-extension",
+    "equipment": "dumbbell",
+    "weightMode": "total",
+    "unilateral": false,
+    "aliases": [],
+    "technique": "Устойчиво поставь стопы и проверь опору. Поднимай таз за счёт разгибания бёдер, не переразгибая поясницу. Опускайся подконтрольно."
+  },
+  {
+    "catalogId": "abduction",
+    "name": "Разведение ног в тренажёре",
+    "group": "Ягодицы",
+    "pattern": "hip-abduction",
+    "equipment": "machine",
+    "weightMode": "stack",
+    "unilateral": false,
+    "aliases": [],
+    "technique": "Настрой сиденье и валики. Удерживай таз и корпус на опоре. Разводи и своди ноги без рывков и столкновения грузов."
+  },
+  {
+    "catalogId": "calf-seated",
+    "name": "Подъём на носки сидя",
+    "group": "Икры",
+    "pattern": "calf-seated",
+    "equipment": "machine",
+    "weightMode": "stack",
+    "unilateral": false,
+    "aliases": [],
+    "technique": "Устойчиво поставь переднюю часть стопы на платформу. Поднимай и опускай пятки плавно. Не пружинь внизу и не используй болезненную амплитуду."
+  },
+  {
+    "catalogId": "calf-seated-db",
+    "name": "Подъём на носки сидя с гантелями",
+    "group": "Икры",
+    "pattern": "calf-seated",
+    "equipment": "dumbbell",
+    "weightMode": "total",
+    "unilateral": false,
+    "aliases": [],
+    "technique": "Устойчиво поставь переднюю часть стопы на платформу. Поднимай и опускай пятки плавно. Не пружинь внизу и не используй болезненную амплитуду."
+  },
+  {
+    "catalogId": "calf-standing",
+    "name": "Подъём на носки стоя в тренажёре",
+    "group": "Икры",
+    "pattern": "calf-standing",
+    "equipment": "machine",
+    "weightMode": "stack",
+    "unilateral": false,
+    "aliases": [],
+    "technique": "Удерживай равновесие с опорой. Поднимай пятки без подскока и медленно опускай. Не превращай движение в приседание."
+  },
+  {
+    "catalogId": "calf-body",
+    "name": "Подъём на носки стоя с опорой",
+    "group": "Икры",
+    "pattern": "calf-standing",
+    "equipment": "bodyweight",
+    "weightMode": "extra",
+    "unilateral": false,
+    "aliases": [],
+    "technique": "Удерживай равновесие с опорой. Поднимай пятки без подскока и медленно опускай. Не превращай движение в приседание."
+  },
+  {
+    "catalogId": "reverse-fly",
+    "name": "Обратная «бабочка» на задние дельты",
+    "group": "Плечи",
+    "pattern": "rear-delt",
+    "equipment": "machine",
+    "weightMode": "stack",
+    "unilateral": false,
+    "aliases": [],
+    "technique": "Настрой рукояти и положение корпуса. Двигай руками без раскачивания и пожимания плечами. Выбирай контролируемую амплитуду без дискомфорта в плече."
+  },
+  {
+    "catalogId": "facepull",
+    "name": "Тяга каната к лицу на задние дельты",
+    "group": "Плечи",
+    "pattern": "rear-delt",
+    "equipment": "cable",
+    "weightMode": "stack",
+    "unilateral": false,
+    "aliases": [],
+    "technique": "Настрой рукояти и положение корпуса. Двигай руками без раскачивания и пожимания плечами. Выбирай контролируемую амплитуду без дискомфорта в плече."
+  },
+  {
+    "catalogId": "lateral-db",
+    "name": "Подъём гантелей в стороны",
+    "group": "Плечи",
+    "pattern": "lateral-raise",
+    "equipment": "dumbbell",
+    "weightMode": "single",
+    "unilateral": false,
+    "aliases": [
+      "Разведения рук в стороны"
+    ],
+    "technique": "Сохраняй небольшой сгиб локтей. Поднимай руки в комфортной плоскости без рывков корпусом. Не поднимай плечи к ушам; опускай вес плавно."
+  },
+  {
+    "catalogId": "lateral-cable",
+    "name": "Отведение руки в сторону в кроссовере",
+    "group": "Плечи",
+    "pattern": "lateral-raise",
+    "equipment": "cable",
+    "weightMode": "stack",
+    "unilateral": true,
+    "aliases": [],
+    "technique": "Сохраняй небольшой сгиб локтей. Поднимай руки в комфортной плоскости без рывков корпусом. Не поднимай плечи к ушам; опускай вес плавно."
+  },
+  {
+    "catalogId": "lateral-machine",
+    "name": "Отведение рук в стороны в тренажёре",
+    "group": "Плечи",
+    "pattern": "lateral-raise",
+    "equipment": "machine",
+    "weightMode": "stack",
+    "unilateral": false,
+    "aliases": [],
+    "technique": "Сохраняй небольшой сгиб локтей. Поднимай руки в комфортной плоскости без рывков корпусом. Не поднимай плечи к ушам; опускай вес плавно."
+  },
+  {
+    "catalogId": "shoulder-db",
+    "name": "Жим гантелей над головой сидя",
+    "group": "Плечи",
+    "pattern": "vertical-press",
+    "equipment": "dumbbell",
+    "weightMode": "single",
+    "unilateral": false,
+    "aliases": [
+      "Жим над головой сидя"
+    ],
+    "technique": "Настрой опору спины и положение рукоятей. Не компенсируй подъём сильным прогибом поясницы. Жми и опускай без рывка в комфортной амплитуде."
+  },
+  {
+    "catalogId": "shoulder-machine",
+    "name": "Жим над головой в тренажёре",
+    "group": "Плечи",
+    "pattern": "vertical-press",
+    "equipment": "machine",
+    "weightMode": "stack",
+    "unilateral": false,
+    "aliases": [],
+    "technique": "Настрой опору спины и положение рукоятей. Не компенсируй подъём сильным прогибом поясницы. Жми и опускай без рывка в комфортной амплитуде."
+  },
+  {
+    "catalogId": "crunch-machine",
+    "name": "Скручивание в тренажёре на пресс",
+    "group": "Пресс",
+    "pattern": "trunk-flexion",
+    "equipment": "machine",
+    "weightMode": "stack",
+    "unilateral": false,
+    "aliases": [],
+    "technique": "Настрой опоры тренажёра либо ляг на устойчивую поверхность. Сближай грудную клетку и таз небольшим контролируемым движением. Не дёргай шею и не выполняй через боль."
+  },
+  {
+    "catalogId": "crunch-floor",
+    "name": "Скручивание лёжа",
+    "group": "Пресс",
+    "pattern": "trunk-flexion",
+    "equipment": "bodyweight",
+    "weightMode": "extra",
+    "unilateral": false,
+    "aliases": [],
+    "technique": "Настрой опоры тренажёра либо ляг на устойчивую поверхность. Сближай грудную клетку и таз небольшим контролируемым движением. Не дёргай шею и не выполняй через боль."
+  },
+  {
+    "catalogId": "deadbug",
+    "name": "Мёртвый жук",
+    "group": "Пресс",
+    "pattern": "trunk-stability",
+    "equipment": "bodyweight",
+    "weightMode": "extra",
+    "unilateral": true,
+    "aliases": [],
+    "technique": "Лёжа на спине, удерживай положение корпуса. Медленно отводи противоположные руку и ногу настолько, насколько можешь сохранить контроль. Вернись и смени сторону."
+  }
+]

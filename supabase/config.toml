@@ -1,0 +1,4 @@
+project_id = "neo-fit"
+
+[functions.diary-register]
+verify_jwt = false

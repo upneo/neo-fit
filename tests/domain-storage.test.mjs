@@ -119,3 +119,11 @@ test('InBody parser keeps report context, ranges and left/right segments',async(
  assert.equal(parsed.segments.muscle.leftArm.value,2.1);assert.equal(parsed.segments.muscle.rightArm.value,2.2);assert.equal(parsed.segments.fat.trunk.percent,120);assert.equal(parsed.segments.fat.trunk.status,'Выше нормы');
  const state=base();N.addInBody(state,{id:N.uid(),importedAt:'2026-03-03T00:00:00.000Z',source:'Synthetic report',sourceHash:'b'.repeat(64),...parsed});N.validate(state);assert.equal(state.inBody[0].segments.muscle.leftArm.value,2.1);assert.equal(state.profile.weight,'');
 });
+
+test('cloud session-only login survives F5, refreshes token and is not durable',async()=>{
+ const oldFetch=global.fetch,oldLocal=global.localStorage,oldSession=global.sessionStorage;const local=memory(),session=memory();global.localStorage=local;global.sessionStorage=session;let refreshes=0;
+ const short={access_token:'short-access',refresh_token:'short-refresh',expires_at:Math.floor(Date.now()/1000)+1,user:{id:'session-user',email:'tester@users.neo-fit.invalid',user_metadata:{displayName:'Tester'}}},fresh={...short,access_token:'fresh-access',refresh_token:'fresh-refresh',expires_at:Math.floor(Date.now()/1000)+3600},document=base();
+ global.fetch=async url=>{if(url.includes('/auth/v1/token?grant_type=password'))return new Response(JSON.stringify(short),{status:200});if(url.includes('/auth/v1/token?grant_type=refresh_token')){refreshes++;return new Response(JSON.stringify(fresh),{status:200})}if(url.includes('/diary_documents?'))return new Response(JSON.stringify([{document,version:4}]),{status:200});throw Error('unexpected')};
+ try{const config={supabaseUrl:'https://test-project.supabase.co',publishableKey:'public',authDomain:'users.neo-fit.invalid'},first=new S.CloudStore(config);await first.login('tester','12345678',false);assert(!Object.keys(local.data).some(key=>key.endsWith(':auth')));assert(Object.keys(session.data).some(key=>key.endsWith(':auth')));const second=new S.CloudStore(config),restored=await second.restore();assert.equal(restored.profile.username,'tester');assert.equal(refreshes,1);session.data={};const third=new S.CloudStore(config);assert.equal(await third.restore(),null);}
+ finally{global.fetch=oldFetch;global.localStorage=oldLocal;global.sessionStorage=oldSession;}
+});

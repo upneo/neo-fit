@@ -173,7 +173,8 @@ import { N } from "./domain.js";
             try {
                 return await this.raw(path, body, method, authorized ? this.session.access_token : '');
             } catch (error) {
-                if (error.code === '40001') throw Error('CONFLICT: более новая версия есть на сервере');
+                if (error.code === 'PT409' || error.status === 409)
+                    throw Error('CONFLICT: Конфликт версий — есть более новая версия в облаке');
                 if (error.status === 401) {
                     this.clearAuth();
                     this.session = null;
@@ -184,9 +185,9 @@ import { N } from "./domain.js";
                 throw error;
             }
         }
-        async refresh() {
+        async refresh(force = false) {
             if (!this.session) throw Error('SESSION_EXPIRED: Сначала войди в аккаунт');
-            if (Date.now() < Number(this.session.expires_at) * 1000 - 60000) return;
+            if (!force && Date.now() < Number(this.session.expires_at) * 1000 - 60000) return;
             if (!this.refreshTask) {
                 this.refreshTask = this.raw('/auth/v1/token?grant_type=refresh_token', { refresh_token: this.session.refresh_token })
                     .then(session => { this.session = session; this.persistAuth(); return session; })
@@ -203,10 +204,13 @@ import { N } from "./domain.js";
             await this.refreshTask;
         }
         async prepareIdentity(username, session, remember) {
+            const prior = this.readAuth();
             this.session = session;
             this.username = username.toLowerCase();
             this.remember = !!remember;
-            this.deviceKey = b64(random(32));
+            // A normal sign-in on the same browser retains the device key, so its encrypted offline copy remains readable.
+            this.deviceKey = prior?.session?.user?.id === session.user.id && prior.deviceKey
+                ? prior.deviceKey : b64(random(32));
             this.key = await importDeviceKey(this.deviceKey);
             this.cacheKey = this.namespace + ':cache:' + session.user.id;
             this.legacyCacheKey = 'nf:cloud:v3:' + this.config.supabaseUrl + ':' + session.user.id;
@@ -214,14 +218,16 @@ import { N } from "./domain.js";
         }
         async readCache(password = '') {
             let saved = null;
+            this.cacheProblem = '';
             try {
-                const cache = N.parseJSON(localStorage.getItem(this.cacheKey) || 'null');
+                const cache = N.parseJSON(this.storage('local')?.getItem(this.cacheKey) || 'null');
                 if (cache) {
                     this.cache = cache;
                     saved = await unseal(cache, this.key);
                 }
             } catch {
-                throw Error('UNLOCK_REQUIRED: Локальная ожидающая копия не открылась. Введи пароль один раз, чтобы безопасно перенести её.');
+                // A damaged browser-only copy must never block a valid cloud login.
+                this.cacheProblem = 'Локальная копия этого устройства не открылась; загружена версия из облака.';
             }
             if (!saved && password) {
                 try {
@@ -232,7 +238,7 @@ import { N } from "./domain.js";
                         localStorage.removeItem(this.legacyCacheKey);
                     }
                 } catch {
-                    throw Error('UNLOCK_REQUIRED: Старая ожидающая копия требует прежний пароль. Она не удалена.');
+                    this.cacheProblem = 'Старая локальная копия не открылась; она не удалена, облачные данные доступны.';
                 }
             }
             return saved;

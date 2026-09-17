@@ -86,20 +86,44 @@ export function configureTemplates(value) { templates = value; }
     const entered = l => l.done || String(l.weight).trim() || String(l.reps).trim() || String(l.rir).trim();
     function totals(s) { return { done: s.exercises.reduce((n, e) => n + e.logs.filter(x => x.done).length, 0), all: s.exercises.reduce((n, e) => n + (e.skipped ? e.logs.filter(x => x.done).length : e.logs.length), 0) }; }
     function startWorkout(state, templateId, date) {
-        if (state.draft)
-            throw Error('Сначала заверши или отмени текущую тренировку.');
-        if (!validDay(date))
-            throw Error('Нужна дата занятия');
+        if (state.draft) throw Error('Сначала заверши или отмени текущую тренировку.');
+        if (!validDay(date)) throw Error('Нужна дата занятия');
         const p = state.programs.find(x => x.id === templateId);
-        if (!p)
-            throw Error('Шаблон не найден');
+        if (!p) throw Error('Шаблон не найден');
         state.draft = { id: uid(), templateId: p.id, title: p.title, date, startedAt: new Date().toISOString(), finishedAt: null, note: '', timer: null, source: p.source || '', exercises: p.exercises.map(e => ({ ...clone(e), logs: makeLogs(e), skipped: false })) };
+        return state.draft;
+    }
+    function pastQueueInfo(state, templateId, date) {
+        const queue = state.schedule?.queue || [], positions = queue.reduce((all, id, index) => id === templateId ? [...all, index] : all, []);
+        if (!templateId || !state.programs.some(p => p.id === templateId)) return { eligible: false, reason: 'Своя тренировка не меняет очередь программы.' };
+        if (positions.length !== 1) return { eligible: false, reason: 'Этот шаблон повторяется в очереди — последовательность неоднозначна.' };
+        if (state.history.some(x => x.date > date && x.templateId && x.queueIncluded !== false)) return { eligible: false, reason: 'После этой даты уже есть более новая завершённая тренировка.' };
+        return { eligible: true, nextIndex: (positions[0] + 1) % queue.length, reason: '' };
+    }
+    function startPastWorkout(state, templateId, date, title = '') {
+        if (!validDay(date) || date > dateKey()) throw Error('Для завершённой тренировки нельзя выбрать будущую дату');
+        if (state.draft) throw Error('Сначала заверши или отмени текущую тренировку.');
+        const p = state.programs.find(x => x.id === templateId);
+        const info = pastQueueInfo(state, templateId, date);
+        state.draft = p
+          ? { id: uid(), templateId: p.id, title: p.title, date, startedAt: new Date().toISOString(), finishedAt: null, note: '', timer: null, source: p.source || '', exercises: p.exercises.map(e => ({ ...clone(e), logs: makeLogs(e), skipped: false })) }
+          : { id: uid(), templateId: null, title: String(title || 'Своя тренировка').trim() || 'Своя тренировка', date, startedAt: new Date().toISOString(), finishedAt: null, note: '', timer: null, source: 'Добавлено вручную', exercises: [] };
+        state.draft.addedManually = true;
+        state.draft.queueEligible = info.eligible;
+        state.draft.queueReason = info.reason;
+        state.draft.queueIncluded = info.eligible;
         return state.draft;
     }
     function finishWorkout(state) { if (!state.draft)
         throw Error('Нет начатой тренировки'); const s = state.draft; if (totals(s).done === 0)
         throw Error('Отметь хотя бы один выполненный подход.'); if (state.history.some(x => x.id === s.id))
-        throw Error('Эта тренировка уже сохранена'); s.finishedAt = new Date().toISOString(); s.timer = null; state.history.unshift(clone(s)); const queue = state.schedule.queue || []; if (queue[state.schedule.nextIndex] === s.templateId) state.schedule.nextIndex = (state.schedule.nextIndex + 1) % Math.max(1, queue.length); state.draft = null; return s; }
+        throw Error('Эта тренировка уже сохранена');
+        if (s.addedManually && s.queueIncluded && !pastQueueInfo(state, s.templateId, s.date).eligible) throw Error('Очередь не изменена: последовательность тренировки неоднозначна.');
+        s.finishedAt = new Date().toISOString(); s.timer = null; state.history.unshift(clone(s)); const queue = state.schedule.queue || [];
+        if (s.addedManually && s.queueIncluded) state.schedule.nextIndex = pastQueueInfo(state, s.templateId, s.date).nextIndex;
+        else if (!s.addedManually && queue[state.schedule.nextIndex] === s.templateId) state.schedule.nextIndex = (state.schedule.nextIndex + 1) % Math.max(1, queue.length);
+        state.draft = null; return s; }
+    function deleteTracker(state, id) { const index = state.trackers.findIndex(t => t.id === id); if (index < 0) throw Error('План не найден'); state.trackers.splice(index, 1); }
     function replaceExercise(list, id, newExercise) { const i = list.findIndex(e => e.id === id); if (i < 0)
         throw Error('Упражнение не найдено'); const old = list[i]; if (old.logs?.some(entered))
         throw Error('Есть введённые результаты. Сохрани это упражнение и добавь новое рядом.'); list[i] = { ...clone(newExercise), id: old.id, originalName: old.originalName || old.name }; if (old.logs) {
@@ -347,4 +371,4 @@ export function configureTemplates(value) { templates = value; }
             lines.push('BEGIN:VEVENT', `UID:${o.tracker.id}-${o.day}-${o.time.replace(':', '')}@neo-fit.local`, `DTSTAMP:${new Date().toISOString().replace(/[-:]/g, '').replace(/\.\d{3}/, '')}`, `DTSTART:${stamp}`, 'DURATION:PT5M', 'SUMMARY:Проверить личный календарь приёма', 'DESCRIPTION:' + escape('Открой NEO FIT и проверь свою запись. Названия и количества не вынесены в уведомление.'), 'BEGIN:VALARM', 'TRIGGER:PT0M', 'ACTION:DISPLAY', 'DESCRIPTION:Проверить личный календарь', 'END:VALARM', 'END:VEVENT');
         }
     } lines.push('END:VCALENDAR'); return lines.join('\r\n') + '\r\n'; }
-    export const N = { clone, uid, normal, num, h, safeJSON, dateKey, validDay, addDays, dow, labels, equipment, groups, library, starterCatalog, lookup, exerciseKey, normalizeExercise, fromLibrary, defaultState, upgrade, makeLogs, validLog, entered, totals, startWorkout, finishWorkout, replaceExercise, alternatives, nextWorkout, schedulePreview, skipQueue, generatePlan, migrateV1, parseJSON, validate, mergeImported, occurrences, recordIntake, reviseTracker, addInBody, nutrition, report, calendarICS };
+    export const N = { clone, uid, normal, num, h, safeJSON, dateKey, validDay, addDays, dow, labels, equipment, groups, library, starterCatalog, lookup, exerciseKey, normalizeExercise, fromLibrary, defaultState, upgrade, makeLogs, validLog, entered, totals, startWorkout, startPastWorkout, pastQueueInfo, finishWorkout, replaceExercise, alternatives, nextWorkout, schedulePreview, skipQueue, generatePlan, migrateV1, parseJSON, validate, mergeImported, occurrences, recordIntake, reviseTracker, deleteTracker, addInBody, nutrition, report, calendarICS };

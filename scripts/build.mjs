@@ -22,7 +22,8 @@ const PREFIX='neo-fit-shell:'+new URL(self.registration.scope).pathname+':';
 const CACHE=PREFIX+'${version}';
 const URLS=FILES.map(f=>new URL(f,self.registration.scope).href);
 const CLEAN=()=>caches.keys().then(keys=>Promise.all(keys.filter(k=>k.startsWith(PREFIX)&&k!==CACHE).map(k=>caches.delete(k))));
-self.addEventListener('install',event=>event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(URLS))));
+const FRESH=new Set(['index.html','entry.js','main.js','config.json'].map(f=>new URL(f,self.registration.scope).href));
+self.addEventListener('install',event=>event.waitUntil(caches.open(CACHE).then(cache=>Promise.all(URLS.map(url=>fetch(url,{cache:'reload'}).then(res=>{if(!res.ok)throw Error('shell');return cache.put(url,res)}))))));
 self.addEventListener('message',event=>{if(event.data?.type==='SKIP_WAITING'){self.skipWaiting();return;}if(event.data?.type==='CLEAN_CACHES')event.waitUntil(CLEAN());});
 self.addEventListener('activate',event=>event.waitUntil(CLEAN().then(()=>self.clients.claim())));
 self.addEventListener('fetch',event=>{
@@ -32,7 +33,7 @@ self.addEventListener('fetch',event=>{
  const home=new URL(self.registration.scope);
  let url=u.href.split('?')[0];if(u.pathname===home.pathname)url=new URL('index.html',home).href;
  if(!URLS.includes(url))return;
- if(u.pathname.endsWith('/config.json')){event.respondWith(fetch(event.request,{cache:'no-store'}).then(async res=>{if(res.ok){const c=await caches.open(CACHE);await c.put(url,res.clone());}return res;}).catch(()=>caches.match(url)));return;}
+ if(FRESH.has(url)){event.respondWith(fetch(event.request,{cache:'no-store'}).then(async res=>{if(res.ok){const c=await caches.open(CACHE);await c.put(url,res.clone());}return res;}).catch(()=>caches.match(url)));return;}
  event.respondWith(caches.open(CACHE).then(async c=>(await c.match(url))||fetch(event.request).then(async res=>{if(res.ok)await c.put(url,res.clone());return res;})));
 });
 `;

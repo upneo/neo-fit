@@ -28,6 +28,7 @@ try {
   await import('./main.js');
   if ('serviceWorker' in navigator && !['localhost', '127.0.0.1'].includes(location.hostname)) {
     const registration = await navigator.serviceWorker.register(new URL('./sw.js', import.meta.url), { scope: './', updateViaCache: 'none' });
+    registration.active?.postMessage({ type: 'CLEAN_CACHES' });
     if (registration.waiting && navigator.serviceWorker.controller) showUpdate(registration);
     registration.addEventListener('updatefound', () => {
       const worker = registration.installing;

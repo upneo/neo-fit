@@ -147,3 +147,16 @@ test('manual past workout updates queue only when it is unambiguous and selected
 test('manual past workout rejects future date and repeated queue ambiguity',()=>{
  const s=N.defaultState('tester','Имя','vika');assert.equal(N.pastQueueInfo(s,s.programs[1].id,'2026-01-05').eligible,false);assert.throws(()=>N.startPastWorkout(s,s.programs[0].id,'2099-01-01'));
 });
+
+test('replacement keeps its exercise slot and only discards active draft results after explicit confirmation',()=>{
+ const state=base(),draft=session(state),first=draft.exercises[0],second=draft.exercises[1],replacement=N.fromLibrary('crunch-floor');
+ Object.assign(first.logs[0],{weight:'20',reps:'10',done:true});assert.throws(()=>N.replaceExercise(draft.exercises,first.id,replacement));
+ const result=N.replaceExercise(draft.exercises,first.id,replacement,{discardEntered:true});assert.equal(draft.exercises.length,state.programs[0].exercises.length);assert.equal(draft.exercises[0].id,first.id);assert.equal(draft.exercises[0].catalogId,'crunch-floor');assert.equal(draft.exercises[1].id,second.id);assert(result.logs.every(x=>!x.done&&!x.weight));
+});
+test('changing planned set count synchronizes targets without manual cleanup',()=>{
+ const exercise=base().programs[0].exercises[0],short=N.syncExerciseTargets(exercise,1,8,12),long=N.syncExerciseTargets(exercise,6,8,12);
+ assert.equal(short.length,1);assert.equal(long.length,6);assert.equal(long.at(-1).reps,'8–12');assert.equal(N.targetLabel(10,10),'10');
+});
+test('active workout editor renders delete action and synchronizes added sets',()=>{
+ const source=fs.readFileSync(new URL('../src/main.js',import.meta.url),'utf8');assert(source.includes('data-action="delete-workout-ex"'));assert(source.includes('e.sets += 1;'));assert(source.includes('N.syncExerciseTargets(e, e.sets'));
+});

@@ -124,9 +124,14 @@ export function configureTemplates(value) { templates = value; }
         else if (!s.addedManually && queue[state.schedule.nextIndex] === s.templateId) state.schedule.nextIndex = (state.schedule.nextIndex + 1) % Math.max(1, queue.length);
         state.draft = null; return s; }
     function deleteTracker(state, id) { const index = state.trackers.findIndex(t => t.id === id); if (index < 0) throw Error('План не найден'); state.trackers.splice(index, 1); }
-    function replaceExercise(list, id, newExercise) { const i = list.findIndex(e => e.id === id); if (i < 0)
-        throw Error('Упражнение не найдено'); const old = list[i]; if (old.logs?.some(entered))
-        throw Error('Есть введённые результаты. Сохрани это упражнение и добавь новое рядом.'); list[i] = { ...clone(newExercise), id: old.id, originalName: old.originalName || old.name }; if (old.logs) {
+    function targetLabel(repsMin, repsMax) { return repsMin === repsMax ? String(repsMin) : repsMin + '–' + repsMax; }
+    function syncExerciseTargets(exercise, sets = exercise.sets, repsMin = exercise.repsMin, repsMax = exercise.repsMax, supplied = []) {
+        const fallback = targetLabel(repsMin, repsMax), old = supplied.length ? supplied : (exercise.targets || []).map(x => x.reps);
+        return Array.from({ length: sets }, (_, index) => ({ reps: String(old[index] || fallback), sourceWeight: exercise.targets?.[index]?.sourceWeight ?? null }));
+    }
+    function replaceExercise(list, id, newExercise, { discardEntered = false } = {}) { const i = list.findIndex(e => e.id === id); if (i < 0)
+        throw Error('Упражнение не найдено'); const old = list[i]; if (old.logs?.some(entered) && !discardEntered)
+        throw Error('Есть введённые результаты. Подтверди замену, чтобы удалить их только из этого упражнения.'); list[i] = { ...clone(newExercise), id: old.id, originalName: old.originalName || old.name }; if (old.logs) {
         list[i].logs = makeLogs(list[i]);
         list[i].skipped = false;
     } return list[i]; }
@@ -371,4 +376,4 @@ export function configureTemplates(value) { templates = value; }
             lines.push('BEGIN:VEVENT', `UID:${o.tracker.id}-${o.day}-${o.time.replace(':', '')}@neo-fit.local`, `DTSTAMP:${new Date().toISOString().replace(/[-:]/g, '').replace(/\.\d{3}/, '')}`, `DTSTART:${stamp}`, 'DURATION:PT5M', 'SUMMARY:Проверить личный календарь приёма', 'DESCRIPTION:' + escape('Открой NEO FIT и проверь свою запись. Названия и количества не вынесены в уведомление.'), 'BEGIN:VALARM', 'TRIGGER:PT0M', 'ACTION:DISPLAY', 'DESCRIPTION:Проверить личный календарь', 'END:VALARM', 'END:VEVENT');
         }
     } lines.push('END:VCALENDAR'); return lines.join('\r\n') + '\r\n'; }
-    export const N = { clone, uid, normal, num, h, safeJSON, dateKey, validDay, addDays, dow, labels, equipment, groups, library, starterCatalog, lookup, exerciseKey, normalizeExercise, fromLibrary, defaultState, upgrade, makeLogs, validLog, entered, totals, startWorkout, startPastWorkout, pastQueueInfo, finishWorkout, replaceExercise, alternatives, nextWorkout, schedulePreview, skipQueue, generatePlan, migrateV1, parseJSON, validate, mergeImported, occurrences, recordIntake, reviseTracker, deleteTracker, addInBody, nutrition, report, calendarICS };
+    export const N = { clone, uid, normal, num, h, safeJSON, dateKey, validDay, addDays, dow, labels, equipment, groups, library, starterCatalog, lookup, exerciseKey, normalizeExercise, fromLibrary, defaultState, upgrade, makeLogs, validLog, entered, totals, startWorkout, startPastWorkout, pastQueueInfo, finishWorkout, targetLabel, syncExerciseTargets, replaceExercise, alternatives, nextWorkout, schedulePreview, skipQueue, generatePlan, migrateV1, parseJSON, validate, mergeImported, occurrences, recordIntake, reviseTracker, deleteTracker, addInBody, nutrition, report, calendarICS };

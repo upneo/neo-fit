@@ -8,7 +8,7 @@ export async function loadConfiguration() {
   return Object.freeze(c);
 }
 export async function loadTemplates() {
-  const paths = ['../data/library.json', '../data/programs/neo.json', '../data/programs/vika.json'];
+  const paths = ['../data/library.json', '../data/programs/neo.json', '../data/programs/vika.json', '../data/programs/general.json'];
   const results = await Promise.all(paths.map(async p => {
     const r = await fetch(new URL(p, import.meta.url));
     if (!r.ok) throw new Error('Каталог упражнений не загрузился. Обнови страницу.');
@@ -16,5 +16,5 @@ export async function loadTemplates() {
     if (!Array.isArray(data)) throw new Error('Повреждён каталог упражнений.');
     return data;
   }));
-  return { library: results[0], neo: results[1], vika: results[2] };
+  return { library: results[0], neo: results[1], vika: results[2], starters: results[3] };
 }

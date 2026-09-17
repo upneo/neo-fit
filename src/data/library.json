@@ -8,7 +8,14 @@
     "weightMode": "stack",
     "unilateral": false,
     "aliases": [],
-    "technique": "Настрой упор для бёдер, поставь стопы устойчиво. Веди локти вниз без рывка и сильного раскачивания. Возвращай рукоять подконтрольно; не тяни её за голову."
+    "technique": "Настрой упор для бёдер, поставь стопы устойчиво. Веди локти вниз без рывка и сильного раскачивания. Возвращай рукоять подконтрольно; не тяни её за голову.",
+    "primaryMuscles": [
+      "Широчайшие"
+    ],
+    "secondaryMuscles": [],
+    "difficulty": "intermediate",
+    "measurement": "reps",
+    "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)"
   },
   {
     "catalogId": "pulldown-neutral",
@@ -19,7 +26,14 @@
     "weightMode": "stack",
     "unilateral": false,
     "aliases": [],
-    "technique": "Настрой упор для бёдер, поставь стопы устойчиво. Веди локти вниз без рывка и сильного раскачивания. Возвращай рукоять подконтрольно; не тяни её за голову."
+    "technique": "Настрой упор для бёдер, поставь стопы устойчиво. Веди локти вниз без рывка и сильного раскачивания. Возвращай рукоять подконтрольно; не тяни её за голову.",
+    "primaryMuscles": [
+      "Широчайшие"
+    ],
+    "secondaryMuscles": [],
+    "difficulty": "intermediate",
+    "measurement": "reps",
+    "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)"
   },
   {
     "catalogId": "gravitron",
@@ -30,7 +44,14 @@
     "weightMode": "assist",
     "unilateral": false,
     "aliases": [],
-    "technique": "Настрой упор для бёдер, поставь стопы устойчиво. Веди локти вниз без рывка и сильного раскачивания. Возвращай рукоять подконтрольно; не тяни её за голову."
+    "technique": "Настрой упор для бёдер, поставь стопы устойчиво. Веди локти вниз без рывка и сильного раскачивания. Возвращай рукоять подконтрольно; не тяни её за голову.",
+    "primaryMuscles": [
+      "Широчайшие"
+    ],
+    "secondaryMuscles": [],
+    "difficulty": "intermediate",
+    "measurement": "reps",
+    "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)"
   },
   {
     "catalogId": "row-chest",
@@ -41,7 +62,14 @@
     "weightMode": "stack",
     "unilateral": false,
     "aliases": [],
-    "technique": "Зафиксируй положение корпуса и опоры. Веди локти назад, не подбрасывая вес поясницей. Плавно верни рукоять, не теряя контроля над плечами."
+    "technique": "Зафиксируй положение корпуса и опоры. Веди локти назад, не подбрасывая вес поясницей. Плавно верни рукоять, не теряя контроля над плечами.",
+    "primaryMuscles": [
+      "Широчайшие"
+    ],
+    "secondaryMuscles": [],
+    "difficulty": "intermediate",
+    "measurement": "reps",
+    "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)"
   },
   {
     "catalogId": "row-cable",
@@ -54,7 +82,14 @@
     "aliases": [
       "Тяга горизонтального блока сидя"
     ],
-    "technique": "Зафиксируй положение корпуса и опоры. Веди локти назад, не подбрасывая вес поясницей. Плавно верни рукоять, не теряя контроля над плечами."
+    "technique": "Зафиксируй положение корпуса и опоры. Веди локти назад, не подбрасывая вес поясницей. Плавно верни рукоять, не теряя контроля над плечами.",
+    "primaryMuscles": [
+      "Широчайшие"
+    ],
+    "secondaryMuscles": [],
+    "difficulty": "intermediate",
+    "measurement": "reps",
+    "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)"
   },
   {
     "catalogId": "row-dumbbell",
@@ -65,7 +100,14 @@
     "weightMode": "single",
     "unilateral": true,
     "aliases": [],
-    "technique": "Зафиксируй положение корпуса и опоры. Веди локти назад, не подбрасывая вес поясницей. Плавно верни рукоять, не теряя контроля над плечами."
+    "technique": "Зафиксируй положение корпуса и опоры. Веди локти назад, не подбрасывая вес поясницей. Плавно верни рукоять, не теряя контроля над плечами.",
+    "primaryMuscles": [
+      "Широчайшие"
+    ],
+    "secondaryMuscles": [],
+    "difficulty": "intermediate",
+    "measurement": "reps",
+    "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)"
   },
   {
     "catalogId": "row-lever",
@@ -76,7 +118,14 @@
     "weightMode": "stack",
     "unilateral": false,
     "aliases": [],
-    "technique": "Зафиксируй положение корпуса и опоры. Веди локти назад, не подбрасывая вес поясницей. Плавно верни рукоять, не теряя контроля над плечами."
+    "technique": "Зафиксируй положение корпуса и опоры. Веди локти назад, не подбрасывая вес поясницей. Плавно верни рукоять, не теряя контроля над плечами.",
+    "primaryMuscles": [
+      "Широчайшие"
+    ],
+    "secondaryMuscles": [],
+    "difficulty": "intermediate",
+    "measurement": "reps",
+    "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)"
   },
   {
     "catalogId": "incline-db",
@@ -87,7 +136,14 @@
     "weightMode": "single",
     "unilateral": false,
     "aliases": [],
-    "technique": "Отрегулируй наклон и устойчиво поставь стопы. Держи запястья над предплечьями. Опускай отягощение плавно, без отбива и болезненной глубины."
+    "technique": "Отрегулируй наклон и устойчиво поставь стопы. Держи запястья над предплечьями. Опускай отягощение плавно, без отбива и болезненной глубины.",
+    "primaryMuscles": [
+      "Грудные"
+    ],
+    "secondaryMuscles": [],
+    "difficulty": "intermediate",
+    "measurement": "reps",
+    "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)"
   },
   {
     "catalogId": "incline-machine",
@@ -98,7 +154,14 @@
     "weightMode": "stack",
     "unilateral": false,
     "aliases": [],
-    "technique": "Отрегулируй наклон и устойчиво поставь стопы. Держи запястья над предплечьями. Опускай отягощение плавно, без отбива и болезненной глубины."
+    "technique": "Отрегулируй наклон и устойчиво поставь стопы. Держи запястья над предплечьями. Опускай отягощение плавно, без отбива и болезненной глубины.",
+    "primaryMuscles": [
+      "Грудные"
+    ],
+    "secondaryMuscles": [],
+    "difficulty": "intermediate",
+    "measurement": "reps",
+    "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)"
   },
   {
     "catalogId": "chest-machine",
@@ -109,7 +172,14 @@
     "weightMode": "stack",
     "unilateral": false,
     "aliases": [],
-    "technique": "Настрой высоту сиденья или положение на скамье. Сохраняй устойчивую опору, не заламывай кисти. Жми и опускай плавно, без отбива."
+    "technique": "Настрой высоту сиденья или положение на скамье. Сохраняй устойчивую опору, не заламывай кисти. Жми и опускай плавно, без отбива.",
+    "primaryMuscles": [
+      "Грудные"
+    ],
+    "secondaryMuscles": [],
+    "difficulty": "intermediate",
+    "measurement": "reps",
+    "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)"
   },
   {
     "catalogId": "chest-db",
@@ -120,7 +190,14 @@
     "weightMode": "single",
     "unilateral": false,
     "aliases": [],
-    "technique": "Настрой высоту сиденья или положение на скамье. Сохраняй устойчивую опору, не заламывай кисти. Жми и опускай плавно, без отбива."
+    "technique": "Настрой высоту сиденья или положение на скамье. Сохраняй устойчивую опору, не заламывай кисти. Жми и опускай плавно, без отбива.",
+    "primaryMuscles": [
+      "Грудные"
+    ],
+    "secondaryMuscles": [],
+    "difficulty": "intermediate",
+    "measurement": "reps",
+    "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)"
   },
   {
     "catalogId": "pushup",
@@ -131,7 +208,14 @@
     "weightMode": "extra",
     "unilateral": false,
     "aliases": [],
-    "technique": "Настрой высоту сиденья или положение на скамье. Сохраняй устойчивую опору, не заламывай кисти. Жми и опускай плавно, без отбива."
+    "technique": "Настрой высоту сиденья или положение на скамье. Сохраняй устойчивую опору, не заламывай кисти. Жми и опускай плавно, без отбива.",
+    "primaryMuscles": [
+      "Грудные"
+    ],
+    "secondaryMuscles": [],
+    "difficulty": "intermediate",
+    "measurement": "reps",
+    "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)"
   },
   {
     "catalogId": "fly-machine",
@@ -142,7 +226,14 @@
     "weightMode": "stack",
     "unilateral": false,
     "aliases": [],
-    "technique": "Подстрой сиденье и рукояти под свой рост. Сохраняй небольшой сгиб локтей. Своди руки без рывка и не уходи в болезненное растяжение."
+    "technique": "Подстрой сиденье и рукояти под свой рост. Сохраняй небольшой сгиб локтей. Своди руки без рывка и не уходи в болезненное растяжение.",
+    "primaryMuscles": [
+      "Грудные"
+    ],
+    "secondaryMuscles": [],
+    "difficulty": "intermediate",
+    "measurement": "reps",
+    "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)"
   },
   {
     "catalogId": "fly-cable",
@@ -153,7 +244,14 @@
     "weightMode": "stack",
     "unilateral": false,
     "aliases": [],
-    "technique": "Подстрой сиденье и рукояти под свой рост. Сохраняй небольшой сгиб локтей. Своди руки без рывка и не уходи в болезненное растяжение."
+    "technique": "Подстрой сиденье и рукояти под свой рост. Сохраняй небольшой сгиб локтей. Своди руки без рывка и не уходи в болезненное растяжение.",
+    "primaryMuscles": [
+      "Грудные"
+    ],
+    "secondaryMuscles": [],
+    "difficulty": "intermediate",
+    "measurement": "reps",
+    "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)"
   },
   {
     "catalogId": "curl-cable",
@@ -164,7 +262,14 @@
     "weightMode": "stack",
     "unilateral": false,
     "aliases": [],
-    "technique": "Выбери устойчивое положение. Сгибай локти без раскачивания корпусом; кисти не заламывай. Опускай вес подконтрольно."
+    "technique": "Выбери устойчивое положение. Сгибай локти без раскачивания корпусом; кисти не заламывай. Опускай вес подконтрольно.",
+    "primaryMuscles": [
+      "Бицепс"
+    ],
+    "secondaryMuscles": [],
+    "difficulty": "intermediate",
+    "measurement": "reps",
+    "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)"
   },
   {
     "catalogId": "curl-ez",
@@ -177,7 +282,14 @@
     "aliases": [
       "Z гриф на бицепс"
     ],
-    "technique": "Выбери устойчивое положение. Сгибай локти без раскачивания корпусом; кисти не заламывай. Опускай вес подконтрольно."
+    "technique": "Выбери устойчивое положение. Сгибай локти без раскачивания корпусом; кисти не заламывай. Опускай вес подконтрольно.",
+    "primaryMuscles": [
+      "Бицепс"
+    ],
+    "secondaryMuscles": [],
+    "difficulty": "intermediate",
+    "measurement": "reps",
+    "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)"
   },
   {
     "catalogId": "curl-db",
@@ -190,7 +302,14 @@
     "aliases": [
       "Сгибания, на бицепс"
     ],
-    "technique": "Выбери устойчивое положение. Сгибай локти без раскачивания корпусом; кисти не заламывай. Опускай вес подконтрольно."
+    "technique": "Выбери устойчивое положение. Сгибай локти без раскачивания корпусом; кисти не заламывай. Опускай вес подконтрольно.",
+    "primaryMuscles": [
+      "Бицепс"
+    ],
+    "secondaryMuscles": [],
+    "difficulty": "intermediate",
+    "measurement": "reps",
+    "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)"
   },
   {
     "catalogId": "hammer",
@@ -201,7 +320,14 @@
     "weightMode": "single",
     "unilateral": false,
     "aliases": [],
-    "technique": "Держи ладони обращёнными друг к другу. Сгибай локти, не подбрасывая гантели плечами. Опускай вес плавно."
+    "technique": "Держи ладони обращёнными друг к другу. Сгибай локти, не подбрасывая гантели плечами. Опускай вес плавно.",
+    "primaryMuscles": [
+      "Бицепс"
+    ],
+    "secondaryMuscles": [],
+    "difficulty": "intermediate",
+    "measurement": "reps",
+    "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)"
   },
   {
     "catalogId": "hammer-cable",
@@ -212,7 +338,14 @@
     "weightMode": "stack",
     "unilateral": false,
     "aliases": [],
-    "technique": "Держи ладони обращёнными друг к другу. Сгибай локти, не подбрасывая гантели плечами. Опускай вес плавно."
+    "technique": "Держи ладони обращёнными друг к другу. Сгибай локти, не подбрасывая гантели плечами. Опускай вес плавно.",
+    "primaryMuscles": [
+      "Бицепс"
+    ],
+    "secondaryMuscles": [],
+    "difficulty": "intermediate",
+    "measurement": "reps",
+    "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)"
   },
   {
     "catalogId": "pushdown",
@@ -223,7 +356,14 @@
     "weightMode": "stack",
     "unilateral": false,
     "aliases": [],
-    "technique": "Устойчиво встань у блока и удерживай плечи относительно корпуса. Разгибай локти без рывка. Возвращай рукоять медленно; не дави через боль в локте."
+    "technique": "Устойчиво встань у блока и удерживай плечи относительно корпуса. Разгибай локти без рывка. Возвращай рукоять медленно; не дави через боль в локте.",
+    "primaryMuscles": [
+      "Трицепс"
+    ],
+    "secondaryMuscles": [],
+    "difficulty": "intermediate",
+    "measurement": "reps",
+    "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)"
   },
   {
     "catalogId": "pushdown-bar",
@@ -236,7 +376,14 @@
     "aliases": [
       "Разгибания на трицепс в блоке"
     ],
-    "technique": "Устойчиво встань у блока и удерживай плечи относительно корпуса. Разгибай локти без рывка. Возвращай рукоять медленно; не дави через боль в локте."
+    "technique": "Устойчиво встань у блока и удерживай плечи относительно корпуса. Разгибай локти без рывка. Возвращай рукоять медленно; не дави через боль в локте.",
+    "primaryMuscles": [
+      "Трицепс"
+    ],
+    "secondaryMuscles": [],
+    "difficulty": "intermediate",
+    "measurement": "reps",
+    "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)"
   },
   {
     "catalogId": "legpress",
@@ -247,7 +394,14 @@
     "weightMode": "stack",
     "unilateral": false,
     "aliases": [],
-    "technique": "Выбери устойчивую постановку стоп. Колени направляй примерно по линии носков. Контролируй опускание; глубину выбирай без боли и потери положения корпуса."
+    "technique": "Выбери устойчивую постановку стоп. Колени направляй примерно по линии носков. Контролируй опускание; глубину выбирай без боли и потери положения корпуса.",
+    "primaryMuscles": [
+      "Квадрицепс"
+    ],
+    "secondaryMuscles": [],
+    "difficulty": "intermediate",
+    "measurement": "reps",
+    "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)"
   },
   {
     "catalogId": "goblet",
@@ -258,7 +412,14 @@
     "weightMode": "total",
     "unilateral": false,
     "aliases": [],
-    "technique": "Выбери устойчивую постановку стоп. Колени направляй примерно по линии носков. Контролируй опускание; глубину выбирай без боли и потери положения корпуса."
+    "technique": "Выбери устойчивую постановку стоп. Колени направляй примерно по линии носков. Контролируй опускание; глубину выбирай без боли и потери положения корпуса.",
+    "primaryMuscles": [
+      "Квадрицепс"
+    ],
+    "secondaryMuscles": [],
+    "difficulty": "intermediate",
+    "measurement": "reps",
+    "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)"
   },
   {
     "catalogId": "sitstand",
@@ -269,7 +430,14 @@
     "weightMode": "extra",
     "unilateral": false,
     "aliases": [],
-    "technique": "Выбери устойчивую постановку стоп. Колени направляй примерно по линии носков. Контролируй опускание; глубину выбирай без боли и потери положения корпуса."
+    "technique": "Выбери устойчивую постановку стоп. Колени направляй примерно по линии носков. Контролируй опускание; глубину выбирай без боли и потери положения корпуса.",
+    "primaryMuscles": [
+      "Квадрицепс"
+    ],
+    "secondaryMuscles": [],
+    "difficulty": "intermediate",
+    "measurement": "reps",
+    "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)"
   },
   {
     "catalogId": "legcurl-seated",
@@ -280,7 +448,14 @@
     "weightMode": "stack",
     "unilateral": false,
     "aliases": [],
-    "technique": "Настрой валик и ось тренажёра под себя. Не отрывай таз от опоры. Сгибай и разгибай колени плавно, не бросая груз."
+    "technique": "Настрой валик и ось тренажёра под себя. Не отрывай таз от опоры. Сгибай и разгибай колени плавно, не бросая груз.",
+    "primaryMuscles": [
+      "Квадрицепс"
+    ],
+    "secondaryMuscles": [],
+    "difficulty": "intermediate",
+    "measurement": "reps",
+    "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)"
   },
   {
     "catalogId": "legcurl-lying",
@@ -291,7 +466,14 @@
     "weightMode": "stack",
     "unilateral": false,
     "aliases": [],
-    "technique": "Настрой валик и ось тренажёра под себя. Не отрывай таз от опоры. Сгибай и разгибай колени плавно, не бросая груз."
+    "technique": "Настрой валик и ось тренажёра под себя. Не отрывай таз от опоры. Сгибай и разгибай колени плавно, не бросая груз.",
+    "primaryMuscles": [
+      "Квадрицепс"
+    ],
+    "secondaryMuscles": [],
+    "difficulty": "intermediate",
+    "measurement": "reps",
+    "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)"
   },
   {
     "catalogId": "legextension",
@@ -302,7 +484,14 @@
     "weightMode": "stack",
     "unilateral": false,
     "aliases": [],
-    "technique": "Совмести ось тренажёра с коленом и настрой валик. Сохраняй опору спины. Поднимай и опускай вес без ударов и болезненной амплитуды."
+    "technique": "Совмести ось тренажёра с коленом и настрой валик. Сохраняй опору спины. Поднимай и опускай вес без ударов и болезненной амплитуды.",
+    "primaryMuscles": [
+      "Квадрицепс"
+    ],
+    "secondaryMuscles": [],
+    "difficulty": "intermediate",
+    "measurement": "reps",
+    "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)"
   },
   {
     "catalogId": "hipbridge",
@@ -313,7 +502,14 @@
     "weightMode": "extra",
     "unilateral": false,
     "aliases": [],
-    "technique": "Устойчиво поставь стопы и проверь опору. Поднимай таз за счёт разгибания бёдер, не переразгибая поясницу. Опускайся подконтрольно."
+    "technique": "Устойчиво поставь стопы и проверь опору. Поднимай таз за счёт разгибания бёдер, не переразгибая поясницу. Опускайся подконтрольно.",
+    "primaryMuscles": [
+      "Ягодичные"
+    ],
+    "secondaryMuscles": [],
+    "difficulty": "intermediate",
+    "measurement": "reps",
+    "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)"
   },
   {
     "catalogId": "hipbridge-machine",
@@ -324,7 +520,14 @@
     "weightMode": "stack",
     "unilateral": false,
     "aliases": [],
-    "technique": "Устойчиво поставь стопы и проверь опору. Поднимай таз за счёт разгибания бёдер, не переразгибая поясницу. Опускайся подконтрольно."
+    "technique": "Устойчиво поставь стопы и проверь опору. Поднимай таз за счёт разгибания бёдер, не переразгибая поясницу. Опускайся подконтрольно.",
+    "primaryMuscles": [
+      "Ягодичные"
+    ],
+    "secondaryMuscles": [],
+    "difficulty": "intermediate",
+    "measurement": "reps",
+    "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)"
   },
   {
     "catalogId": "hipbridge-db",
@@ -335,7 +538,14 @@
     "weightMode": "total",
     "unilateral": false,
     "aliases": [],
-    "technique": "Устойчиво поставь стопы и проверь опору. Поднимай таз за счёт разгибания бёдер, не переразгибая поясницу. Опускайся подконтрольно."
+    "technique": "Устойчиво поставь стопы и проверь опору. Поднимай таз за счёт разгибания бёдер, не переразгибая поясницу. Опускайся подконтрольно.",
+    "primaryMuscles": [
+      "Ягодичные"
+    ],
+    "secondaryMuscles": [],
+    "difficulty": "intermediate",
+    "measurement": "reps",
+    "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)"
   },
   {
     "catalogId": "abduction",
@@ -346,7 +556,14 @@
     "weightMode": "stack",
     "unilateral": false,
     "aliases": [],
-    "technique": "Настрой сиденье и валики. Удерживай таз и корпус на опоре. Разводи и своди ноги без рывков и столкновения грузов."
+    "technique": "Настрой сиденье и валики. Удерживай таз и корпус на опоре. Разводи и своди ноги без рывков и столкновения грузов.",
+    "primaryMuscles": [
+      "Ягодичные"
+    ],
+    "secondaryMuscles": [],
+    "difficulty": "intermediate",
+    "measurement": "reps",
+    "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)"
   },
   {
     "catalogId": "calf-seated",
@@ -357,7 +574,14 @@
     "weightMode": "stack",
     "unilateral": false,
     "aliases": [],
-    "technique": "Устойчиво поставь переднюю часть стопы на платформу. Поднимай и опускай пятки плавно. Не пружинь внизу и не используй болезненную амплитуду."
+    "technique": "Устойчиво поставь переднюю часть стопы на платформу. Поднимай и опускай пятки плавно. Не пружинь внизу и не используй болезненную амплитуду.",
+    "primaryMuscles": [
+      "Икроножные"
+    ],
+    "secondaryMuscles": [],
+    "difficulty": "intermediate",
+    "measurement": "reps",
+    "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)"
   },
   {
     "catalogId": "calf-seated-db",
@@ -368,7 +592,14 @@
     "weightMode": "total",
     "unilateral": false,
     "aliases": [],
-    "technique": "Устойчиво поставь переднюю часть стопы на платформу. Поднимай и опускай пятки плавно. Не пружинь внизу и не используй болезненную амплитуду."
+    "technique": "Устойчиво поставь переднюю часть стопы на платформу. Поднимай и опускай пятки плавно. Не пружинь внизу и не используй болезненную амплитуду.",
+    "primaryMuscles": [
+      "Икроножные"
+    ],
+    "secondaryMuscles": [],
+    "difficulty": "intermediate",
+    "measurement": "reps",
+    "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)"
   },
   {
     "catalogId": "calf-standing",
@@ -379,7 +610,14 @@
     "weightMode": "stack",
     "unilateral": false,
     "aliases": [],
-    "technique": "Удерживай равновесие с опорой. Поднимай пятки без подскока и медленно опускай. Не превращай движение в приседание."
+    "technique": "Удерживай равновесие с опорой. Поднимай пятки без подскока и медленно опускай. Не превращай движение в приседание.",
+    "primaryMuscles": [
+      "Икроножные"
+    ],
+    "secondaryMuscles": [],
+    "difficulty": "intermediate",
+    "measurement": "reps",
+    "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)"
   },
   {
     "catalogId": "calf-body",
@@ -390,7 +628,14 @@
     "weightMode": "extra",
     "unilateral": false,
     "aliases": [],
-    "technique": "Удерживай равновесие с опорой. Поднимай пятки без подскока и медленно опускай. Не превращай движение в приседание."
+    "technique": "Удерживай равновесие с опорой. Поднимай пятки без подскока и медленно опускай. Не превращай движение в приседание.",
+    "primaryMuscles": [
+      "Икроножные"
+    ],
+    "secondaryMuscles": [],
+    "difficulty": "intermediate",
+    "measurement": "reps",
+    "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)"
   },
   {
     "catalogId": "reverse-fly",
@@ -401,7 +646,14 @@
     "weightMode": "stack",
     "unilateral": false,
     "aliases": [],
-    "technique": "Настрой рукояти и положение корпуса. Двигай руками без раскачивания и пожимания плечами. Выбирай контролируемую амплитуду без дискомфорта в плече."
+    "technique": "Настрой рукояти и положение корпуса. Двигай руками без раскачивания и пожимания плечами. Выбирай контролируемую амплитуду без дискомфорта в плече.",
+    "primaryMuscles": [
+      "Дельты"
+    ],
+    "secondaryMuscles": [],
+    "difficulty": "intermediate",
+    "measurement": "reps",
+    "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)"
   },
   {
     "catalogId": "facepull",
@@ -412,7 +664,14 @@
     "weightMode": "stack",
     "unilateral": false,
     "aliases": [],
-    "technique": "Настрой рукояти и положение корпуса. Двигай руками без раскачивания и пожимания плечами. Выбирай контролируемую амплитуду без дискомфорта в плече."
+    "technique": "Настрой рукояти и положение корпуса. Двигай руками без раскачивания и пожимания плечами. Выбирай контролируемую амплитуду без дискомфорта в плече.",
+    "primaryMuscles": [
+      "Дельты"
+    ],
+    "secondaryMuscles": [],
+    "difficulty": "intermediate",
+    "measurement": "reps",
+    "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)"
   },
   {
     "catalogId": "lateral-db",
@@ -425,7 +684,14 @@
     "aliases": [
       "Разведения рук в стороны"
     ],
-    "technique": "Сохраняй небольшой сгиб локтей. Поднимай руки в комфортной плоскости без рывков корпусом. Не поднимай плечи к ушам; опускай вес плавно."
+    "technique": "Сохраняй небольшой сгиб локтей. Поднимай руки в комфортной плоскости без рывков корпусом. Не поднимай плечи к ушам; опускай вес плавно.",
+    "primaryMuscles": [
+      "Дельты"
+    ],
+    "secondaryMuscles": [],
+    "difficulty": "intermediate",
+    "measurement": "reps",
+    "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)"
   },
   {
     "catalogId": "lateral-cable",
@@ -436,7 +702,14 @@
     "weightMode": "stack",
     "unilateral": true,
     "aliases": [],
-    "technique": "Сохраняй небольшой сгиб локтей. Поднимай руки в комфортной плоскости без рывков корпусом. Не поднимай плечи к ушам; опускай вес плавно."
+    "technique": "Сохраняй небольшой сгиб локтей. Поднимай руки в комфортной плоскости без рывков корпусом. Не поднимай плечи к ушам; опускай вес плавно.",
+    "primaryMuscles": [
+      "Дельты"
+    ],
+    "secondaryMuscles": [],
+    "difficulty": "intermediate",
+    "measurement": "reps",
+    "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)"
   },
   {
     "catalogId": "lateral-machine",
@@ -447,7 +720,14 @@
     "weightMode": "stack",
     "unilateral": false,
     "aliases": [],
-    "technique": "Сохраняй небольшой сгиб локтей. Поднимай руки в комфортной плоскости без рывков корпусом. Не поднимай плечи к ушам; опускай вес плавно."
+    "technique": "Сохраняй небольшой сгиб локтей. Поднимай руки в комфортной плоскости без рывков корпусом. Не поднимай плечи к ушам; опускай вес плавно.",
+    "primaryMuscles": [
+      "Дельты"
+    ],
+    "secondaryMuscles": [],
+    "difficulty": "intermediate",
+    "measurement": "reps",
+    "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)"
   },
   {
     "catalogId": "shoulder-db",
@@ -460,7 +740,14 @@
     "aliases": [
       "Жим над головой сидя"
     ],
-    "technique": "Настрой опору спины и положение рукоятей. Не компенсируй подъём сильным прогибом поясницы. Жми и опускай без рывка в комфортной амплитуде."
+    "technique": "Настрой опору спины и положение рукоятей. Не компенсируй подъём сильным прогибом поясницы. Жми и опускай без рывка в комфортной амплитуде.",
+    "primaryMuscles": [
+      "Дельты"
+    ],
+    "secondaryMuscles": [],
+    "difficulty": "intermediate",
+    "measurement": "reps",
+    "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)"
   },
   {
     "catalogId": "shoulder-machine",
@@ -471,7 +758,14 @@
     "weightMode": "stack",
     "unilateral": false,
     "aliases": [],
-    "technique": "Настрой опору спины и положение рукоятей. Не компенсируй подъём сильным прогибом поясницы. Жми и опускай без рывка в комфортной амплитуде."
+    "technique": "Настрой опору спины и положение рукоятей. Не компенсируй подъём сильным прогибом поясницы. Жми и опускай без рывка в комфортной амплитуде.",
+    "primaryMuscles": [
+      "Дельты"
+    ],
+    "secondaryMuscles": [],
+    "difficulty": "intermediate",
+    "measurement": "reps",
+    "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)"
   },
   {
     "catalogId": "crunch-machine",
@@ -482,7 +776,14 @@
     "weightMode": "stack",
     "unilateral": false,
     "aliases": [],
-    "technique": "Настрой опоры тренажёра либо ляг на устойчивую поверхность. Сближай грудную клетку и таз небольшим контролируемым движением. Не дёргай шею и не выполняй через боль."
+    "technique": "Настрой опоры тренажёра либо ляг на устойчивую поверхность. Сближай грудную клетку и таз небольшим контролируемым движением. Не дёргай шею и не выполняй через боль.",
+    "primaryMuscles": [
+      "Прямая мышца живота"
+    ],
+    "secondaryMuscles": [],
+    "difficulty": "intermediate",
+    "measurement": "reps",
+    "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)"
   },
   {
     "catalogId": "crunch-floor",
@@ -493,7 +794,14 @@
     "weightMode": "extra",
     "unilateral": false,
     "aliases": [],
-    "technique": "Настрой опоры тренажёра либо ляг на устойчивую поверхность. Сближай грудную клетку и таз небольшим контролируемым движением. Не дёргай шею и не выполняй через боль."
+    "technique": "Настрой опоры тренажёра либо ляг на устойчивую поверхность. Сближай грудную клетку и таз небольшим контролируемым движением. Не дёргай шею и не выполняй через боль.",
+    "primaryMuscles": [
+      "Прямая мышца живота"
+    ],
+    "secondaryMuscles": [],
+    "difficulty": "intermediate",
+    "measurement": "reps",
+    "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)"
   },
   {
     "catalogId": "deadbug",
@@ -504,6 +812,930 @@
     "weightMode": "extra",
     "unilateral": true,
     "aliases": [],
-    "technique": "Лёжа на спине, удерживай положение корпуса. Медленно отводи противоположные руку и ногу настолько, насколько можешь сохранить контроль. Вернись и смени сторону."
+    "technique": "Лёжа на спине, удерживай положение корпуса. Медленно отводи противоположные руку и ногу настолько, насколько можешь сохранить контроль. Вернись и смени сторону.",
+    "primaryMuscles": [
+      "Прямая мышца живота"
+    ],
+    "secondaryMuscles": [],
+    "difficulty": "intermediate",
+    "measurement": "reps",
+    "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)"
+  },
+  {
+    "catalogId": "pullup",
+    "name": "Подтягивания прямым хватом",
+    "group": "Спина",
+    "pattern": "vertical-pull",
+    "equipment": "bodyweight",
+    "weightMode": "extra",
+    "unilateral": false,
+    "aliases": [
+      "подтягивания"
+    ],
+    "primaryMuscles": [
+      "Широчайшие"
+    ],
+    "secondaryMuscles": [
+      "Бицепс"
+    ],
+    "difficulty": "advanced",
+    "measurement": "reps",
+    "technique": "Начни из устойчивого виса и собери лопатки. Подтяни грудь к перекладине без раскачивания. Опускайся подконтрольно.",
+    "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)"
+  },
+  {
+    "catalogId": "pulldown-band",
+    "name": "Тяга резинки сверху",
+    "group": "Спина",
+    "pattern": "vertical-pull",
+    "equipment": "band",
+    "weightMode": "unspecified",
+    "unilateral": false,
+    "aliases": [
+      "тяга резинки к груди"
+    ],
+    "primaryMuscles": [
+      "Широчайшие"
+    ],
+    "secondaryMuscles": [
+      "Бицепс"
+    ],
+    "difficulty": "beginner",
+    "measurement": "reps",
+    "technique": "Закрепи резинку над головой и проверь крепление. Опусти локти к корпусу, не отклоняясь назад. Верни руки плавно.",
+    "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)"
+  },
+  {
+    "catalogId": "row-barbell",
+    "name": "Тяга штанги в наклоне",
+    "group": "Спина",
+    "pattern": "horizontal-pull",
+    "equipment": "barbell",
+    "weightMode": "total",
+    "unilateral": false,
+    "aliases": [
+      "тяга штанги к поясу"
+    ],
+    "primaryMuscles": [
+      "Широчайшие",
+      "Ромбовидные"
+    ],
+    "secondaryMuscles": [
+      "Бицепс",
+      "Разгибатели спины"
+    ],
+    "difficulty": "advanced",
+    "measurement": "reps",
+    "technique": "Зафиксируй наклон и нейтральную спину. Тяни гриф к нижней части корпуса локтями назад. Не меняй угол корпуса и опускай вес контролируемо.",
+    "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)"
+  },
+  {
+    "catalogId": "row-inverted",
+    "name": "Горизонтальные подтягивания",
+    "group": "Спина",
+    "pattern": "horizontal-pull",
+    "equipment": "bodyweight",
+    "weightMode": "extra",
+    "unilateral": false,
+    "aliases": [
+      "австралийские подтягивания"
+    ],
+    "primaryMuscles": [
+      "Ромбовидные",
+      "Широчайшие"
+    ],
+    "secondaryMuscles": [
+      "Бицепс"
+    ],
+    "difficulty": "intermediate",
+    "measurement": "reps",
+    "technique": "Выбери устойчивую перекладину. Держи тело одной линией и подтяни грудь к опоре. Не запрокидывай голову, опускайся плавно.",
+    "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)"
+  },
+  {
+    "catalogId": "row-band",
+    "name": "Тяга резинки к поясу",
+    "group": "Спина",
+    "pattern": "horizontal-pull",
+    "equipment": "band",
+    "weightMode": "unspecified",
+    "unilateral": false,
+    "aliases": [
+      "тяга эспандера сидя"
+    ],
+    "primaryMuscles": [
+      "Широчайшие",
+      "Ромбовидные"
+    ],
+    "secondaryMuscles": [
+      "Бицепс"
+    ],
+    "difficulty": "beginner",
+    "measurement": "reps",
+    "technique": "Закрепи резинку и проверь её целостность. Потяни локти назад при устойчивом корпусе. Верни руки без рывка и потери натяжения.",
+    "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)"
+  },
+  {
+    "catalogId": "bench-barbell",
+    "name": "Жим штанги лёжа",
+    "group": "Грудь",
+    "pattern": "horizontal-press",
+    "equipment": "barbell",
+    "weightMode": "total",
+    "unilateral": false,
+    "aliases": [
+      "жим лежа"
+    ],
+    "primaryMuscles": [
+      "Грудные"
+    ],
+    "secondaryMuscles": [
+      "Трицепс",
+      "Передние дельты"
+    ],
+    "difficulty": "advanced",
+    "measurement": "reps",
+    "technique": "Установи лопатки и стопы, используй страховку. Опусти гриф подконтрольно к груди и выжми без потери опоры. Не отбивай гриф.",
+    "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)"
+  },
+  {
+    "catalogId": "floor-press-db",
+    "name": "Жим гантелей лёжа на полу",
+    "group": "Грудь",
+    "pattern": "horizontal-press",
+    "equipment": "dumbbell",
+    "weightMode": "total",
+    "unilateral": false,
+    "aliases": [
+      "жим гантелей на полу"
+    ],
+    "primaryMuscles": [
+      "Грудные"
+    ],
+    "secondaryMuscles": [
+      "Трицепс"
+    ],
+    "difficulty": "beginner",
+    "measurement": "reps",
+    "technique": "Ляг устойчиво, согни ноги. Опускай плечи до мягкого касания пола, сохраняя запястья над локтями. Выжимай без столкновения гантелей.",
+    "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)"
+  },
+  {
+    "catalogId": "wall-pushup",
+    "name": "Отжимания от стены",
+    "group": "Грудь",
+    "pattern": "horizontal-press",
+    "equipment": "bodyweight",
+    "weightMode": "extra",
+    "unilateral": false,
+    "aliases": [
+      "отжимания стоя"
+    ],
+    "primaryMuscles": [
+      "Грудные"
+    ],
+    "secondaryMuscles": [
+      "Трицепс"
+    ],
+    "difficulty": "beginner",
+    "measurement": "reps",
+    "technique": "Поставь ладони на устойчивую стену на уровне груди. Сохраняй прямую линию корпуса, приблизь грудь к стене и плавно оттолкнись.",
+    "source": "NHS Strength exercises: https://www.nhs.uk/live-well/exercise/strength-exercises/ (проверено 17.09.2026)"
+  },
+  {
+    "catalogId": "fly-db",
+    "name": "Разведение гантелей лёжа",
+    "group": "Грудь",
+    "pattern": "chest-fly",
+    "equipment": "dumbbell",
+    "weightMode": "total",
+    "unilateral": false,
+    "aliases": [
+      "разводка гантелей"
+    ],
+    "primaryMuscles": [
+      "Грудные"
+    ],
+    "secondaryMuscles": [
+      "Передние дельты"
+    ],
+    "difficulty": "intermediate",
+    "measurement": "reps",
+    "technique": "Сохраняй небольшой постоянный сгиб локтя. Разведи руки только до комфортного растяжения и сведи над грудью. Не превращай движение в жим.",
+    "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)"
+  },
+  {
+    "catalogId": "curl-concentration",
+    "name": "Концентрированное сгибание с гантелью",
+    "group": "Бицепс",
+    "pattern": "elbow-flexion",
+    "equipment": "dumbbell",
+    "weightMode": "single",
+    "unilateral": true,
+    "aliases": [
+      "концентрированный подъем"
+    ],
+    "primaryMuscles": [
+      "Бицепс"
+    ],
+    "secondaryMuscles": [],
+    "difficulty": "intermediate",
+    "measurement": "reps",
+    "technique": "Зафиксируй плечо у внутренней поверхности бедра. Согни локоть без движения корпуса. Полностью контролируй опускание.",
+    "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)"
+  },
+  {
+    "catalogId": "curl-preacher-machine",
+    "name": "Сгибание рук в тренажёре Скотта",
+    "group": "Бицепс",
+    "pattern": "elbow-flexion",
+    "equipment": "machine",
+    "weightMode": "stack",
+    "unilateral": false,
+    "aliases": [
+      "бицепс в тренажере скотта"
+    ],
+    "primaryMuscles": [
+      "Бицепс"
+    ],
+    "secondaryMuscles": [],
+    "difficulty": "beginner",
+    "measurement": "reps",
+    "technique": "Совмести локти с осью тренажёра и сохрани контакт плеч с подушкой. Сгибай без рывка. Не разгибай локти через боль.",
+    "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)"
+  },
+  {
+    "catalogId": "curl-band",
+    "name": "Сгибание рук с резинкой",
+    "group": "Бицепс",
+    "pattern": "elbow-flexion",
+    "equipment": "band",
+    "weightMode": "unspecified",
+    "unilateral": false,
+    "aliases": [
+      "бицепс с резинкой"
+    ],
+    "primaryMuscles": [
+      "Бицепс"
+    ],
+    "secondaryMuscles": [],
+    "difficulty": "beginner",
+    "measurement": "reps",
+    "technique": "Встань на середину целой резинки. Держи локти у корпуса и согни руки. Возвращайся медленно, сохраняя контроль натяжения.",
+    "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)"
+  },
+  {
+    "catalogId": "triceps-overhead-cable",
+    "name": "Разгибание рук над головой на блоке",
+    "group": "Трицепс",
+    "pattern": "elbow-extension",
+    "equipment": "cable",
+    "weightMode": "stack",
+    "unilateral": false,
+    "aliases": [
+      "французское разгибание на блоке"
+    ],
+    "primaryMuscles": [
+      "Трицепс"
+    ],
+    "secondaryMuscles": [],
+    "difficulty": "intermediate",
+    "measurement": "reps",
+    "technique": "Займи устойчивое положение спиной к блоку. Сохраняй плечи неподвижными и разогни локти. Не прогибай поясницу.",
+    "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)"
+  },
+  {
+    "catalogId": "triceps-overhead-db",
+    "name": "Разгибание руки с гантелью из-за головы",
+    "group": "Трицепс",
+    "pattern": "elbow-extension",
+    "equipment": "dumbbell",
+    "weightMode": "single",
+    "unilateral": true,
+    "aliases": [
+      "французский жим одной рукой"
+    ],
+    "primaryMuscles": [
+      "Трицепс"
+    ],
+    "secondaryMuscles": [],
+    "difficulty": "intermediate",
+    "measurement": "reps",
+    "technique": "Зафиксируй плечо рядом с головой. Разогни локоть без наклона корпуса. Опускай гантель только в комфортной амплитуде.",
+    "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)"
+  },
+  {
+    "catalogId": "pushup-close",
+    "name": "Отжимания узкой постановкой рук",
+    "group": "Трицепс",
+    "pattern": "elbow-extension",
+    "equipment": "bodyweight",
+    "weightMode": "extra",
+    "unilateral": false,
+    "aliases": [
+      "узкие отжимания"
+    ],
+    "primaryMuscles": [
+      "Трицепс"
+    ],
+    "secondaryMuscles": [
+      "Грудные"
+    ],
+    "difficulty": "advanced",
+    "measurement": "reps",
+    "technique": "Сохраняй корпус одной линией и локти ближе к телу. Опустись в доступной амплитуде и оттолкнись без провала плеч.",
+    "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)"
+  },
+  {
+    "catalogId": "squat-body",
+    "name": "Приседание без отягощения",
+    "group": "Ноги",
+    "pattern": "knee-dominant",
+    "equipment": "bodyweight",
+    "weightMode": "extra",
+    "unilateral": false,
+    "aliases": [
+      "воздушный присед"
+    ],
+    "primaryMuscles": [
+      "Квадрицепс",
+      "Ягодичные"
+    ],
+    "secondaryMuscles": [
+      "Икры"
+    ],
+    "difficulty": "beginner",
+    "measurement": "reps",
+    "technique": "Поставь стопы устойчиво. Отведи таз и согни колени в направлении носков до комфортной глубины. Встань, сохраняя опору всей стопы.",
+    "source": "NHS Strength exercises: https://www.nhs.uk/live-well/exercise/strength-exercises/ (проверено 17.09.2026)"
+  },
+  {
+    "catalogId": "squat-barbell",
+    "name": "Приседание со штангой на спине",
+    "group": "Ноги",
+    "pattern": "knee-dominant",
+    "equipment": "barbell",
+    "weightMode": "total",
+    "unilateral": false,
+    "aliases": [
+      "присед со штангой"
+    ],
+    "primaryMuscles": [
+      "Квадрицепс",
+      "Ягодичные"
+    ],
+    "secondaryMuscles": [
+      "Разгибатели спины"
+    ],
+    "difficulty": "advanced",
+    "measurement": "reps",
+    "technique": "Настрой стойки и страховочные упоры. Удерживай корпус жёстким, колени направляй по линии стоп. Поднимайся без потери баланса.",
+    "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)"
+  },
+  {
+    "catalogId": "goblet-kb",
+    "name": "Гоблет-приседание с гирей",
+    "group": "Ноги",
+    "pattern": "knee-dominant",
+    "equipment": "kettlebell",
+    "weightMode": "single",
+    "unilateral": false,
+    "aliases": [
+      "присед с гирей у груди"
+    ],
+    "primaryMuscles": [
+      "Квадрицепс",
+      "Ягодичные"
+    ],
+    "secondaryMuscles": [
+      "Пресс"
+    ],
+    "difficulty": "intermediate",
+    "measurement": "reps",
+    "technique": "Удерживай гирю близко к груди. Сядь между бёдер с опорой на всю стопу. Встань, сохраняя нейтральный корпус.",
+    "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)"
+  },
+  {
+    "catalogId": "split-squat-db",
+    "name": "Сплит-приседание с гантелями",
+    "group": "Ноги",
+    "pattern": "knee-dominant",
+    "equipment": "dumbbell",
+    "weightMode": "total",
+    "unilateral": true,
+    "aliases": [
+      "стационарные выпады"
+    ],
+    "primaryMuscles": [
+      "Квадрицепс",
+      "Ягодичные"
+    ],
+    "secondaryMuscles": [],
+    "difficulty": "intermediate",
+    "measurement": "reps",
+    "technique": "Выбери устойчивую разножку. Опускай заднее колено вниз при неподвижных стопах. Поднимайся через опору передней ноги.",
+    "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)"
+  },
+  {
+    "catalogId": "reverse-lunge",
+    "name": "Обратный выпад",
+    "group": "Ноги",
+    "pattern": "knee-dominant",
+    "equipment": "bodyweight",
+    "weightMode": "extra",
+    "unilateral": true,
+    "aliases": [
+      "выпад назад"
+    ],
+    "primaryMuscles": [
+      "Квадрицепс",
+      "Ягодичные"
+    ],
+    "secondaryMuscles": [],
+    "difficulty": "intermediate",
+    "measurement": "reps",
+    "technique": "Шагни назад на комфортную длину. Опусти заднее колено, сохраняя устойчивость передней стопы. Вернись без отталкивания корпусом.",
+    "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)"
+  },
+  {
+    "catalogId": "step-up-db",
+    "name": "Зашагивание на тумбу с гантелями",
+    "group": "Ноги",
+    "pattern": "knee-dominant",
+    "equipment": "dumbbell",
+    "weightMode": "total",
+    "unilateral": true,
+    "aliases": [
+      "подъем на платформу"
+    ],
+    "primaryMuscles": [
+      "Квадрицепс",
+      "Ягодичные"
+    ],
+    "secondaryMuscles": [],
+    "difficulty": "intermediate",
+    "measurement": "reps",
+    "technique": "Выбери устойчивую тумбу подходящей высоты. Поставь всю стопу и поднимись усилием рабочей ноги. Спускайся подконтрольно.",
+    "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)"
+  },
+  {
+    "catalogId": "rdl-db",
+    "name": "Румынская тяга с гантелями",
+    "group": "Ноги",
+    "pattern": "hip-hinge",
+    "equipment": "dumbbell",
+    "weightMode": "total",
+    "unilateral": false,
+    "aliases": [
+      "мертвая тяга с гантелями"
+    ],
+    "primaryMuscles": [
+      "Задняя поверхность бедра",
+      "Ягодичные"
+    ],
+    "secondaryMuscles": [
+      "Разгибатели спины"
+    ],
+    "difficulty": "intermediate",
+    "measurement": "reps",
+    "technique": "Слегка согни колени и отводи таз назад. Веди гантели близко к ногам при нейтральной спине. Встань разгибанием бёдер.",
+    "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)"
+  },
+  {
+    "catalogId": "rdl-barbell",
+    "name": "Румынская тяга со штангой",
+    "group": "Ноги",
+    "pattern": "hip-hinge",
+    "equipment": "barbell",
+    "weightMode": "total",
+    "unilateral": false,
+    "aliases": [
+      "румынская тяга"
+    ],
+    "primaryMuscles": [
+      "Задняя поверхность бедра",
+      "Ягодичные"
+    ],
+    "secondaryMuscles": [
+      "Разгибатели спины"
+    ],
+    "difficulty": "advanced",
+    "measurement": "reps",
+    "technique": "Отводи таз назад, сохраняя гриф близко к ногам и спину нейтральной. Остановись до потери положения. Разогни бёдра без рывка.",
+    "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)"
+  },
+  {
+    "catalogId": "rdl-kb",
+    "name": "Румынская тяга с гирей",
+    "group": "Ноги",
+    "pattern": "hip-hinge",
+    "equipment": "kettlebell",
+    "weightMode": "single",
+    "unilateral": false,
+    "aliases": [
+      "наклон с гирей"
+    ],
+    "primaryMuscles": [
+      "Задняя поверхность бедра",
+      "Ягодичные"
+    ],
+    "secondaryMuscles": [
+      "Разгибатели спины"
+    ],
+    "difficulty": "beginner",
+    "measurement": "reps",
+    "technique": "Держи гирю перед собой. Отведи таз назад при мягких коленях и ровной спине. Вернись за счёт ягодиц, не запрокидывая корпус.",
+    "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)"
+  },
+  {
+    "catalogId": "legcurl-band",
+    "name": "Сгибание ног с резинкой",
+    "group": "Ноги",
+    "pattern": "knee-flexion",
+    "equipment": "band",
+    "weightMode": "unspecified",
+    "unilateral": false,
+    "aliases": [
+      "сгибание голени с резинкой"
+    ],
+    "primaryMuscles": [
+      "Задняя поверхность бедра"
+    ],
+    "secondaryMuscles": [],
+    "difficulty": "beginner",
+    "measurement": "reps",
+    "technique": "Надёжно закрепи резинку. Согни колени без подъёма таза и рывка. Верни ноги медленно, контролируя натяжение.",
+    "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)"
+  },
+  {
+    "catalogId": "hipthrust-barbell",
+    "name": "Ягодичный мост со штангой",
+    "group": "Ягодицы",
+    "pattern": "hip-extension",
+    "equipment": "barbell",
+    "weightMode": "total",
+    "unilateral": false,
+    "aliases": [
+      "хип траст"
+    ],
+    "primaryMuscles": [
+      "Ягодичные"
+    ],
+    "secondaryMuscles": [
+      "Задняя поверхность бедра"
+    ],
+    "difficulty": "advanced",
+    "measurement": "reps",
+    "technique": "Упрись верхом спины в устойчивую скамью и защити таз накладкой. Разогни бёдра до нейтрального корпуса. Не переразгибай поясницу.",
+    "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)"
+  },
+  {
+    "catalogId": "abduction-band",
+    "name": "Отведение бёдер с резинкой",
+    "group": "Ягодицы",
+    "pattern": "hip-abduction",
+    "equipment": "band",
+    "weightMode": "unspecified",
+    "unilateral": false,
+    "aliases": [
+      "разведение коленей с резинкой"
+    ],
+    "primaryMuscles": [
+      "Средняя ягодичная"
+    ],
+    "secondaryMuscles": [],
+    "difficulty": "beginner",
+    "measurement": "reps",
+    "technique": "Расположи резинку устойчиво. Разводи колени или отводи ногу без разворота таза. Возвращайся медленно, сохраняя контроль.",
+    "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)"
+  },
+  {
+    "catalogId": "kickback-cable",
+    "name": "Отведение ноги назад в кроссовере",
+    "group": "Ягодицы",
+    "pattern": "hip-extension",
+    "equipment": "cable",
+    "weightMode": "stack",
+    "unilateral": true,
+    "aliases": [
+      "ягодичный мах назад"
+    ],
+    "primaryMuscles": [
+      "Ягодичные"
+    ],
+    "secondaryMuscles": [
+      "Задняя поверхность бедра"
+    ],
+    "difficulty": "intermediate",
+    "measurement": "reps",
+    "technique": "Закрепи манжету и держись за опору. Отведи бедро назад без прогиба поясницы и разворота таза. Верни ногу плавно.",
+    "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)"
+  },
+  {
+    "catalogId": "kickback-band",
+    "name": "Отведение ноги назад с резинкой",
+    "group": "Ягодицы",
+    "pattern": "hip-extension",
+    "equipment": "band",
+    "weightMode": "unspecified",
+    "unilateral": true,
+    "aliases": [
+      "ягодичный мах с резинкой"
+    ],
+    "primaryMuscles": [
+      "Ягодичные"
+    ],
+    "secondaryMuscles": [
+      "Задняя поверхность бедра"
+    ],
+    "difficulty": "beginner",
+    "measurement": "reps",
+    "technique": "Проверь крепление резинки и устойчивость. Отведи ногу назад при неподвижном тазе. Не компенсируй движение поясницей.",
+    "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)"
+  },
+  {
+    "catalogId": "calf-db",
+    "name": "Подъём на носки стоя с гантелями",
+    "group": "Икры",
+    "pattern": "calf-standing",
+    "equipment": "dumbbell",
+    "weightMode": "total",
+    "unilateral": false,
+    "aliases": [
+      "икры с гантелями"
+    ],
+    "primaryMuscles": [
+      "Икроножные"
+    ],
+    "secondaryMuscles": [],
+    "difficulty": "intermediate",
+    "measurement": "reps",
+    "technique": "Используй устойчивую опору при необходимости. Поднимись на носки без раскачивания и опустись подконтрольно. Не заваливай голеностоп наружу.",
+    "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)"
+  },
+  {
+    "catalogId": "arnold-press",
+    "name": "Жим Арнольда с гантелями",
+    "group": "Плечи",
+    "pattern": "vertical-press",
+    "equipment": "dumbbell",
+    "weightMode": "total",
+    "unilateral": false,
+    "aliases": [
+      "жим арнольда"
+    ],
+    "primaryMuscles": [
+      "Передние дельты"
+    ],
+    "secondaryMuscles": [
+      "Трицепс"
+    ],
+    "difficulty": "intermediate",
+    "measurement": "reps",
+    "technique": "Сиди устойчиво и держи рёбра под контролем. Разворачивай предплечья вместе с жимом вверх. Опускай без резкого сведения плеч.",
+    "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)"
+  },
+  {
+    "catalogId": "shoulder-band",
+    "name": "Жим резинки над головой",
+    "group": "Плечи",
+    "pattern": "vertical-press",
+    "equipment": "band",
+    "weightMode": "unspecified",
+    "unilateral": false,
+    "aliases": [
+      "жим эспандера вверх"
+    ],
+    "primaryMuscles": [
+      "Дельты"
+    ],
+    "secondaryMuscles": [
+      "Трицепс"
+    ],
+    "difficulty": "beginner",
+    "measurement": "reps",
+    "technique": "Встань на резинку симметрично. Выжми руки вверх без прогиба поясницы. Возвращайся медленно и не отпускай натяжение резко.",
+    "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)"
+  },
+  {
+    "catalogId": "lateral-band",
+    "name": "Подъём рук в стороны с резинкой",
+    "group": "Плечи",
+    "pattern": "lateral-raise",
+    "equipment": "band",
+    "weightMode": "unspecified",
+    "unilateral": false,
+    "aliases": [
+      "махи с резинкой"
+    ],
+    "primaryMuscles": [
+      "Средние дельты"
+    ],
+    "secondaryMuscles": [],
+    "difficulty": "beginner",
+    "measurement": "reps",
+    "technique": "Зафиксируй резинку под стопами. Подними руки до комфортного уровня без рывка и пожимания плечами. Опусти плавно.",
+    "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)"
+  },
+  {
+    "catalogId": "plank",
+    "name": "Планка на предплечьях",
+    "group": "Пресс",
+    "pattern": "trunk-stability",
+    "equipment": "bodyweight",
+    "weightMode": "extra",
+    "unilateral": false,
+    "aliases": [
+      "планка"
+    ],
+    "primaryMuscles": [
+      "Поперечная мышца живота"
+    ],
+    "secondaryMuscles": [
+      "Ягодичные"
+    ],
+    "difficulty": "beginner",
+    "measurement": "seconds",
+    "technique": "Создай прямую линию от головы до пяток. Мягко напряги живот и ягодицы, продолжая дышать. Заверши подход при потере положения.",
+    "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)"
+  },
+  {
+    "catalogId": "side-plank",
+    "name": "Боковая планка",
+    "group": "Пресс",
+    "pattern": "trunk-stability",
+    "equipment": "bodyweight",
+    "weightMode": "extra",
+    "unilateral": true,
+    "aliases": [
+      "планка на боку"
+    ],
+    "primaryMuscles": [
+      "Косые мышцы живота"
+    ],
+    "secondaryMuscles": [
+      "Средняя ягодичная"
+    ],
+    "difficulty": "intermediate",
+    "measurement": "seconds",
+    "technique": "Установи локоть под плечом и выстрой корпус одной линией. Подними таз и дыши спокойно. Остановись при потере опоры или боли.",
+    "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)"
+  },
+  {
+    "catalogId": "bird-dog",
+    "name": "Птица-собака",
+    "group": "Пресс",
+    "pattern": "trunk-stability",
+    "equipment": "bodyweight",
+    "weightMode": "extra",
+    "unilateral": true,
+    "aliases": [
+      "берд дог"
+    ],
+    "primaryMuscles": [
+      "Поперечная мышца живота"
+    ],
+    "secondaryMuscles": [
+      "Ягодичные",
+      "Разгибатели спины"
+    ],
+    "difficulty": "beginner",
+    "measurement": "reps",
+    "technique": "Из положения на четвереньках вытягивай противоположные руку и ногу. Не вращай таз и не прогибай поясницу. Вернись подконтрольно.",
+    "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)"
+  },
+  {
+    "catalogId": "pallof-cable",
+    "name": "Жим Паллофа на блоке",
+    "group": "Пресс",
+    "pattern": "anti-rotation",
+    "equipment": "cable",
+    "weightMode": "stack",
+    "unilateral": true,
+    "aliases": [
+      "паллоф пресс"
+    ],
+    "primaryMuscles": [
+      "Косые мышцы живота"
+    ],
+    "secondaryMuscles": [
+      "Ягодичные"
+    ],
+    "difficulty": "intermediate",
+    "measurement": "reps",
+    "technique": "Встань боком к блоку в устойчивой стойке. Выжми рукоять перед собой, сопротивляясь развороту. Верни к груди без смещения таза.",
+    "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)"
+  },
+  {
+    "catalogId": "pallof-band",
+    "name": "Жим Паллофа с резинкой",
+    "group": "Пресс",
+    "pattern": "anti-rotation",
+    "equipment": "band",
+    "weightMode": "unspecified",
+    "unilateral": true,
+    "aliases": [
+      "антивращение с резинкой"
+    ],
+    "primaryMuscles": [
+      "Косые мышцы живота"
+    ],
+    "secondaryMuscles": [
+      "Ягодичные"
+    ],
+    "difficulty": "beginner",
+    "measurement": "reps",
+    "technique": "Проверь крепление и встань боком к резинке. Выжми руки вперёд, удерживая корпус неподвижным. Верни руки плавно.",
+    "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)"
+  },
+  {
+    "catalogId": "knee-raise",
+    "name": "Подъём коленей в висе",
+    "group": "Пресс",
+    "pattern": "trunk-flexion",
+    "equipment": "bodyweight",
+    "weightMode": "extra",
+    "unilateral": false,
+    "aliases": [
+      "колени к груди в висе"
+    ],
+    "primaryMuscles": [
+      "Прямая мышца живота"
+    ],
+    "secondaryMuscles": [
+      "Сгибатели бедра"
+    ],
+    "difficulty": "advanced",
+    "measurement": "reps",
+    "technique": "Начни из устойчивого виса. Подними колени без раскачивания и подкручивания за счёт инерции. Опускай ноги контролируемо.",
+    "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)"
+  },
+  {
+    "catalogId": "back-extension",
+    "name": "Разгибание спины на полу",
+    "group": "Спина",
+    "pattern": "trunk-extension",
+    "equipment": "bodyweight",
+    "weightMode": "extra",
+    "unilateral": false,
+    "aliases": [
+      "лодочка"
+    ],
+    "primaryMuscles": [
+      "Разгибатели спины"
+    ],
+    "secondaryMuscles": [
+      "Ягодичные"
+    ],
+    "difficulty": "beginner",
+    "measurement": "reps",
+    "technique": "Ляг на живот и сохраняй шею нейтральной. Слегка подними грудь без резкого переразгибания. Опустись плавно; амплитуда небольшая.",
+    "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)"
+  },
+  {
+    "catalogId": "farmer-kb",
+    "name": "Удержание гирь стоя",
+    "group": "Другое",
+    "pattern": "carry",
+    "equipment": "kettlebell",
+    "weightMode": "total",
+    "unilateral": false,
+    "aliases": [
+      "фермерская прогулка на месте"
+    ],
+    "primaryMuscles": [
+      "Хват",
+      "Трапеции"
+    ],
+    "secondaryMuscles": [
+      "Пресс"
+    ],
+    "difficulty": "intermediate",
+    "measurement": "seconds",
+    "technique": "Подними гири безопасно и стой ровно с опущенными плечами. Дыши, удерживая корпус устойчивым. Поставь гири без броска.",
+    "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)"
+  },
+  {
+    "catalogId": "swing-kb",
+    "name": "Мах гирей",
+    "group": "Ягодицы",
+    "pattern": "hip-hinge",
+    "equipment": "kettlebell",
+    "weightMode": "single",
+    "unilateral": false,
+    "aliases": [
+      "свинг гирей"
+    ],
+    "primaryMuscles": [
+      "Ягодичные",
+      "Задняя поверхность бедра"
+    ],
+    "secondaryMuscles": [
+      "Пресс"
+    ],
+    "difficulty": "advanced",
+    "measurement": "reps",
+    "technique": "Освой наклон таза до добавления скорости. Направляй гирю разгибанием бёдер, а не подъёмом руками. Не приседай глубоко и контролируй остановку.",
+    "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)"
   }
 ]

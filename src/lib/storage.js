@@ -89,86 +89,257 @@ import { N } from "./domain.js";
         logout() { this.key = null; this.data = null; this.account = null; }
         exportVault() { return N.clone(this.vault); }
     }
+    async function importDeviceKey(value) {
+        if (!value || !crypto?.subtle) throw Error('Не найден ключ этого устройства');
+        return crypto.subtle.importKey('raw', unb64(value), { name: 'AES-GCM' }, false, ['encrypt', 'decrypt']);
+    }
     class CloudStore {
-        constructor(config) { this.config = config; this.mode = 'cloud'; this.session = null; this.version = 0; this.pending = false; this.conflict = false; this.data = null; this.key = null; this.cache = null; this.persistence = true; if (!/^https:\/\/[a-z0-9-]+\.supabase\.co$/.test(config.supabaseUrl) || !config.publishableKey)
-            throw Error('Облачная база ещё не настроена'); }
-        async request(path, body, method = 'POST', authorized = true) { if (authorized)
-            await this.refresh(); const headers = { 'apikey': this.config.publishableKey, 'Content-Type': 'application/json' }; if (authorized)
-            headers.Authorization = 'Bearer ' + this.session.access_token; const res = await fetch(this.config.supabaseUrl + path, { method, headers, body: body === undefined ? undefined : JSON.stringify(body), cache: 'no-store', signal: AbortSignal.timeout(20000) }); const data = await res.json().catch(() => ({})); if (!res.ok) {
-            if (data.code === '40001')
-                throw Error('CONFLICT: более новая версия есть на сервере');
-            if (res.status === 401 || res.status === 403)
-                throw Error('Нет доступа. Проверь вход и настройку базы.');
-            if (res.status === 429)
-                throw Error('Слишком много попыток. Подожди и попробуй позднее.');
-            throw Error(data.error_description || data.msg || data.message || data.error || 'Ошибка сервера ' + res.status);
-        } return data; }
-        async refresh() { if (!this.session)
-            throw Error('Сначала войди в аккаунт'); if (Date.now() < this.session.expires_at * 1000 - 60000)
-            return; if (!this.refreshTask)
-            this.refreshTask = this.request('/auth/v1/token?grant_type=refresh_token', { refresh_token: this.session.refresh_token }, 'POST', false).then(s => { this.session = s; }).finally(() => { this.refreshTask = null; }); await this.refreshTask; }
-        async login(username, password) {
-            const email = username.trim().toLowerCase() + '@' + this.config.authDomain;
-            this.session = await this.request('/auth/v1/token?grant_type=password', { email, password }, 'POST', false);
-            this.username = username.toLowerCase();
-            this.cacheKey = 'nf:cloud:v3:' + this.config.supabaseUrl + ':' + this.session.user.id;
-            let cache;
-            try {
-                cache = N.parseJSON(localStorage.getItem(this.cacheKey) || 'null');
-            }
-            catch { }
-            const salt = cache?.salt || b64(random(16));
-            this.key = await derive(password, salt);
-            this.salt = salt;
-            let saved;
-            try {
-                if (cache)
-                    saved = await unseal(cache, this.key);
-            }
-            catch {
-                throw Error('Локальная облачная копия не расшифровалась. Возможно, пароль был изменён на другом устройстве. Не очищай данные браузера: сначала сохрани проблемную копию или открой дневник в другом браузере.');
-            }
+        constructor(config) {
+            this.config = config;
+            this.mode = 'cloud';
+            this.session = null;
+            this.version = 0;
             this.pending = false;
-            const rows = await this.request('/rest/v1/diary_documents?select=document,version', undefined, 'GET');
-            const row = rows[0];
-            this.version = row?.version || 0;
-            this.data = row ? N.validate(row.document) : N.defaultState(this.username, this.session.user.user_metadata?.displayName || username);
             this.conflict = false;
-            if (saved?.pending) {
-                this.data = N.validate(saved.document);
-                this.pending = true;
-                if (saved.baseVersion !== this.version)
-                    this.conflict = true;
+            this.data = null;
+            this.key = null;
+            this.cache = null;
+            this.persistence = true;
+            this.refreshTask = null;
+            this.remember = true;
+            if (!config.publishableKey || !/^([a-z0-9-]+\.)?supabase\.co$/.test(new URL(config.supabaseUrl).hostname) || new URL(config.supabaseUrl).protocol !== 'https:')
+                throw Error('Облачная база ещё не настроена');
+            const project = new URL(config.supabaseUrl).hostname.split('.')[0];
+            const appPath = globalThis.location?.pathname || '/';
+            this.namespace = 'neo-fit:v4:' + project + ':' + appPath;
+            this.authKey = this.namespace + ':auth';
+            this.viewKey = this.namespace + ':view';
+        }
+        storage(kind) {
+            try { return kind === 'local' ? globalThis.localStorage : globalThis.sessionStorage; }
+            catch { return null; }
+        }
+        readAuth() {
+            for (const kind of ['session', 'local']) {
+                try {
+                    const value = N.parseJSON(this.storage(kind)?.getItem(this.authKey) || 'null');
+                    if (value?.session?.access_token && value?.session?.refresh_token && value?.session?.user?.id && value?.deviceKey)
+                        return { ...value, kind };
+                } catch { }
             }
+            return null;
+        }
+        persistAuth() {
+            if (!this.session || !this.deviceKey) return;
+            const record = JSON.stringify({ version: 1, remember: this.remember, session: this.session, deviceKey: this.deviceKey, updatedAt: new Date().toISOString() });
+            const target = this.storage(this.remember ? 'local' : 'session');
+            const other = this.storage(this.remember ? 'session' : 'local');
+            target?.setItem(this.authKey, record);
+            other?.removeItem(this.authKey);
+        }
+        clearAuth() {
+            this.storage('local')?.removeItem(this.authKey);
+            this.storage('session')?.removeItem(this.authKey);
+        }
+        saveView(view) {
+            try { this.storage(this.remember ? 'local' : 'session')?.setItem(this.viewKey, JSON.stringify(view)); } catch { }
+        }
+        restoreView() {
+            try { return N.parseJSON((this.storage('session')?.getItem(this.viewKey) || this.storage('local')?.getItem(this.viewKey)) ?? 'null'); }
+            catch { return null; }
+        }
+        async raw(path, body, method = 'POST', token = '') {
+            const headers = { apikey: this.config.publishableKey, 'Content-Type': 'application/json' };
+            if (token) headers.Authorization = 'Bearer ' + token;
+            let res;
+            try {
+                res = await fetch(this.config.supabaseUrl + path, { method, headers, body: body === undefined ? undefined : JSON.stringify(body), cache: 'no-store', signal: AbortSignal.timeout(20000) });
+            } catch (error) {
+                const offline = !globalThis.navigator?.onLine || error?.name === 'TimeoutError' || error?.name === 'AbortError' || error instanceof TypeError;
+                throw Error((offline ? 'OFFLINE: ' : '') + 'Не удалось связаться с облаком');
+            }
+            const data = await res.json().catch(() => ({}));
+            if (!res.ok) {
+                const message = data.error_description || data.msg || data.message || data.error || 'Ошибка сервера ' + res.status;
+                const error = Error(message);
+                error.status = res.status;
+                error.code = data.code || '';
+                throw error;
+            }
+            return data;
+        }
+        async request(path, body, method = 'POST', authorized = true) {
+            if (authorized) await this.refresh();
+            try {
+                return await this.raw(path, body, method, authorized ? this.session.access_token : '');
+            } catch (error) {
+                if (error.code === '40001') throw Error('CONFLICT: более новая версия есть на сервере');
+                if (error.status === 401) {
+                    this.clearAuth();
+                    this.session = null;
+                    throw Error('SESSION_EXPIRED: Сессия завершена. Войди снова.');
+                }
+                if (error.status === 403) throw Error('Нет доступа к этой записи.');
+                if (error.status === 429) throw Error('Слишком много попыток. Подожди и попробуй позднее.');
+                throw error;
+            }
+        }
+        async refresh() {
+            if (!this.session) throw Error('SESSION_EXPIRED: Сначала войди в аккаунт');
+            if (Date.now() < Number(this.session.expires_at) * 1000 - 60000) return;
+            if (!this.refreshTask) {
+                this.refreshTask = this.raw('/auth/v1/token?grant_type=refresh_token', { refresh_token: this.session.refresh_token })
+                    .then(session => { this.session = session; this.persistAuth(); return session; })
+                    .catch(error => {
+                        if (!String(error.message).startsWith('OFFLINE:')) {
+                            this.clearAuth();
+                            this.session = null;
+                            throw Error('SESSION_EXPIRED: Сессия завершена. Войди снова.');
+                        }
+                        throw error;
+                    })
+                    .finally(() => { this.refreshTask = null; });
+            }
+            await this.refreshTask;
+        }
+        async prepareIdentity(username, session, remember) {
+            this.session = session;
+            this.username = username.toLowerCase();
+            this.remember = !!remember;
+            this.deviceKey = b64(random(32));
+            this.key = await importDeviceKey(this.deviceKey);
+            this.cacheKey = this.namespace + ':cache:' + session.user.id;
+            this.legacyCacheKey = 'nf:cloud:v3:' + this.config.supabaseUrl + ':' + session.user.id;
+            this.persistAuth();
+        }
+        async readCache(password = '') {
+            let saved = null;
+            try {
+                const cache = N.parseJSON(localStorage.getItem(this.cacheKey) || 'null');
+                if (cache) {
+                    this.cache = cache;
+                    saved = await unseal(cache, this.key);
+                }
+            } catch {
+                throw Error('UNLOCK_REQUIRED: Локальная ожидающая копия не открылась. Введи пароль один раз, чтобы безопасно перенести её.');
+            }
+            if (!saved && password) {
+                try {
+                    const legacy = N.parseJSON(localStorage.getItem(this.legacyCacheKey) || 'null');
+                    if (legacy) {
+                        saved = await unseal(legacy, await derive(password, legacy.salt));
+                        await this.saveCache(saved.document, !!saved.pending, saved.baseVersion);
+                        localStorage.removeItem(this.legacyCacheKey);
+                    }
+                } catch {
+                    throw Error('UNLOCK_REQUIRED: Старая ожидающая копия требует прежний пароль. Она не удалена.');
+                }
+            }
+            return saved;
+        }
+        async loadDocument(password = '') {
+            const saved = await this.readCache(password);
+            let row = null, remoteError = null;
+            try {
+                const rows = await this.request('/rest/v1/diary_documents?select=document,version', undefined, 'GET');
+                row = rows[0] || null;
+            } catch (error) {
+                remoteError = error;
+                if (!saved) throw error;
+            }
+            this.version = row?.version || saved?.baseVersion || 0;
+            this.data = row ? N.validate(row.document) : saved?.document ? N.validate(saved.document) : N.defaultState(this.username, this.session.user.user_metadata?.displayName || this.username);
+            this.pending = !!saved?.pending;
+            this.conflict = !!(saved?.pending && row && Number(saved.baseVersion) !== Number(row.version));
+            if (saved?.pending) this.data = N.validate(saved.document);
+            if (remoteError) this.offline = true;
+            else this.offline = false;
+            await this.saveCache(this.data, this.pending);
             return this.data;
         }
-        async register(username, password, displayName, invite) { username = credentials(username, password); if (!invite || invite.length > 200)
-            throw Error('Введи код приглашения владельца'); await this.request('/functions/v1/' + this.config.registrationFunction, { username, password, displayName, invite }, 'POST', false); return this.login(username, password); }
-        async saveCache(document, pending) { try {
-            const packed = await seal({ document, baseVersion: this.version, pending }, this.key);
-            this.cache = { ...packed, salt: this.salt, iterations: ITERATIONS };
-            localStorage.setItem(this.cacheKey, JSON.stringify(this.cache));
-            this.persistence = true;
+        async restore() {
+            const record = this.readAuth();
+            if (!record) return null;
+            this.session = record.session;
+            this.remember = record.kind === 'local' && record.remember !== false;
+            this.deviceKey = record.deviceKey;
+            this.key = await importDeviceKey(this.deviceKey);
+            this.username = String(record.session.user.email || '').split('@')[0].toLowerCase();
+            this.cacheKey = this.namespace + ':cache:' + record.session.user.id;
+            this.legacyCacheKey = 'nf:cloud:v3:' + this.config.supabaseUrl + ':' + record.session.user.id;
+            try { await this.refresh(); }
+            catch (error) {
+                if (!String(error.message).startsWith('OFFLINE:')) throw error;
+            }
+            return this.loadDocument();
         }
-        catch {
-            this.persistence = false;
-        } }
-        async save(document) { N.validate(document); this.data = N.clone(document); this.pending = true; await this.saveCache(document, true); if (this.conflict)
-            throw Error('CONFLICT: сначала сохрани свою копию и разреши конфликт'); try {
-            const result = await this.request('/rest/v1/rpc/save_diary', { p_expected: this.version, p_document: document });
-            this.version = Number(result);
+        async login(username, password, remember = true) {
+            username = username.trim().toLowerCase();
+            const email = username + '@' + this.config.authDomain;
+            const session = await this.raw('/auth/v1/token?grant_type=password', { email, password });
+            await this.prepareIdentity(username, session, remember);
+            return this.loadDocument(password);
+        }
+        async register(username, password, displayName, invite, remember = true) {
+            username = credentials(username, password);
+            if (!invite || invite.length > 200) throw Error('Введи код приглашения владельца');
+            await this.request('/functions/v1/' + this.config.registrationFunction, { username, password, displayName, invite }, 'POST', false);
+            return this.login(username, password, remember);
+        }
+        async saveCache(document, pending, baseVersion = this.version) {
+            try {
+                if (!this.key) return;
+                const packed = await seal({ document, baseVersion, pending }, this.key);
+                this.cache = { ...packed, keyVersion: 2, updatedAt: new Date().toISOString() };
+                localStorage.setItem(this.cacheKey, JSON.stringify(this.cache));
+                this.persistence = true;
+            } catch {
+                this.persistence = false;
+            }
+        }
+        async save(document) {
+            document = N.validate(document);
+            this.data = N.clone(document);
+            this.pending = true;
+            await this.saveCache(document, true);
+            if (this.conflict) throw Error('CONFLICT: сначала сохрани свою копию и разреши конфликт');
+            try {
+                const result = await this.request('/rest/v1/rpc/save_diary', { p_expected: this.version, p_document: document });
+                this.version = Number(result);
+                this.pending = false;
+                this.offline = false;
+                await this.saveCache(document, false);
+                return this.version;
+            } catch (error) {
+                if (String(error.message).startsWith('CONFLICT')) this.conflict = true;
+                throw error;
+            }
+        }
+        async reload() {
+            const rows = await this.request('/rest/v1/diary_documents?select=document,version', undefined, 'GET');
+            this.version = rows[0]?.version || 0;
+            this.data = rows[0] ? N.validate(rows[0].document) : N.defaultState(this.username, this.username);
             this.pending = false;
-            await this.saveCache(document, false);
-            return this.version;
+            this.conflict = false;
+            await this.saveCache(this.data, false);
+            return this.data;
         }
-        catch (e) {
-            if (e.message.startsWith('CONFLICT'))
-                this.conflict = true;
-            throw e;
-        } }
-        async reload() { const rows = await this.request('/rest/v1/diary_documents?select=document,version', undefined, 'GET'); this.version = rows[0]?.version || 0; this.data = rows[0] ? N.validate(rows[0].document) : N.defaultState(this.username, this.username); this.pending = false; this.conflict = false; await this.saveCache(this.data, false); return this.data; }
-        async changePassword(current, next) { credentials(this.username, next); await this.request('/auth/v1/token?grant_type=password', { email: this.username + '@' + this.config.authDomain, password: current }, 'POST', false); await this.request('/auth/v1/user', { password: next }, 'PUT'); this.salt = b64(random(16)); this.key = await derive(next, this.salt); await this.saveCache(this.data, this.pending); }
-        async logout() { if (this.session)
-            await this.request('/auth/v1/logout', {}, 'POST').catch(() => { }); this.session = null; this.key = null; this.data = null; }
+        async changePassword(current, next) {
+            credentials(this.username, next);
+            await this.raw('/auth/v1/token?grant_type=password', { email: this.username + '@' + this.config.authDomain, password: current });
+            await this.request('/auth/v1/user', { password: next }, 'PUT');
+            await this.saveCache(this.data, this.pending);
+        }
+        async logout() {
+            const cacheKey = this.cacheKey;
+            if (this.session) await this.request('/auth/v1/logout', {}, 'POST').catch(() => {});
+            this.clearAuth();
+            this.storage('local')?.removeItem(this.viewKey);
+            this.storage('session')?.removeItem(this.viewKey);
+            if (cacheKey) localStorage.removeItem(cacheKey);
+            this.session = null;
+            this.key = null;
+            this.data = null;
+        }
     }
-    export const S = { derive, seal, unseal, credentials, validateVault, LocalStore, CloudStore };
+    export const S = { derive, seal, unseal, importDeviceKey, credentials, validateVault, LocalStore, CloudStore };

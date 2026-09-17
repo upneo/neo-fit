@@ -2,7 +2,7 @@
 -- Transaction is rolled back; users below are synthetic test fixtures.
 begin;
 set local search_path = public, extensions;
-select plan(14);
+select plan(16);
 insert into auth.users(id,email) values
  ('11111111-1111-4111-8111-111111111111','testowner@users.neo-fit.invalid'),
  ('22222222-2222-4222-8222-222222222222','testother@users.neo-fit.invalid'),
@@ -22,6 +22,8 @@ select set_config('request.jwt.claims','{"sub":"11111111-1111-4111-8111-11111111
 select is(public.save_diary(0,'{"app":"neo-fit","schemaVersion":2,"profile":{"username":"testowner"},"programs":[],"history":[],"trackers":[],"intakes":[]}'::jsonb),1::bigint,'owner creates own document');
 select results_eq('select count(*) from public.diary_documents',array[1::bigint],'owner reads own row');
 select throws_ok($$select public.save_diary(0,'{"app":"neo-fit","schemaVersion":2,"profile":{"username":"testowner"},"programs":[],"history":[],"trackers":[],"intakes":[]}'::jsonb)$$,'40001',null,'stale version rejected');
+select is(public.save_diary(1,'{"app":"neo-fit","schemaVersion":3,"profile":{"username":"testowner"},"schedule":{"mode":"queue","queue":[]},"programs":[],"history":[],"trackers":[],"intakes":[],"inBody":[]}'::jsonb),2::bigint,'owner upgrades document to schema v3');
+select throws_ok($$select public.save_diary(2,'{"app":"neo-fit","schemaVersion":2,"profile":{"username":"testowner"},"programs":[],"history":[],"trackers":[],"intakes":[]}'::jsonb)$$,'22023',null,'schema v3 cannot be downgraded');
 select set_config('request.jwt.claims','{"sub":"22222222-2222-4222-8222-222222222222","role":"authenticated"}',true);
 select results_eq('select count(*) from public.diary_documents',array[0::bigint],'other account cannot read first owner');
 select throws_ok($$select public.save_diary(0,'{"app":"neo-fit","schemaVersion":2,"profile":{"username":"testowner"},"programs":[],"history":[],"trackers":[],"intakes":[]}'::jsonb)$$,'22023',null,'forged profile identity rejected');

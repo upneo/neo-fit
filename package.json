@@ -14,5 +14,8 @@
     "test": "node --test tests/*.test.mjs",
     "check": "node scripts/check.mjs",
     "publish:github": "node scripts/publish-github.mjs"
+  },
+  "dependencies": {
+    "pdfjs-dist": "^5.4.149"
   }
 }

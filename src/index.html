@@ -9,6 +9,7 @@
   <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self' https://*.supabase.co; font-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'; manifest-src 'self'; worker-src 'self'">
   <link rel="icon" href="./icon.svg" type="image/svg+xml">
   <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="apple-touch-icon" href="./apple-touch-icon.png">
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="./ui/studio.css">
   <title>NEO FIT — твой личный ритм</title>
@@ -21,6 +22,7 @@
   <aside id="timer" class="rest-timer" aria-label="Таймер отдыха" hidden></aside>
   <div id="toasts" class="toast-region" aria-live="polite"></div>
   <input id="import-file" type="file" accept=".json,.html,.htm" hidden>
+  <input id="inbody-file" type="file" accept=".pdf,application/pdf" hidden>
   <script type="module" src="./entry.js"></script>
   <noscript><p>Для работы приложения включи JavaScript.</p></noscript>
 </body>

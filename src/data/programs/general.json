@@ -1,0 +1,2733 @@
+[
+  {
+    "id": "starter-full-2",
+    "title": "Старт · 2 раза в неделю",
+    "description": "Две чередующиеся тренировки на всё тело, базовый объём.",
+    "weekdays": [
+      2,
+      6
+    ],
+    "source": {
+      "title": "Общие рекомендации по силовой активности; NEO FIT adaptation",
+      "urls": [
+        "https://www.acsm.org/docs/default-source/files-for-resource-library/resistance-training-for-health.pdf",
+        "https://www.nhs.uk/live-well/exercise/how-to-improve-strength-flexibility/",
+        "https://odphp.health.gov/our-work/nutrition-physical-activity/physical-activity-guidelines/current-guidelines/top-10-things-know"
+      ],
+      "checkedAt": "2026-09-17"
+    },
+    "programs": [
+      {
+        "id": "starter-full-a",
+        "title": "Всё тело А",
+        "short": "Всё тело А",
+        "kind": "full",
+        "source": "NEO FIT — редактируемая адаптация общих рекомендаций. Это не индивидуальное назначение; рабочий вес не задан.",
+        "exercises": [
+          {
+            "catalogId": "squat-body",
+            "name": "Приседание без отягощения",
+            "group": "Ноги",
+            "pattern": "knee-dominant",
+            "equipment": "bodyweight",
+            "weightMode": "extra",
+            "unilateral": false,
+            "aliases": [
+              "воздушный присед"
+            ],
+            "primaryMuscles": [
+              "Квадрицепс",
+              "Ягодичные"
+            ],
+            "secondaryMuscles": [
+              "Икры"
+            ],
+            "difficulty": "beginner",
+            "measurement": "reps",
+            "technique": "Поставь стопы устойчиво. Отведи таз и согни колени в направлении носков до комфортной глубины. Встань, сохраняя опору всей стопы.",
+            "source": "NHS Strength exercises: https://www.nhs.uk/live-well/exercise/strength-exercises/ (проверено 17.09.2026)",
+            "id": "tpl-9a4a20c3b381",
+            "originalName": "Приседание без отягощения",
+            "sets": 2,
+            "repsMin": 8,
+            "repsMax": 12,
+            "restSeconds": 120,
+            "rirMin": 2,
+            "rirMax": 3,
+            "machine": "",
+            "notes": "",
+            "targets": [
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              }
+            ]
+          },
+          {
+            "catalogId": "pushup",
+            "name": "Отжимания от опоры",
+            "group": "Грудь",
+            "pattern": "horizontal-press",
+            "equipment": "bodyweight",
+            "weightMode": "extra",
+            "unilateral": false,
+            "aliases": [],
+            "technique": "Настрой высоту сиденья или положение на скамье. Сохраняй устойчивую опору, не заламывай кисти. Жми и опускай плавно, без отбива.",
+            "primaryMuscles": [
+              "Грудные"
+            ],
+            "secondaryMuscles": [],
+            "difficulty": "intermediate",
+            "measurement": "reps",
+            "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)",
+            "id": "tpl-ac99ee0de560",
+            "originalName": "Отжимания от опоры",
+            "sets": 2,
+            "repsMin": 8,
+            "repsMax": 12,
+            "restSeconds": 120,
+            "rirMin": 2,
+            "rirMax": 3,
+            "machine": "",
+            "notes": "",
+            "targets": [
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              }
+            ]
+          },
+          {
+            "catalogId": "row-cable",
+            "name": "Тяга нижнего блока узким хватом сидя",
+            "group": "Спина",
+            "pattern": "horizontal-pull",
+            "equipment": "cable",
+            "weightMode": "stack",
+            "unilateral": false,
+            "aliases": [
+              "Тяга горизонтального блока сидя"
+            ],
+            "technique": "Зафиксируй положение корпуса и опоры. Веди локти назад, не подбрасывая вес поясницей. Плавно верни рукоять, не теряя контроля над плечами.",
+            "primaryMuscles": [
+              "Широчайшие"
+            ],
+            "secondaryMuscles": [],
+            "difficulty": "intermediate",
+            "measurement": "reps",
+            "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)",
+            "id": "tpl-e192a10f9dd4",
+            "originalName": "Тяга нижнего блока узким хватом сидя",
+            "sets": 2,
+            "repsMin": 8,
+            "repsMax": 12,
+            "restSeconds": 120,
+            "rirMin": 2,
+            "rirMax": 3,
+            "machine": "",
+            "notes": "",
+            "targets": [
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              }
+            ]
+          },
+          {
+            "catalogId": "hipbridge",
+            "name": "Ягодичный мостик",
+            "group": "Ягодицы",
+            "pattern": "hip-extension",
+            "equipment": "bodyweight",
+            "weightMode": "extra",
+            "unilateral": false,
+            "aliases": [],
+            "technique": "Устойчиво поставь стопы и проверь опору. Поднимай таз за счёт разгибания бёдер, не переразгибая поясницу. Опускайся подконтрольно.",
+            "primaryMuscles": [
+              "Ягодичные"
+            ],
+            "secondaryMuscles": [],
+            "difficulty": "intermediate",
+            "measurement": "reps",
+            "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)",
+            "id": "tpl-9cb407ec5539",
+            "originalName": "Ягодичный мостик",
+            "sets": 2,
+            "repsMin": 8,
+            "repsMax": 12,
+            "restSeconds": 120,
+            "rirMin": 2,
+            "rirMax": 3,
+            "machine": "",
+            "notes": "",
+            "targets": [
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              }
+            ]
+          },
+          {
+            "catalogId": "deadbug",
+            "name": "Мёртвый жук",
+            "group": "Пресс",
+            "pattern": "trunk-stability",
+            "equipment": "bodyweight",
+            "weightMode": "extra",
+            "unilateral": true,
+            "aliases": [],
+            "technique": "Лёжа на спине, удерживай положение корпуса. Медленно отводи противоположные руку и ногу настолько, насколько можешь сохранить контроль. Вернись и смени сторону.",
+            "primaryMuscles": [
+              "Прямая мышца живота"
+            ],
+            "secondaryMuscles": [],
+            "difficulty": "intermediate",
+            "measurement": "reps",
+            "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)",
+            "id": "tpl-4ee95961fea6",
+            "originalName": "Мёртвый жук",
+            "sets": 2,
+            "repsMin": 8,
+            "repsMax": 12,
+            "restSeconds": 120,
+            "rirMin": 2,
+            "rirMax": 3,
+            "machine": "",
+            "notes": "",
+            "targets": [
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "starter-full-b",
+        "title": "Всё тело Б",
+        "short": "Всё тело Б",
+        "kind": "full",
+        "source": "NEO FIT — редактируемая адаптация общих рекомендаций. Это не индивидуальное назначение; рабочий вес не задан.",
+        "exercises": [
+          {
+            "catalogId": "rdl-kb",
+            "name": "Румынская тяга с гирей",
+            "group": "Ноги",
+            "pattern": "hip-hinge",
+            "equipment": "kettlebell",
+            "weightMode": "single",
+            "unilateral": false,
+            "aliases": [
+              "наклон с гирей"
+            ],
+            "primaryMuscles": [
+              "Задняя поверхность бедра",
+              "Ягодичные"
+            ],
+            "secondaryMuscles": [
+              "Разгибатели спины"
+            ],
+            "difficulty": "beginner",
+            "measurement": "reps",
+            "technique": "Держи гирю перед собой. Отведи таз назад при мягких коленях и ровной спине. Вернись за счёт ягодиц, не запрокидывая корпус.",
+            "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)",
+            "id": "tpl-8e3754613660",
+            "originalName": "Румынская тяга с гирей",
+            "sets": 2,
+            "repsMin": 8,
+            "repsMax": 12,
+            "restSeconds": 120,
+            "rirMin": 2,
+            "rirMax": 3,
+            "machine": "",
+            "notes": "",
+            "targets": [
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              }
+            ]
+          },
+          {
+            "catalogId": "pulldown-band",
+            "name": "Тяга резинки сверху",
+            "group": "Спина",
+            "pattern": "vertical-pull",
+            "equipment": "band",
+            "weightMode": "unspecified",
+            "unilateral": false,
+            "aliases": [
+              "тяга резинки к груди"
+            ],
+            "primaryMuscles": [
+              "Широчайшие"
+            ],
+            "secondaryMuscles": [
+              "Бицепс"
+            ],
+            "difficulty": "beginner",
+            "measurement": "reps",
+            "technique": "Закрепи резинку над головой и проверь крепление. Опусти локти к корпусу, не отклоняясь назад. Верни руки плавно.",
+            "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)",
+            "id": "tpl-a7f285c4e779",
+            "originalName": "Тяга резинки сверху",
+            "sets": 2,
+            "repsMin": 8,
+            "repsMax": 12,
+            "restSeconds": 120,
+            "rirMin": 2,
+            "rirMax": 3,
+            "machine": "",
+            "notes": "",
+            "targets": [
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              }
+            ]
+          },
+          {
+            "catalogId": "floor-press-db",
+            "name": "Жим гантелей лёжа на полу",
+            "group": "Грудь",
+            "pattern": "horizontal-press",
+            "equipment": "dumbbell",
+            "weightMode": "total",
+            "unilateral": false,
+            "aliases": [
+              "жим гантелей на полу"
+            ],
+            "primaryMuscles": [
+              "Грудные"
+            ],
+            "secondaryMuscles": [
+              "Трицепс"
+            ],
+            "difficulty": "beginner",
+            "measurement": "reps",
+            "technique": "Ляг устойчиво, согни ноги. Опускай плечи до мягкого касания пола, сохраняя запястья над локтями. Выжимай без столкновения гантелей.",
+            "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)",
+            "id": "tpl-f1dec7bb263f",
+            "originalName": "Жим гантелей лёжа на полу",
+            "sets": 2,
+            "repsMin": 8,
+            "repsMax": 12,
+            "restSeconds": 120,
+            "rirMin": 2,
+            "rirMax": 3,
+            "machine": "",
+            "notes": "",
+            "targets": [
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              }
+            ]
+          },
+          {
+            "catalogId": "step-up-db",
+            "name": "Зашагивание на тумбу с гантелями",
+            "group": "Ноги",
+            "pattern": "knee-dominant",
+            "equipment": "dumbbell",
+            "weightMode": "total",
+            "unilateral": true,
+            "aliases": [
+              "подъем на платформу"
+            ],
+            "primaryMuscles": [
+              "Квадрицепс",
+              "Ягодичные"
+            ],
+            "secondaryMuscles": [],
+            "difficulty": "intermediate",
+            "measurement": "reps",
+            "technique": "Выбери устойчивую тумбу подходящей высоты. Поставь всю стопу и поднимись усилием рабочей ноги. Спускайся подконтрольно.",
+            "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)",
+            "id": "tpl-0c5963742d9c",
+            "originalName": "Зашагивание на тумбу с гантелями",
+            "sets": 2,
+            "repsMin": 8,
+            "repsMax": 12,
+            "restSeconds": 120,
+            "rirMin": 2,
+            "rirMax": 3,
+            "machine": "",
+            "notes": "",
+            "targets": [
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              }
+            ]
+          },
+          {
+            "catalogId": "plank",
+            "name": "Планка на предплечьях",
+            "group": "Пресс",
+            "pattern": "trunk-stability",
+            "equipment": "bodyweight",
+            "weightMode": "extra",
+            "unilateral": false,
+            "aliases": [
+              "планка"
+            ],
+            "primaryMuscles": [
+              "Поперечная мышца живота"
+            ],
+            "secondaryMuscles": [
+              "Ягодичные"
+            ],
+            "difficulty": "beginner",
+            "measurement": "seconds",
+            "technique": "Создай прямую линию от головы до пяток. Мягко напряги живот и ягодицы, продолжая дышать. Заверши подход при потере положения.",
+            "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)",
+            "id": "tpl-85b3516e90cc",
+            "originalName": "Планка на предплечьях",
+            "sets": 2,
+            "repsMin": 8,
+            "repsMax": 12,
+            "restSeconds": 120,
+            "rirMin": 2,
+            "rirMax": 3,
+            "machine": "",
+            "notes": "",
+            "targets": [
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "gym-full-3",
+    "title": "Зал · всё тело 3 раза",
+    "description": "Три варианта для основных групп с тренажёрами и свободными весами.",
+    "weekdays": [
+      1,
+      3,
+      6
+    ],
+    "source": {
+      "title": "Общие рекомендации по силовой активности; NEO FIT adaptation",
+      "urls": [
+        "https://www.acsm.org/docs/default-source/files-for-resource-library/resistance-training-for-health.pdf",
+        "https://www.nhs.uk/live-well/exercise/how-to-improve-strength-flexibility/",
+        "https://odphp.health.gov/our-work/nutrition-physical-activity/physical-activity-guidelines/current-guidelines/top-10-things-know"
+      ],
+      "checkedAt": "2026-09-17"
+    },
+    "programs": [
+      {
+        "id": "gym-full-a",
+        "title": "Зал А",
+        "short": "Зал А",
+        "kind": "full",
+        "source": "NEO FIT — редактируемая адаптация общих рекомендаций. Это не индивидуальное назначение; рабочий вес не задан.",
+        "exercises": [
+          {
+            "catalogId": "legpress",
+            "name": "Жим ногами",
+            "group": "Ноги",
+            "pattern": "knee-dominant",
+            "equipment": "machine",
+            "weightMode": "stack",
+            "unilateral": false,
+            "aliases": [],
+            "technique": "Выбери устойчивую постановку стоп. Колени направляй примерно по линии носков. Контролируй опускание; глубину выбирай без боли и потери положения корпуса.",
+            "primaryMuscles": [
+              "Квадрицепс"
+            ],
+            "secondaryMuscles": [],
+            "difficulty": "intermediate",
+            "measurement": "reps",
+            "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)",
+            "id": "tpl-70ccb3544a5d",
+            "originalName": "Жим ногами",
+            "sets": 3,
+            "repsMin": 8,
+            "repsMax": 12,
+            "restSeconds": 120,
+            "rirMin": 2,
+            "rirMax": 3,
+            "machine": "",
+            "notes": "",
+            "targets": [
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              }
+            ]
+          },
+          {
+            "catalogId": "chest-machine",
+            "name": "Горизонтальный жим в тренажёре",
+            "group": "Грудь",
+            "pattern": "horizontal-press",
+            "equipment": "machine",
+            "weightMode": "stack",
+            "unilateral": false,
+            "aliases": [],
+            "technique": "Настрой высоту сиденья или положение на скамье. Сохраняй устойчивую опору, не заламывай кисти. Жми и опускай плавно, без отбива.",
+            "primaryMuscles": [
+              "Грудные"
+            ],
+            "secondaryMuscles": [],
+            "difficulty": "intermediate",
+            "measurement": "reps",
+            "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)",
+            "id": "tpl-c09ddf368056",
+            "originalName": "Горизонтальный жим в тренажёре",
+            "sets": 3,
+            "repsMin": 8,
+            "repsMax": 12,
+            "restSeconds": 120,
+            "rirMin": 2,
+            "rirMax": 3,
+            "machine": "",
+            "notes": "",
+            "targets": [
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              }
+            ]
+          },
+          {
+            "catalogId": "pulldown",
+            "name": "Тяга верхнего блока средним хватом",
+            "group": "Спина",
+            "pattern": "vertical-pull",
+            "equipment": "cable",
+            "weightMode": "stack",
+            "unilateral": false,
+            "aliases": [],
+            "technique": "Настрой упор для бёдер, поставь стопы устойчиво. Веди локти вниз без рывка и сильного раскачивания. Возвращай рукоять подконтрольно; не тяни её за голову.",
+            "primaryMuscles": [
+              "Широчайшие"
+            ],
+            "secondaryMuscles": [],
+            "difficulty": "intermediate",
+            "measurement": "reps",
+            "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)",
+            "id": "tpl-c3e712e77838",
+            "originalName": "Тяга верхнего блока средним хватом",
+            "sets": 3,
+            "repsMin": 8,
+            "repsMax": 12,
+            "restSeconds": 120,
+            "rirMin": 2,
+            "rirMax": 3,
+            "machine": "",
+            "notes": "",
+            "targets": [
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              }
+            ]
+          },
+          {
+            "catalogId": "hipbridge-machine",
+            "name": "Ягодичный мост в тренажёре",
+            "group": "Ягодицы",
+            "pattern": "hip-extension",
+            "equipment": "machine",
+            "weightMode": "stack",
+            "unilateral": false,
+            "aliases": [],
+            "technique": "Устойчиво поставь стопы и проверь опору. Поднимай таз за счёт разгибания бёдер, не переразгибая поясницу. Опускайся подконтрольно.",
+            "primaryMuscles": [
+              "Ягодичные"
+            ],
+            "secondaryMuscles": [],
+            "difficulty": "intermediate",
+            "measurement": "reps",
+            "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)",
+            "id": "tpl-95f790e2cd76",
+            "originalName": "Ягодичный мост в тренажёре",
+            "sets": 3,
+            "repsMin": 8,
+            "repsMax": 12,
+            "restSeconds": 120,
+            "rirMin": 2,
+            "rirMax": 3,
+            "machine": "",
+            "notes": "",
+            "targets": [
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              }
+            ]
+          },
+          {
+            "catalogId": "lateral-machine",
+            "name": "Отведение рук в стороны в тренажёре",
+            "group": "Плечи",
+            "pattern": "lateral-raise",
+            "equipment": "machine",
+            "weightMode": "stack",
+            "unilateral": false,
+            "aliases": [],
+            "technique": "Сохраняй небольшой сгиб локтей. Поднимай руки в комфортной плоскости без рывков корпусом. Не поднимай плечи к ушам; опускай вес плавно.",
+            "primaryMuscles": [
+              "Дельты"
+            ],
+            "secondaryMuscles": [],
+            "difficulty": "intermediate",
+            "measurement": "reps",
+            "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)",
+            "id": "tpl-44891981dea9",
+            "originalName": "Отведение рук в стороны в тренажёре",
+            "sets": 3,
+            "repsMin": 8,
+            "repsMax": 12,
+            "restSeconds": 120,
+            "rirMin": 2,
+            "rirMax": 3,
+            "machine": "",
+            "notes": "",
+            "targets": [
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "gym-full-b",
+        "title": "Зал Б",
+        "short": "Зал Б",
+        "kind": "full",
+        "source": "NEO FIT — редактируемая адаптация общих рекомендаций. Это не индивидуальное назначение; рабочий вес не задан.",
+        "exercises": [
+          {
+            "catalogId": "rdl-db",
+            "name": "Румынская тяга с гантелями",
+            "group": "Ноги",
+            "pattern": "hip-hinge",
+            "equipment": "dumbbell",
+            "weightMode": "total",
+            "unilateral": false,
+            "aliases": [
+              "мертвая тяга с гантелями"
+            ],
+            "primaryMuscles": [
+              "Задняя поверхность бедра",
+              "Ягодичные"
+            ],
+            "secondaryMuscles": [
+              "Разгибатели спины"
+            ],
+            "difficulty": "intermediate",
+            "measurement": "reps",
+            "technique": "Слегка согни колени и отводи таз назад. Веди гантели близко к ногам при нейтральной спине. Встань разгибанием бёдер.",
+            "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)",
+            "id": "tpl-4d5ff01dc409",
+            "originalName": "Румынская тяга с гантелями",
+            "sets": 3,
+            "repsMin": 8,
+            "repsMax": 12,
+            "restSeconds": 120,
+            "rirMin": 2,
+            "rirMax": 3,
+            "machine": "",
+            "notes": "",
+            "targets": [
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              }
+            ]
+          },
+          {
+            "catalogId": "row-chest",
+            "name": "Рычажная тяга с упором грудью",
+            "group": "Спина",
+            "pattern": "horizontal-pull",
+            "equipment": "machine",
+            "weightMode": "stack",
+            "unilateral": false,
+            "aliases": [],
+            "technique": "Зафиксируй положение корпуса и опоры. Веди локти назад, не подбрасывая вес поясницей. Плавно верни рукоять, не теряя контроля над плечами.",
+            "primaryMuscles": [
+              "Широчайшие"
+            ],
+            "secondaryMuscles": [],
+            "difficulty": "intermediate",
+            "measurement": "reps",
+            "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)",
+            "id": "tpl-44a0fe9ccf3c",
+            "originalName": "Рычажная тяга с упором грудью",
+            "sets": 3,
+            "repsMin": 8,
+            "repsMax": 12,
+            "restSeconds": 120,
+            "rirMin": 2,
+            "rirMax": 3,
+            "machine": "",
+            "notes": "",
+            "targets": [
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              }
+            ]
+          },
+          {
+            "catalogId": "incline-db",
+            "name": "Жим гантелей на наклонной скамье",
+            "group": "Грудь",
+            "pattern": "incline-press",
+            "equipment": "dumbbell",
+            "weightMode": "single",
+            "unilateral": false,
+            "aliases": [],
+            "technique": "Отрегулируй наклон и устойчиво поставь стопы. Держи запястья над предплечьями. Опускай отягощение плавно, без отбива и болезненной глубины.",
+            "primaryMuscles": [
+              "Грудные"
+            ],
+            "secondaryMuscles": [],
+            "difficulty": "intermediate",
+            "measurement": "reps",
+            "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)",
+            "id": "tpl-c24876d4c814",
+            "originalName": "Жим гантелей на наклонной скамье",
+            "sets": 3,
+            "repsMin": 8,
+            "repsMax": 12,
+            "restSeconds": 120,
+            "rirMin": 2,
+            "rirMax": 3,
+            "machine": "",
+            "notes": "",
+            "targets": [
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              }
+            ]
+          },
+          {
+            "catalogId": "legcurl-seated",
+            "name": "Сгибание ног сидя",
+            "group": "Ноги",
+            "pattern": "knee-flexion",
+            "equipment": "machine",
+            "weightMode": "stack",
+            "unilateral": false,
+            "aliases": [],
+            "technique": "Настрой валик и ось тренажёра под себя. Не отрывай таз от опоры. Сгибай и разгибай колени плавно, не бросая груз.",
+            "primaryMuscles": [
+              "Квадрицепс"
+            ],
+            "secondaryMuscles": [],
+            "difficulty": "intermediate",
+            "measurement": "reps",
+            "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)",
+            "id": "tpl-2fd533b50bea",
+            "originalName": "Сгибание ног сидя",
+            "sets": 3,
+            "repsMin": 8,
+            "repsMax": 12,
+            "restSeconds": 120,
+            "rirMin": 2,
+            "rirMax": 3,
+            "machine": "",
+            "notes": "",
+            "targets": [
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              }
+            ]
+          },
+          {
+            "catalogId": "pallof-cable",
+            "name": "Жим Паллофа на блоке",
+            "group": "Пресс",
+            "pattern": "anti-rotation",
+            "equipment": "cable",
+            "weightMode": "stack",
+            "unilateral": true,
+            "aliases": [
+              "паллоф пресс"
+            ],
+            "primaryMuscles": [
+              "Косые мышцы живота"
+            ],
+            "secondaryMuscles": [
+              "Ягодичные"
+            ],
+            "difficulty": "intermediate",
+            "measurement": "reps",
+            "technique": "Встань боком к блоку в устойчивой стойке. Выжми рукоять перед собой, сопротивляясь развороту. Верни к груди без смещения таза.",
+            "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)",
+            "id": "tpl-9bd5e94edc29",
+            "originalName": "Жим Паллофа на блоке",
+            "sets": 3,
+            "repsMin": 8,
+            "repsMax": 12,
+            "restSeconds": 120,
+            "rirMin": 2,
+            "rirMax": 3,
+            "machine": "",
+            "notes": "",
+            "targets": [
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "gym-full-c",
+        "title": "Зал В",
+        "short": "Зал В",
+        "kind": "full",
+        "source": "NEO FIT — редактируемая адаптация общих рекомендаций. Это не индивидуальное назначение; рабочий вес не задан.",
+        "exercises": [
+          {
+            "catalogId": "goblet",
+            "name": "Приседание с гантелью у груди",
+            "group": "Ноги",
+            "pattern": "knee-dominant",
+            "equipment": "dumbbell",
+            "weightMode": "total",
+            "unilateral": false,
+            "aliases": [],
+            "technique": "Выбери устойчивую постановку стоп. Колени направляй примерно по линии носков. Контролируй опускание; глубину выбирай без боли и потери положения корпуса.",
+            "primaryMuscles": [
+              "Квадрицепс"
+            ],
+            "secondaryMuscles": [],
+            "difficulty": "intermediate",
+            "measurement": "reps",
+            "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)",
+            "id": "tpl-4b3482167b9f",
+            "originalName": "Приседание с гантелью у груди",
+            "sets": 3,
+            "repsMin": 8,
+            "repsMax": 12,
+            "restSeconds": 120,
+            "rirMin": 2,
+            "rirMax": 3,
+            "machine": "",
+            "notes": "",
+            "targets": [
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              }
+            ]
+          },
+          {
+            "catalogId": "chest-db",
+            "name": "Жим гантелей лёжа",
+            "group": "Грудь",
+            "pattern": "horizontal-press",
+            "equipment": "dumbbell",
+            "weightMode": "single",
+            "unilateral": false,
+            "aliases": [],
+            "technique": "Настрой высоту сиденья или положение на скамье. Сохраняй устойчивую опору, не заламывай кисти. Жми и опускай плавно, без отбива.",
+            "primaryMuscles": [
+              "Грудные"
+            ],
+            "secondaryMuscles": [],
+            "difficulty": "intermediate",
+            "measurement": "reps",
+            "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)",
+            "id": "tpl-090bdeaf8995",
+            "originalName": "Жим гантелей лёжа",
+            "sets": 3,
+            "repsMin": 8,
+            "repsMax": 12,
+            "restSeconds": 120,
+            "rirMin": 2,
+            "rirMax": 3,
+            "machine": "",
+            "notes": "",
+            "targets": [
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              }
+            ]
+          },
+          {
+            "catalogId": "row-cable",
+            "name": "Тяга нижнего блока узким хватом сидя",
+            "group": "Спина",
+            "pattern": "horizontal-pull",
+            "equipment": "cable",
+            "weightMode": "stack",
+            "unilateral": false,
+            "aliases": [
+              "Тяга горизонтального блока сидя"
+            ],
+            "technique": "Зафиксируй положение корпуса и опоры. Веди локти назад, не подбрасывая вес поясницей. Плавно верни рукоять, не теряя контроля над плечами.",
+            "primaryMuscles": [
+              "Широчайшие"
+            ],
+            "secondaryMuscles": [],
+            "difficulty": "intermediate",
+            "measurement": "reps",
+            "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)",
+            "id": "tpl-ba1dc43e979f",
+            "originalName": "Тяга нижнего блока узким хватом сидя",
+            "sets": 3,
+            "repsMin": 8,
+            "repsMax": 12,
+            "restSeconds": 120,
+            "rirMin": 2,
+            "rirMax": 3,
+            "machine": "",
+            "notes": "",
+            "targets": [
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              }
+            ]
+          },
+          {
+            "catalogId": "kickback-cable",
+            "name": "Отведение ноги назад в кроссовере",
+            "group": "Ягодицы",
+            "pattern": "hip-extension",
+            "equipment": "cable",
+            "weightMode": "stack",
+            "unilateral": true,
+            "aliases": [
+              "ягодичный мах назад"
+            ],
+            "primaryMuscles": [
+              "Ягодичные"
+            ],
+            "secondaryMuscles": [
+              "Задняя поверхность бедра"
+            ],
+            "difficulty": "intermediate",
+            "measurement": "reps",
+            "technique": "Закрепи манжету и держись за опору. Отведи бедро назад без прогиба поясницы и разворота таза. Верни ногу плавно.",
+            "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)",
+            "id": "tpl-80d7f4b8bf33",
+            "originalName": "Отведение ноги назад в кроссовере",
+            "sets": 3,
+            "repsMin": 8,
+            "repsMax": 12,
+            "restSeconds": 120,
+            "rirMin": 2,
+            "rirMax": 3,
+            "machine": "",
+            "notes": "",
+            "targets": [
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              }
+            ]
+          },
+          {
+            "catalogId": "facepull",
+            "name": "Тяга каната к лицу на задние дельты",
+            "group": "Плечи",
+            "pattern": "rear-delt",
+            "equipment": "cable",
+            "weightMode": "stack",
+            "unilateral": false,
+            "aliases": [],
+            "technique": "Настрой рукояти и положение корпуса. Двигай руками без раскачивания и пожимания плечами. Выбирай контролируемую амплитуду без дискомфорта в плече.",
+            "primaryMuscles": [
+              "Дельты"
+            ],
+            "secondaryMuscles": [],
+            "difficulty": "intermediate",
+            "measurement": "reps",
+            "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)",
+            "id": "tpl-85361efb9c02",
+            "originalName": "Тяга каната к лицу на задние дельты",
+            "sets": 3,
+            "repsMin": 8,
+            "repsMax": 12,
+            "restSeconds": 120,
+            "rirMin": 2,
+            "rirMax": 3,
+            "machine": "",
+            "notes": "",
+            "targets": [
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "upper-lower-4",
+    "title": "Верх / низ · 4 раза",
+    "description": "Два варианта верха и два варианта низа в непрерывной очереди.",
+    "weekdays": [
+      1,
+      2,
+      4,
+      6
+    ],
+    "source": {
+      "title": "Общие рекомендации по силовой активности; NEO FIT adaptation",
+      "urls": [
+        "https://www.acsm.org/docs/default-source/files-for-resource-library/resistance-training-for-health.pdf",
+        "https://www.nhs.uk/live-well/exercise/how-to-improve-strength-flexibility/",
+        "https://odphp.health.gov/our-work/nutrition-physical-activity/physical-activity-guidelines/current-guidelines/top-10-things-know"
+      ],
+      "checkedAt": "2026-09-17"
+    },
+    "programs": [
+      {
+        "id": "upper-a",
+        "title": "Верх А",
+        "short": "Верх А",
+        "kind": "full",
+        "source": "NEO FIT — редактируемая адаптация общих рекомендаций. Это не индивидуальное назначение; рабочий вес не задан.",
+        "exercises": [
+          {
+            "catalogId": "pulldown",
+            "name": "Тяга верхнего блока средним хватом",
+            "group": "Спина",
+            "pattern": "vertical-pull",
+            "equipment": "cable",
+            "weightMode": "stack",
+            "unilateral": false,
+            "aliases": [],
+            "technique": "Настрой упор для бёдер, поставь стопы устойчиво. Веди локти вниз без рывка и сильного раскачивания. Возвращай рукоять подконтрольно; не тяни её за голову.",
+            "primaryMuscles": [
+              "Широчайшие"
+            ],
+            "secondaryMuscles": [],
+            "difficulty": "intermediate",
+            "measurement": "reps",
+            "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)",
+            "id": "tpl-4ef10cf1a3c9",
+            "originalName": "Тяга верхнего блока средним хватом",
+            "sets": 3,
+            "repsMin": 8,
+            "repsMax": 12,
+            "restSeconds": 120,
+            "rirMin": 2,
+            "rirMax": 3,
+            "machine": "",
+            "notes": "",
+            "targets": [
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              }
+            ]
+          },
+          {
+            "catalogId": "chest-db",
+            "name": "Жим гантелей лёжа",
+            "group": "Грудь",
+            "pattern": "horizontal-press",
+            "equipment": "dumbbell",
+            "weightMode": "single",
+            "unilateral": false,
+            "aliases": [],
+            "technique": "Настрой высоту сиденья или положение на скамье. Сохраняй устойчивую опору, не заламывай кисти. Жми и опускай плавно, без отбива.",
+            "primaryMuscles": [
+              "Грудные"
+            ],
+            "secondaryMuscles": [],
+            "difficulty": "intermediate",
+            "measurement": "reps",
+            "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)",
+            "id": "tpl-4ff182ea8e63",
+            "originalName": "Жим гантелей лёжа",
+            "sets": 3,
+            "repsMin": 8,
+            "repsMax": 12,
+            "restSeconds": 120,
+            "rirMin": 2,
+            "rirMax": 3,
+            "machine": "",
+            "notes": "",
+            "targets": [
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              }
+            ]
+          },
+          {
+            "catalogId": "row-cable",
+            "name": "Тяга нижнего блока узким хватом сидя",
+            "group": "Спина",
+            "pattern": "horizontal-pull",
+            "equipment": "cable",
+            "weightMode": "stack",
+            "unilateral": false,
+            "aliases": [
+              "Тяга горизонтального блока сидя"
+            ],
+            "technique": "Зафиксируй положение корпуса и опоры. Веди локти назад, не подбрасывая вес поясницей. Плавно верни рукоять, не теряя контроля над плечами.",
+            "primaryMuscles": [
+              "Широчайшие"
+            ],
+            "secondaryMuscles": [],
+            "difficulty": "intermediate",
+            "measurement": "reps",
+            "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)",
+            "id": "tpl-244680e04b52",
+            "originalName": "Тяга нижнего блока узким хватом сидя",
+            "sets": 3,
+            "repsMin": 8,
+            "repsMax": 12,
+            "restSeconds": 120,
+            "rirMin": 2,
+            "rirMax": 3,
+            "machine": "",
+            "notes": "",
+            "targets": [
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              }
+            ]
+          },
+          {
+            "catalogId": "shoulder-db",
+            "name": "Жим гантелей над головой сидя",
+            "group": "Плечи",
+            "pattern": "vertical-press",
+            "equipment": "dumbbell",
+            "weightMode": "single",
+            "unilateral": false,
+            "aliases": [
+              "Жим над головой сидя"
+            ],
+            "technique": "Настрой опору спины и положение рукоятей. Не компенсируй подъём сильным прогибом поясницы. Жми и опускай без рывка в комфортной амплитуде.",
+            "primaryMuscles": [
+              "Дельты"
+            ],
+            "secondaryMuscles": [],
+            "difficulty": "intermediate",
+            "measurement": "reps",
+            "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)",
+            "id": "tpl-387bea9105cf",
+            "originalName": "Жим гантелей над головой сидя",
+            "sets": 3,
+            "repsMin": 8,
+            "repsMax": 12,
+            "restSeconds": 120,
+            "rirMin": 2,
+            "rirMax": 3,
+            "machine": "",
+            "notes": "",
+            "targets": [
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              }
+            ]
+          },
+          {
+            "catalogId": "pushdown",
+            "name": "Разгибание рук с канатом на верхнем блоке",
+            "group": "Трицепс",
+            "pattern": "elbow-extension",
+            "equipment": "cable",
+            "weightMode": "stack",
+            "unilateral": false,
+            "aliases": [],
+            "technique": "Устойчиво встань у блока и удерживай плечи относительно корпуса. Разгибай локти без рывка. Возвращай рукоять медленно; не дави через боль в локте.",
+            "primaryMuscles": [
+              "Трицепс"
+            ],
+            "secondaryMuscles": [],
+            "difficulty": "intermediate",
+            "measurement": "reps",
+            "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)",
+            "id": "tpl-79d751d914e6",
+            "originalName": "Разгибание рук с канатом на верхнем блоке",
+            "sets": 3,
+            "repsMin": 8,
+            "repsMax": 12,
+            "restSeconds": 120,
+            "rirMin": 2,
+            "rirMax": 3,
+            "machine": "",
+            "notes": "",
+            "targets": [
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "lower-a",
+        "title": "Низ А",
+        "short": "Низ А",
+        "kind": "full",
+        "source": "NEO FIT — редактируемая адаптация общих рекомендаций. Это не индивидуальное назначение; рабочий вес не задан.",
+        "exercises": [
+          {
+            "catalogId": "legpress",
+            "name": "Жим ногами",
+            "group": "Ноги",
+            "pattern": "knee-dominant",
+            "equipment": "machine",
+            "weightMode": "stack",
+            "unilateral": false,
+            "aliases": [],
+            "technique": "Выбери устойчивую постановку стоп. Колени направляй примерно по линии носков. Контролируй опускание; глубину выбирай без боли и потери положения корпуса.",
+            "primaryMuscles": [
+              "Квадрицепс"
+            ],
+            "secondaryMuscles": [],
+            "difficulty": "intermediate",
+            "measurement": "reps",
+            "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)",
+            "id": "tpl-786c0b17c26a",
+            "originalName": "Жим ногами",
+            "sets": 3,
+            "repsMin": 8,
+            "repsMax": 12,
+            "restSeconds": 120,
+            "rirMin": 2,
+            "rirMax": 3,
+            "machine": "",
+            "notes": "",
+            "targets": [
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              }
+            ]
+          },
+          {
+            "catalogId": "rdl-db",
+            "name": "Румынская тяга с гантелями",
+            "group": "Ноги",
+            "pattern": "hip-hinge",
+            "equipment": "dumbbell",
+            "weightMode": "total",
+            "unilateral": false,
+            "aliases": [
+              "мертвая тяга с гантелями"
+            ],
+            "primaryMuscles": [
+              "Задняя поверхность бедра",
+              "Ягодичные"
+            ],
+            "secondaryMuscles": [
+              "Разгибатели спины"
+            ],
+            "difficulty": "intermediate",
+            "measurement": "reps",
+            "technique": "Слегка согни колени и отводи таз назад. Веди гантели близко к ногам при нейтральной спине. Встань разгибанием бёдер.",
+            "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)",
+            "id": "tpl-fa5754c908f9",
+            "originalName": "Румынская тяга с гантелями",
+            "sets": 3,
+            "repsMin": 8,
+            "repsMax": 12,
+            "restSeconds": 120,
+            "rirMin": 2,
+            "rirMax": 3,
+            "machine": "",
+            "notes": "",
+            "targets": [
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              }
+            ]
+          },
+          {
+            "catalogId": "legcurl-seated",
+            "name": "Сгибание ног сидя",
+            "group": "Ноги",
+            "pattern": "knee-flexion",
+            "equipment": "machine",
+            "weightMode": "stack",
+            "unilateral": false,
+            "aliases": [],
+            "technique": "Настрой валик и ось тренажёра под себя. Не отрывай таз от опоры. Сгибай и разгибай колени плавно, не бросая груз.",
+            "primaryMuscles": [
+              "Квадрицепс"
+            ],
+            "secondaryMuscles": [],
+            "difficulty": "intermediate",
+            "measurement": "reps",
+            "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)",
+            "id": "tpl-e8edca93cc82",
+            "originalName": "Сгибание ног сидя",
+            "sets": 3,
+            "repsMin": 8,
+            "repsMax": 12,
+            "restSeconds": 120,
+            "rirMin": 2,
+            "rirMax": 3,
+            "machine": "",
+            "notes": "",
+            "targets": [
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              }
+            ]
+          },
+          {
+            "catalogId": "calf-standing",
+            "name": "Подъём на носки стоя в тренажёре",
+            "group": "Икры",
+            "pattern": "calf-standing",
+            "equipment": "machine",
+            "weightMode": "stack",
+            "unilateral": false,
+            "aliases": [],
+            "technique": "Удерживай равновесие с опорой. Поднимай пятки без подскока и медленно опускай. Не превращай движение в приседание.",
+            "primaryMuscles": [
+              "Икроножные"
+            ],
+            "secondaryMuscles": [],
+            "difficulty": "intermediate",
+            "measurement": "reps",
+            "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)",
+            "id": "tpl-fadc2220fb81",
+            "originalName": "Подъём на носки стоя в тренажёре",
+            "sets": 3,
+            "repsMin": 8,
+            "repsMax": 12,
+            "restSeconds": 120,
+            "rirMin": 2,
+            "rirMax": 3,
+            "machine": "",
+            "notes": "",
+            "targets": [
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              }
+            ]
+          },
+          {
+            "catalogId": "deadbug",
+            "name": "Мёртвый жук",
+            "group": "Пресс",
+            "pattern": "trunk-stability",
+            "equipment": "bodyweight",
+            "weightMode": "extra",
+            "unilateral": true,
+            "aliases": [],
+            "technique": "Лёжа на спине, удерживай положение корпуса. Медленно отводи противоположные руку и ногу настолько, насколько можешь сохранить контроль. Вернись и смени сторону.",
+            "primaryMuscles": [
+              "Прямая мышца живота"
+            ],
+            "secondaryMuscles": [],
+            "difficulty": "intermediate",
+            "measurement": "reps",
+            "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)",
+            "id": "tpl-54be06063705",
+            "originalName": "Мёртвый жук",
+            "sets": 3,
+            "repsMin": 8,
+            "repsMax": 12,
+            "restSeconds": 120,
+            "rirMin": 2,
+            "rirMax": 3,
+            "machine": "",
+            "notes": "",
+            "targets": [
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "upper-b",
+        "title": "Верх Б",
+        "short": "Верх Б",
+        "kind": "full",
+        "source": "NEO FIT — редактируемая адаптация общих рекомендаций. Это не индивидуальное назначение; рабочий вес не задан.",
+        "exercises": [
+          {
+            "catalogId": "row-chest",
+            "name": "Рычажная тяга с упором грудью",
+            "group": "Спина",
+            "pattern": "horizontal-pull",
+            "equipment": "machine",
+            "weightMode": "stack",
+            "unilateral": false,
+            "aliases": [],
+            "technique": "Зафиксируй положение корпуса и опоры. Веди локти назад, не подбрасывая вес поясницей. Плавно верни рукоять, не теряя контроля над плечами.",
+            "primaryMuscles": [
+              "Широчайшие"
+            ],
+            "secondaryMuscles": [],
+            "difficulty": "intermediate",
+            "measurement": "reps",
+            "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)",
+            "id": "tpl-478ddf55a88e",
+            "originalName": "Рычажная тяга с упором грудью",
+            "sets": 3,
+            "repsMin": 8,
+            "repsMax": 12,
+            "restSeconds": 120,
+            "rirMin": 2,
+            "rirMax": 3,
+            "machine": "",
+            "notes": "",
+            "targets": [
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              }
+            ]
+          },
+          {
+            "catalogId": "incline-machine",
+            "name": "Наклонный жим в тренажёре",
+            "group": "Грудь",
+            "pattern": "incline-press",
+            "equipment": "machine",
+            "weightMode": "stack",
+            "unilateral": false,
+            "aliases": [],
+            "technique": "Отрегулируй наклон и устойчиво поставь стопы. Держи запястья над предплечьями. Опускай отягощение плавно, без отбива и болезненной глубины.",
+            "primaryMuscles": [
+              "Грудные"
+            ],
+            "secondaryMuscles": [],
+            "difficulty": "intermediate",
+            "measurement": "reps",
+            "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)",
+            "id": "tpl-348f2cfcd6fc",
+            "originalName": "Наклонный жим в тренажёре",
+            "sets": 3,
+            "repsMin": 8,
+            "repsMax": 12,
+            "restSeconds": 120,
+            "rirMin": 2,
+            "rirMax": 3,
+            "machine": "",
+            "notes": "",
+            "targets": [
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              }
+            ]
+          },
+          {
+            "catalogId": "gravitron",
+            "name": "Подтягивания в гравитроне",
+            "group": "Спина",
+            "pattern": "vertical-pull",
+            "equipment": "machine",
+            "weightMode": "assist",
+            "unilateral": false,
+            "aliases": [],
+            "technique": "Настрой упор для бёдер, поставь стопы устойчиво. Веди локти вниз без рывка и сильного раскачивания. Возвращай рукоять подконтрольно; не тяни её за голову.",
+            "primaryMuscles": [
+              "Широчайшие"
+            ],
+            "secondaryMuscles": [],
+            "difficulty": "intermediate",
+            "measurement": "reps",
+            "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)",
+            "id": "tpl-b2b1279fecdd",
+            "originalName": "Подтягивания в гравитроне",
+            "sets": 3,
+            "repsMin": 8,
+            "repsMax": 12,
+            "restSeconds": 120,
+            "rirMin": 2,
+            "rirMax": 3,
+            "machine": "",
+            "notes": "",
+            "targets": [
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              }
+            ]
+          },
+          {
+            "catalogId": "lateral-db",
+            "name": "Подъём гантелей в стороны",
+            "group": "Плечи",
+            "pattern": "lateral-raise",
+            "equipment": "dumbbell",
+            "weightMode": "single",
+            "unilateral": false,
+            "aliases": [
+              "Разведения рук в стороны"
+            ],
+            "technique": "Сохраняй небольшой сгиб локтей. Поднимай руки в комфортной плоскости без рывков корпусом. Не поднимай плечи к ушам; опускай вес плавно.",
+            "primaryMuscles": [
+              "Дельты"
+            ],
+            "secondaryMuscles": [],
+            "difficulty": "intermediate",
+            "measurement": "reps",
+            "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)",
+            "id": "tpl-d1ae166b5756",
+            "originalName": "Подъём гантелей в стороны",
+            "sets": 3,
+            "repsMin": 8,
+            "repsMax": 12,
+            "restSeconds": 120,
+            "rirMin": 2,
+            "rirMax": 3,
+            "machine": "",
+            "notes": "",
+            "targets": [
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              }
+            ]
+          },
+          {
+            "catalogId": "curl-db",
+            "name": "Сгибание рук с гантелями",
+            "group": "Бицепс",
+            "pattern": "elbow-flexion",
+            "equipment": "dumbbell",
+            "weightMode": "single",
+            "unilateral": false,
+            "aliases": [
+              "Сгибания, на бицепс"
+            ],
+            "technique": "Выбери устойчивое положение. Сгибай локти без раскачивания корпусом; кисти не заламывай. Опускай вес подконтрольно.",
+            "primaryMuscles": [
+              "Бицепс"
+            ],
+            "secondaryMuscles": [],
+            "difficulty": "intermediate",
+            "measurement": "reps",
+            "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)",
+            "id": "tpl-36971a910404",
+            "originalName": "Сгибание рук с гантелями",
+            "sets": 3,
+            "repsMin": 8,
+            "repsMax": 12,
+            "restSeconds": 120,
+            "rirMin": 2,
+            "rirMax": 3,
+            "machine": "",
+            "notes": "",
+            "targets": [
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "lower-b",
+        "title": "Низ Б",
+        "short": "Низ Б",
+        "kind": "full",
+        "source": "NEO FIT — редактируемая адаптация общих рекомендаций. Это не индивидуальное назначение; рабочий вес не задан.",
+        "exercises": [
+          {
+            "catalogId": "goblet-kb",
+            "name": "Гоблет-приседание с гирей",
+            "group": "Ноги",
+            "pattern": "knee-dominant",
+            "equipment": "kettlebell",
+            "weightMode": "single",
+            "unilateral": false,
+            "aliases": [
+              "присед с гирей у груди"
+            ],
+            "primaryMuscles": [
+              "Квадрицепс",
+              "Ягодичные"
+            ],
+            "secondaryMuscles": [
+              "Пресс"
+            ],
+            "difficulty": "intermediate",
+            "measurement": "reps",
+            "technique": "Удерживай гирю близко к груди. Сядь между бёдер с опорой на всю стопу. Встань, сохраняя нейтральный корпус.",
+            "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)",
+            "id": "tpl-983191d8f363",
+            "originalName": "Гоблет-приседание с гирей",
+            "sets": 3,
+            "repsMin": 8,
+            "repsMax": 12,
+            "restSeconds": 120,
+            "rirMin": 2,
+            "rirMax": 3,
+            "machine": "",
+            "notes": "",
+            "targets": [
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              }
+            ]
+          },
+          {
+            "catalogId": "hipthrust-barbell",
+            "name": "Ягодичный мост со штангой",
+            "group": "Ягодицы",
+            "pattern": "hip-extension",
+            "equipment": "barbell",
+            "weightMode": "total",
+            "unilateral": false,
+            "aliases": [
+              "хип траст"
+            ],
+            "primaryMuscles": [
+              "Ягодичные"
+            ],
+            "secondaryMuscles": [
+              "Задняя поверхность бедра"
+            ],
+            "difficulty": "advanced",
+            "measurement": "reps",
+            "technique": "Упрись верхом спины в устойчивую скамью и защити таз накладкой. Разогни бёдра до нейтрального корпуса. Не переразгибай поясницу.",
+            "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)",
+            "id": "tpl-266438e0c769",
+            "originalName": "Ягодичный мост со штангой",
+            "sets": 3,
+            "repsMin": 8,
+            "repsMax": 12,
+            "restSeconds": 120,
+            "rirMin": 2,
+            "rirMax": 3,
+            "machine": "",
+            "notes": "",
+            "targets": [
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              }
+            ]
+          },
+          {
+            "catalogId": "step-up-db",
+            "name": "Зашагивание на тумбу с гантелями",
+            "group": "Ноги",
+            "pattern": "knee-dominant",
+            "equipment": "dumbbell",
+            "weightMode": "total",
+            "unilateral": true,
+            "aliases": [
+              "подъем на платформу"
+            ],
+            "primaryMuscles": [
+              "Квадрицепс",
+              "Ягодичные"
+            ],
+            "secondaryMuscles": [],
+            "difficulty": "intermediate",
+            "measurement": "reps",
+            "technique": "Выбери устойчивую тумбу подходящей высоты. Поставь всю стопу и поднимись усилием рабочей ноги. Спускайся подконтрольно.",
+            "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)",
+            "id": "tpl-caeeba90b2f5",
+            "originalName": "Зашагивание на тумбу с гантелями",
+            "sets": 3,
+            "repsMin": 8,
+            "repsMax": 12,
+            "restSeconds": 120,
+            "rirMin": 2,
+            "rirMax": 3,
+            "machine": "",
+            "notes": "",
+            "targets": [
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              }
+            ]
+          },
+          {
+            "catalogId": "abduction",
+            "name": "Разведение ног в тренажёре",
+            "group": "Ягодицы",
+            "pattern": "hip-abduction",
+            "equipment": "machine",
+            "weightMode": "stack",
+            "unilateral": false,
+            "aliases": [],
+            "technique": "Настрой сиденье и валики. Удерживай таз и корпус на опоре. Разводи и своди ноги без рывков и столкновения грузов.",
+            "primaryMuscles": [
+              "Ягодичные"
+            ],
+            "secondaryMuscles": [],
+            "difficulty": "intermediate",
+            "measurement": "reps",
+            "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)",
+            "id": "tpl-a0ec78080ffb",
+            "originalName": "Разведение ног в тренажёре",
+            "sets": 3,
+            "repsMin": 8,
+            "repsMax": 12,
+            "restSeconds": 120,
+            "rirMin": 2,
+            "rirMax": 3,
+            "machine": "",
+            "notes": "",
+            "targets": [
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              }
+            ]
+          },
+          {
+            "catalogId": "plank",
+            "name": "Планка на предплечьях",
+            "group": "Пресс",
+            "pattern": "trunk-stability",
+            "equipment": "bodyweight",
+            "weightMode": "extra",
+            "unilateral": false,
+            "aliases": [
+              "планка"
+            ],
+            "primaryMuscles": [
+              "Поперечная мышца живота"
+            ],
+            "secondaryMuscles": [
+              "Ягодичные"
+            ],
+            "difficulty": "beginner",
+            "measurement": "seconds",
+            "technique": "Создай прямую линию от головы до пяток. Мягко напряги живот и ягодицы, продолжая дышать. Заверши подход при потере положения.",
+            "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)",
+            "id": "tpl-260d027c9371",
+            "originalName": "Планка на предплечьях",
+            "sets": 3,
+            "repsMin": 8,
+            "repsMax": 12,
+            "restSeconds": 120,
+            "rirMin": 2,
+            "rirMax": 3,
+            "machine": "",
+            "notes": "",
+            "targets": [
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "home-band-3",
+    "title": "Дом и резинки · 3 раза",
+    "description": "Без тренажёров: собственный вес, резинки, гантель или гиря.",
+    "weekdays": [
+      2,
+      4,
+      0
+    ],
+    "source": {
+      "title": "Общие рекомендации по силовой активности; NEO FIT adaptation",
+      "urls": [
+        "https://www.acsm.org/docs/default-source/files-for-resource-library/resistance-training-for-health.pdf",
+        "https://www.nhs.uk/live-well/exercise/how-to-improve-strength-flexibility/",
+        "https://odphp.health.gov/our-work/nutrition-physical-activity/physical-activity-guidelines/current-guidelines/top-10-things-know"
+      ],
+      "checkedAt": "2026-09-17"
+    },
+    "programs": [
+      {
+        "id": "home-a",
+        "title": "Дом А",
+        "short": "Дом А",
+        "kind": "full",
+        "source": "NEO FIT — редактируемая адаптация общих рекомендаций. Это не индивидуальное назначение; рабочий вес не задан.",
+        "exercises": [
+          {
+            "catalogId": "squat-body",
+            "name": "Приседание без отягощения",
+            "group": "Ноги",
+            "pattern": "knee-dominant",
+            "equipment": "bodyweight",
+            "weightMode": "extra",
+            "unilateral": false,
+            "aliases": [
+              "воздушный присед"
+            ],
+            "primaryMuscles": [
+              "Квадрицепс",
+              "Ягодичные"
+            ],
+            "secondaryMuscles": [
+              "Икры"
+            ],
+            "difficulty": "beginner",
+            "measurement": "reps",
+            "technique": "Поставь стопы устойчиво. Отведи таз и согни колени в направлении носков до комфортной глубины. Встань, сохраняя опору всей стопы.",
+            "source": "NHS Strength exercises: https://www.nhs.uk/live-well/exercise/strength-exercises/ (проверено 17.09.2026)",
+            "id": "tpl-71116817d99e",
+            "originalName": "Приседание без отягощения",
+            "sets": 2,
+            "repsMin": 8,
+            "repsMax": 12,
+            "restSeconds": 120,
+            "rirMin": 2,
+            "rirMax": 3,
+            "machine": "",
+            "notes": "",
+            "targets": [
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              }
+            ]
+          },
+          {
+            "catalogId": "wall-pushup",
+            "name": "Отжимания от стены",
+            "group": "Грудь",
+            "pattern": "horizontal-press",
+            "equipment": "bodyweight",
+            "weightMode": "extra",
+            "unilateral": false,
+            "aliases": [
+              "отжимания стоя"
+            ],
+            "primaryMuscles": [
+              "Грудные"
+            ],
+            "secondaryMuscles": [
+              "Трицепс"
+            ],
+            "difficulty": "beginner",
+            "measurement": "reps",
+            "technique": "Поставь ладони на устойчивую стену на уровне груди. Сохраняй прямую линию корпуса, приблизь грудь к стене и плавно оттолкнись.",
+            "source": "NHS Strength exercises: https://www.nhs.uk/live-well/exercise/strength-exercises/ (проверено 17.09.2026)",
+            "id": "tpl-e0bf3dd6f3ae",
+            "originalName": "Отжимания от стены",
+            "sets": 2,
+            "repsMin": 8,
+            "repsMax": 12,
+            "restSeconds": 120,
+            "rirMin": 2,
+            "rirMax": 3,
+            "machine": "",
+            "notes": "",
+            "targets": [
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              }
+            ]
+          },
+          {
+            "catalogId": "row-band",
+            "name": "Тяга резинки к поясу",
+            "group": "Спина",
+            "pattern": "horizontal-pull",
+            "equipment": "band",
+            "weightMode": "unspecified",
+            "unilateral": false,
+            "aliases": [
+              "тяга эспандера сидя"
+            ],
+            "primaryMuscles": [
+              "Широчайшие",
+              "Ромбовидные"
+            ],
+            "secondaryMuscles": [
+              "Бицепс"
+            ],
+            "difficulty": "beginner",
+            "measurement": "reps",
+            "technique": "Закрепи резинку и проверь её целостность. Потяни локти назад при устойчивом корпусе. Верни руки без рывка и потери натяжения.",
+            "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)",
+            "id": "tpl-802cd34bedc6",
+            "originalName": "Тяга резинки к поясу",
+            "sets": 2,
+            "repsMin": 8,
+            "repsMax": 12,
+            "restSeconds": 120,
+            "rirMin": 2,
+            "rirMax": 3,
+            "machine": "",
+            "notes": "",
+            "targets": [
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              }
+            ]
+          },
+          {
+            "catalogId": "hipbridge",
+            "name": "Ягодичный мостик",
+            "group": "Ягодицы",
+            "pattern": "hip-extension",
+            "equipment": "bodyweight",
+            "weightMode": "extra",
+            "unilateral": false,
+            "aliases": [],
+            "technique": "Устойчиво поставь стопы и проверь опору. Поднимай таз за счёт разгибания бёдер, не переразгибая поясницу. Опускайся подконтрольно.",
+            "primaryMuscles": [
+              "Ягодичные"
+            ],
+            "secondaryMuscles": [],
+            "difficulty": "intermediate",
+            "measurement": "reps",
+            "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)",
+            "id": "tpl-d47fe9c07dae",
+            "originalName": "Ягодичный мостик",
+            "sets": 2,
+            "repsMin": 8,
+            "repsMax": 12,
+            "restSeconds": 120,
+            "rirMin": 2,
+            "rirMax": 3,
+            "machine": "",
+            "notes": "",
+            "targets": [
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              }
+            ]
+          },
+          {
+            "catalogId": "deadbug",
+            "name": "Мёртвый жук",
+            "group": "Пресс",
+            "pattern": "trunk-stability",
+            "equipment": "bodyweight",
+            "weightMode": "extra",
+            "unilateral": true,
+            "aliases": [],
+            "technique": "Лёжа на спине, удерживай положение корпуса. Медленно отводи противоположные руку и ногу настолько, насколько можешь сохранить контроль. Вернись и смени сторону.",
+            "primaryMuscles": [
+              "Прямая мышца живота"
+            ],
+            "secondaryMuscles": [],
+            "difficulty": "intermediate",
+            "measurement": "reps",
+            "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)",
+            "id": "tpl-1a9711f7f521",
+            "originalName": "Мёртвый жук",
+            "sets": 2,
+            "repsMin": 8,
+            "repsMax": 12,
+            "restSeconds": 120,
+            "rirMin": 2,
+            "rirMax": 3,
+            "machine": "",
+            "notes": "",
+            "targets": [
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "home-b",
+        "title": "Дом Б",
+        "short": "Дом Б",
+        "kind": "full",
+        "source": "NEO FIT — редактируемая адаптация общих рекомендаций. Это не индивидуальное назначение; рабочий вес не задан.",
+        "exercises": [
+          {
+            "catalogId": "reverse-lunge",
+            "name": "Обратный выпад",
+            "group": "Ноги",
+            "pattern": "knee-dominant",
+            "equipment": "bodyweight",
+            "weightMode": "extra",
+            "unilateral": true,
+            "aliases": [
+              "выпад назад"
+            ],
+            "primaryMuscles": [
+              "Квадрицепс",
+              "Ягодичные"
+            ],
+            "secondaryMuscles": [],
+            "difficulty": "intermediate",
+            "measurement": "reps",
+            "technique": "Шагни назад на комфортную длину. Опусти заднее колено, сохраняя устойчивость передней стопы. Вернись без отталкивания корпусом.",
+            "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)",
+            "id": "tpl-9eeb04eeacc1",
+            "originalName": "Обратный выпад",
+            "sets": 2,
+            "repsMin": 8,
+            "repsMax": 12,
+            "restSeconds": 120,
+            "rirMin": 2,
+            "rirMax": 3,
+            "machine": "",
+            "notes": "",
+            "targets": [
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              }
+            ]
+          },
+          {
+            "catalogId": "pulldown-band",
+            "name": "Тяга резинки сверху",
+            "group": "Спина",
+            "pattern": "vertical-pull",
+            "equipment": "band",
+            "weightMode": "unspecified",
+            "unilateral": false,
+            "aliases": [
+              "тяга резинки к груди"
+            ],
+            "primaryMuscles": [
+              "Широчайшие"
+            ],
+            "secondaryMuscles": [
+              "Бицепс"
+            ],
+            "difficulty": "beginner",
+            "measurement": "reps",
+            "technique": "Закрепи резинку над головой и проверь крепление. Опусти локти к корпусу, не отклоняясь назад. Верни руки плавно.",
+            "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)",
+            "id": "tpl-a07b3bc46605",
+            "originalName": "Тяга резинки сверху",
+            "sets": 2,
+            "repsMin": 8,
+            "repsMax": 12,
+            "restSeconds": 120,
+            "rirMin": 2,
+            "rirMax": 3,
+            "machine": "",
+            "notes": "",
+            "targets": [
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              }
+            ]
+          },
+          {
+            "catalogId": "shoulder-band",
+            "name": "Жим резинки над головой",
+            "group": "Плечи",
+            "pattern": "vertical-press",
+            "equipment": "band",
+            "weightMode": "unspecified",
+            "unilateral": false,
+            "aliases": [
+              "жим эспандера вверх"
+            ],
+            "primaryMuscles": [
+              "Дельты"
+            ],
+            "secondaryMuscles": [
+              "Трицепс"
+            ],
+            "difficulty": "beginner",
+            "measurement": "reps",
+            "technique": "Встань на резинку симметрично. Выжми руки вверх без прогиба поясницы. Возвращайся медленно и не отпускай натяжение резко.",
+            "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)",
+            "id": "tpl-4591bd027556",
+            "originalName": "Жим резинки над головой",
+            "sets": 2,
+            "repsMin": 8,
+            "repsMax": 12,
+            "restSeconds": 120,
+            "rirMin": 2,
+            "rirMax": 3,
+            "machine": "",
+            "notes": "",
+            "targets": [
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              }
+            ]
+          },
+          {
+            "catalogId": "abduction-band",
+            "name": "Отведение бёдер с резинкой",
+            "group": "Ягодицы",
+            "pattern": "hip-abduction",
+            "equipment": "band",
+            "weightMode": "unspecified",
+            "unilateral": false,
+            "aliases": [
+              "разведение коленей с резинкой"
+            ],
+            "primaryMuscles": [
+              "Средняя ягодичная"
+            ],
+            "secondaryMuscles": [],
+            "difficulty": "beginner",
+            "measurement": "reps",
+            "technique": "Расположи резинку устойчиво. Разводи колени или отводи ногу без разворота таза. Возвращайся медленно, сохраняя контроль.",
+            "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)",
+            "id": "tpl-0cf83306e017",
+            "originalName": "Отведение бёдер с резинкой",
+            "sets": 2,
+            "repsMin": 8,
+            "repsMax": 12,
+            "restSeconds": 120,
+            "rirMin": 2,
+            "rirMax": 3,
+            "machine": "",
+            "notes": "",
+            "targets": [
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              }
+            ]
+          },
+          {
+            "catalogId": "side-plank",
+            "name": "Боковая планка",
+            "group": "Пресс",
+            "pattern": "trunk-stability",
+            "equipment": "bodyweight",
+            "weightMode": "extra",
+            "unilateral": true,
+            "aliases": [
+              "планка на боку"
+            ],
+            "primaryMuscles": [
+              "Косые мышцы живота"
+            ],
+            "secondaryMuscles": [
+              "Средняя ягодичная"
+            ],
+            "difficulty": "intermediate",
+            "measurement": "seconds",
+            "technique": "Установи локоть под плечом и выстрой корпус одной линией. Подними таз и дыши спокойно. Остановись при потере опоры или боли.",
+            "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)",
+            "id": "tpl-a5f17332e4ca",
+            "originalName": "Боковая планка",
+            "sets": 2,
+            "repsMin": 8,
+            "repsMax": 12,
+            "restSeconds": 120,
+            "rirMin": 2,
+            "rirMax": 3,
+            "machine": "",
+            "notes": "",
+            "targets": [
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "home-c",
+        "title": "Дом В",
+        "short": "Дом В",
+        "kind": "full",
+        "source": "NEO FIT — редактируемая адаптация общих рекомендаций. Это не индивидуальное назначение; рабочий вес не задан.",
+        "exercises": [
+          {
+            "catalogId": "rdl-kb",
+            "name": "Румынская тяга с гирей",
+            "group": "Ноги",
+            "pattern": "hip-hinge",
+            "equipment": "kettlebell",
+            "weightMode": "single",
+            "unilateral": false,
+            "aliases": [
+              "наклон с гирей"
+            ],
+            "primaryMuscles": [
+              "Задняя поверхность бедра",
+              "Ягодичные"
+            ],
+            "secondaryMuscles": [
+              "Разгибатели спины"
+            ],
+            "difficulty": "beginner",
+            "measurement": "reps",
+            "technique": "Держи гирю перед собой. Отведи таз назад при мягких коленях и ровной спине. Вернись за счёт ягодиц, не запрокидывая корпус.",
+            "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)",
+            "id": "tpl-79a844bdf7fd",
+            "originalName": "Румынская тяга с гирей",
+            "sets": 2,
+            "repsMin": 8,
+            "repsMax": 12,
+            "restSeconds": 120,
+            "rirMin": 2,
+            "rirMax": 3,
+            "machine": "",
+            "notes": "",
+            "targets": [
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              }
+            ]
+          },
+          {
+            "catalogId": "pushup",
+            "name": "Отжимания от опоры",
+            "group": "Грудь",
+            "pattern": "horizontal-press",
+            "equipment": "bodyweight",
+            "weightMode": "extra",
+            "unilateral": false,
+            "aliases": [],
+            "technique": "Настрой высоту сиденья или положение на скамье. Сохраняй устойчивую опору, не заламывай кисти. Жми и опускай плавно, без отбива.",
+            "primaryMuscles": [
+              "Грудные"
+            ],
+            "secondaryMuscles": [],
+            "difficulty": "intermediate",
+            "measurement": "reps",
+            "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)",
+            "id": "tpl-776626eacd37",
+            "originalName": "Отжимания от опоры",
+            "sets": 2,
+            "repsMin": 8,
+            "repsMax": 12,
+            "restSeconds": 120,
+            "rirMin": 2,
+            "rirMax": 3,
+            "machine": "",
+            "notes": "",
+            "targets": [
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              }
+            ]
+          },
+          {
+            "catalogId": "row-inverted",
+            "name": "Горизонтальные подтягивания",
+            "group": "Спина",
+            "pattern": "horizontal-pull",
+            "equipment": "bodyweight",
+            "weightMode": "extra",
+            "unilateral": false,
+            "aliases": [
+              "австралийские подтягивания"
+            ],
+            "primaryMuscles": [
+              "Ромбовидные",
+              "Широчайшие"
+            ],
+            "secondaryMuscles": [
+              "Бицепс"
+            ],
+            "difficulty": "intermediate",
+            "measurement": "reps",
+            "technique": "Выбери устойчивую перекладину. Держи тело одной линией и подтяни грудь к опоре. Не запрокидывай голову, опускайся плавно.",
+            "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)",
+            "id": "tpl-508880b30244",
+            "originalName": "Горизонтальные подтягивания",
+            "sets": 2,
+            "repsMin": 8,
+            "repsMax": 12,
+            "restSeconds": 120,
+            "rirMin": 2,
+            "rirMax": 3,
+            "machine": "",
+            "notes": "",
+            "targets": [
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              }
+            ]
+          },
+          {
+            "catalogId": "lateral-band",
+            "name": "Подъём рук в стороны с резинкой",
+            "group": "Плечи",
+            "pattern": "lateral-raise",
+            "equipment": "band",
+            "weightMode": "unspecified",
+            "unilateral": false,
+            "aliases": [
+              "махи с резинкой"
+            ],
+            "primaryMuscles": [
+              "Средние дельты"
+            ],
+            "secondaryMuscles": [],
+            "difficulty": "beginner",
+            "measurement": "reps",
+            "technique": "Зафиксируй резинку под стопами. Подними руки до комфортного уровня без рывка и пожимания плечами. Опусти плавно.",
+            "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)",
+            "id": "tpl-65e65d1330c2",
+            "originalName": "Подъём рук в стороны с резинкой",
+            "sets": 2,
+            "repsMin": 8,
+            "repsMax": 12,
+            "restSeconds": 120,
+            "rirMin": 2,
+            "rirMax": 3,
+            "machine": "",
+            "notes": "",
+            "targets": [
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              }
+            ]
+          },
+          {
+            "catalogId": "bird-dog",
+            "name": "Птица-собака",
+            "group": "Пресс",
+            "pattern": "trunk-stability",
+            "equipment": "bodyweight",
+            "weightMode": "extra",
+            "unilateral": true,
+            "aliases": [
+              "берд дог"
+            ],
+            "primaryMuscles": [
+              "Поперечная мышца живота"
+            ],
+            "secondaryMuscles": [
+              "Ягодичные",
+              "Разгибатели спины"
+            ],
+            "difficulty": "beginner",
+            "measurement": "reps",
+            "technique": "Из положения на четвереньках вытягивай противоположные руку и ногу. Не вращай таз и не прогибай поясницу. Вернись подконтрольно.",
+            "source": "ACE Exercise Library: https://www.acefitness.org/resources/everyone/exercise-library/ (проверено 17.09.2026)",
+            "id": "tpl-fa2d72c82512",
+            "originalName": "Птица-собака",
+            "sets": 2,
+            "repsMin": 8,
+            "repsMax": 12,
+            "restSeconds": 120,
+            "rirMin": 2,
+            "rirMax": 3,
+            "machine": "",
+            "notes": "",
+            "targets": [
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              },
+              {
+                "reps": "8–12",
+                "sourceWeight": null
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

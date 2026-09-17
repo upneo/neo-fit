@@ -109,3 +109,13 @@ test('InBody text parser recognizes a supported export without names',async()=>{
  const parsed=parseInBodyText('Дата 01.02.26 Вес Норма 75,4 кг Мышцы Норма 35.2 кг Жир Норма 18,1 % Оценка InBody 80 /100 Вода 45.5 л Белок 12.1 кг Кости 4.1 кг Висцеральный жир Ниже нормы 6 Индекс массы тела 22.4 Содержание Жира 13.6 кг Обмен веществ 1710 ккал');
  assert.equal(parsed.measuredAt,'2026-02-01');assert.equal(parsed.metrics.weight,75.4);assert.equal(parsed.metrics.skeletalMuscleMass,35.2);assert.equal(parsed.metrics.bodyFatPercent,18.1);assert.equal(parsed.metrics.bodyFatMass,13.6);
 });
+
+test('InBody parser keeps report context, ranges and left/right segments',async()=>{
+ const {parseInBodyText}=await import('../src/lib/inbody.js'),item=(str,x,y)=>({str,transform:[1,0,0,1,x,y]});
+ const text='Имя Тест Пол М Возраст 30 Рост 180 см Дата 02.03.26 Вес Норма 72.4 кг Мышцы Норма 32.1 кг Жир Норма 20 % Оценка InBody 81 /100 Вода 44 л Белок 11 кг Кости 3.8 кг Висцеральный жир Норма 7 Индекс массы тела 22.3 Безжировая масса 57.1 кг Обмен веществ 1600 ккал Суточная норма калорий 2100 ккал Идеальный вес 74 кг До идеального веса Вес 1.6 кг Жир -1 кг Мышцы 2.6 кг Содержание Жира 14.5 кг Вес 72.4 кг < 55 55–75 > 75';
+ const items=[item('мышц',122,227),item('Торс',159,145),item('2.1',69,183),item('95 %',73,171),item('Норма',69,158),item('2.2',242,183),item('96 %',259,171),item('Норма',266,158),item('24',156,123),item('100 %',167,109),item('Норма',176,145),item('8.1',69,52),item('101 %',73,70),item('Норма',69,82),item('8.2',240,52),item('102 %',259,70),item('Норма',266,82),item('0.4',325,183),item('65 %',329,171),item('Ниже',325,158),item('нормы',344,158),item('0.5',506,183),item('70 %',517,171),item('Норма',503,158),item('5.8',416,123),item('120 %',421,109),item('Выше',422,145),item('нормы',442,145),item('1.5',325,52),item('90 %',329,70),item('Норма',325,82),item('1.6',510,52),item('91 %',517,70),item('Норма',522,82)];
+ const parsed=parseInBodyText(text,items);
+ assert.equal(parsed.metrics.fatFreeMass,57.1);assert.equal(parsed.metrics.recommendedCalories,2100);assert.equal(parsed.metrics.weightControl,1.6);assert.equal(parsed.context.subjectName,'Тест');assert.equal(parsed.sourceDetails.ranges.weight.normalMin,55);
+ assert.equal(parsed.segments.muscle.leftArm.value,2.1);assert.equal(parsed.segments.muscle.rightArm.value,2.2);assert.equal(parsed.segments.fat.trunk.percent,120);assert.equal(parsed.segments.fat.trunk.status,'Выше нормы');
+ const state=base();N.addInBody(state,{id:N.uid(),importedAt:'2026-03-03T00:00:00.000Z',source:'Synthetic report',sourceHash:'b'.repeat(64),...parsed});N.validate(state);assert.equal(state.inBody[0].segments.muscle.leftArm.value,2.1);assert.equal(state.profile.weight,'');
+});

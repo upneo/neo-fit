@@ -247,12 +247,14 @@ export function configureTemplates(value) { templates = value; }
         for (const ev of s.intakes)
             if (!id(ev.trackerId) || !/^([01]\d|2[0-3]):[0-5]\d$/.test(ev.scheduledTime) || !['supplement', 'peptide'].includes(ev.snapshot.category) || (ev.actualAmount !== undefined && !str(ev.actualAmount, 240)))
                 fail('данные отметки');
-        const bodyMetricKeys = new Set(['weight','skeletalMuscleMass','bodyFatMass','bodyFatPercent','bmi','visceralFatLevel','totalBodyWater','protein','minerals','waistHipRatio','basalMetabolicRate','inBodyScore','segmentalLean']);
+        const bodyMetricKeys = new Set(['weight','skeletalMuscleMass','bodyFatMass','bodyFatPercent','bmi','visceralFatLevel','totalBodyWater','protein','minerals','waistHipRatio','basalMetabolicRate','inBodyScore','fatFreeMass','recommendedCalories','idealWeight','weightControl','fatControl','muscleControl','segmentalLean']);
+        const signedBodyMetrics = new Set(['weightControl','fatControl','muscleControl']);
+        const safeBodyValue = (value, depth = 0) => { if (depth > 6) return false; if (value === null) return true; if (typeof value === 'string') return value.length <= 6000; if (typeof value === 'number') return Number.isFinite(value) && Math.abs(value) <= 100000; if (Array.isArray(value)) return value.length <= 500 && value.every(item => safeBodyValue(item, depth + 1)); if (typeof value === 'object') { const keys = Object.keys(value); return keys.length <= 500 && !keys.some(key => ['__proto__','prototype','constructor'].includes(key)) && keys.every(key => safeBodyValue(value[key], depth + 1)); } return false; };
         for (const body of s.inBody) {
-            if (!id(body.id) || !validDay(body.measuredAt) || !str(body.source, 240) || !str(body.sourceHash, 128) || !str(body.importedAt, 40) || !body.metrics || typeof body.metrics !== 'object' || Array.isArray(body.metrics) || Object.keys(body.metrics).some(k => !bodyMetricKeys.has(k))) fail('InBody');
+            if (!id(body.id) || !validDay(body.measuredAt) || !str(body.source, 240) || !str(body.sourceHash, 128) || !str(body.importedAt, 40) || !body.metrics || typeof body.metrics !== 'object' || Array.isArray(body.metrics) || Object.keys(body.metrics).some(k => !bodyMetricKeys.has(k)) || (body.comment !== undefined && !str(body.comment, 6000)) || (body.conditions !== undefined && !str(body.conditions, 6000)) || ['context','segments','sourceDetails','manualEdits'].some(key => body[key] !== undefined && !safeBodyValue(body[key]))) fail('InBody');
             for (const [key, value] of Object.entries(body.metrics)) {
-                if (key === 'segmentalLean') { if (!value || typeof value !== 'object' || Array.isArray(value) || Object.values(value).some(v => typeof v !== 'number' || !Number.isFinite(v))) fail('InBody'); }
-                else if (value !== null && (typeof value !== 'number' || !Number.isFinite(value) || value < 0 || value > 100000)) fail('InBody');
+                if (key === 'segmentalLean') { if (!safeBodyValue(value)) fail('InBody'); }
+                else if (value !== null && (typeof value !== 'number' || !Number.isFinite(value) || value > 100000 || value < (signedBodyMetrics.has(key) ? -100000 : 0))) fail('InBody');
             }
         }
         return s;
@@ -262,6 +264,7 @@ export function configureTemplates(value) { templates = value; }
         const existing = state.inBody.find(x => x.sourceHash === record.sourceHash);
         if (existing) return existing;
         const next = { id: record.id || uid(), measuredAt: record.measuredAt, importedAt: record.importedAt || new Date().toISOString(), source: record.source || 'Ручной ввод', sourceHash: record.sourceHash, metrics: clone(record.metrics || {}) };
+        for (const key of ['context','segments','sourceDetails','comment','conditions','manualEdits']) if (record[key] !== undefined) next[key] = clone(record[key]);
         state.inBody.push(next); state.inBody.sort((a,b)=>b.measuredAt.localeCompare(a.measuredAt));
         const weight = next.metrics.weight;
         if (Number.isFinite(weight) && !state.weights.some(w => w.date === next.measuredAt && Math.abs(w.value - weight) < .001)) state.weights.push({ id: uid(), date: next.measuredAt, value: weight, source: 'InBody' });
